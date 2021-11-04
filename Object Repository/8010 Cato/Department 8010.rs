@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Department 8010</name>
+   <name>department 8010</name>
    <tag></tag>
    <elementGuidId>51f03f65-eb6e-4837-b5aa-51bcda7670fb</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>span.select2.select2-container.select2-container--default.select2-container--disabled > span.selection > span.select2-selection.select2-selection--single</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>(.//*[normalize-space(text()) and normalize-space(.)='Department'])[4]/following::span[3]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>span.select2.select2-container.select2-container--default.select2-container--disabled > span.selection > span.select2-selection.select2-selection--single</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

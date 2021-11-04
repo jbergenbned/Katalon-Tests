@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Course 8010</name>
+   <name>course 8010</name>
    <tag></tag>
    <elementGuidId>674c40a2-6a73-44cd-9f56-a5578bfcfaf0</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#select2-i7x0-container</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>/html/body/main/div[3]/div[1]/div[2]/div/div/div[3]/div[2]/form/div/div[2]/div[2]/div[3]/div/div/span/span[1]/span/span[2]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#select2-i7x0-container</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

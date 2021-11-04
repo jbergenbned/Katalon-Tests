@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Single TB Rental checkout by course CC 8010</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e4248640-3b4d-472b-a35e-f25fd3ec85a3</testCaseGuid>
+   <variable>
+      <defaultValue>'8010'</defaultValue>
+      <description></description>
+      <id>c73bad49-c213-4b97-b9f1-8ff07728ad3d</id>
+      <masked>false</masked>
+      <name>Cato</name>
+   </variable>
+</TestCaseEntity>

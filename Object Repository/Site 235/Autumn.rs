@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Autumn</name>
+   <tag></tag>
+   <elementGuidId>1522fef8-ee24-49b6-879b-fbb7b7d27a6f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;select2-nda5-result-r7rd-235_1_22_A&quot;]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#select2-8gz9-result-b3bn-235_1_22_A</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>CSS</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>select2-nda5-result-r7rd-235_1_22_A</value>
+   </webElementProperties>
+</WebElementEntity>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Single TB Pick Up In Store by course CC 8010</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b40d4dee-70cb-486b-8a0a-bdd067796c74</testCaseGuid>
+   <variable>
+      <defaultValue>'8010'</defaultValue>
+      <description></description>
+      <id>f7eedf90-06c8-444e-8542-5d85d84e7b63</id>
+      <masked>false</masked>
+      <name>Cato</name>
+   </variable>
+   <variable>
+      <defaultValue>'8010_1_21_F'</defaultValue>
+      <description></description>
+      <id>33203205-66eb-4c6f-9e82-ae090db24fa1</id>
+      <masked>false</masked>
+      <name>Fall</name>
+   </variable>
+</TestCaseEntity>

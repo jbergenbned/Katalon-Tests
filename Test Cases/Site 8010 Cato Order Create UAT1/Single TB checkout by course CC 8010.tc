@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Single TB checkout by course CC 8010</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>73d788ae-51cd-4ab8-b1a9-9cc5bf6bf8c7</testCaseGuid>
+   <variable>
+      <defaultValue>'8010'</defaultValue>
+      <description></description>
+      <id>4852049c-41e8-4e4c-890a-5590ec91ba8d</id>
+      <masked>false</masked>
+      <name>Cato</name>
+   </variable>
+   <variable>
+      <defaultValue>'8010_1_21_F'</defaultValue>
+      <description></description>
+      <id>32530e74-8d9d-4ec2-9482-b4c96303040b</id>
+      <masked>false</masked>
+      <name>Fall</name>
+   </variable>
+</TestCaseEntity>

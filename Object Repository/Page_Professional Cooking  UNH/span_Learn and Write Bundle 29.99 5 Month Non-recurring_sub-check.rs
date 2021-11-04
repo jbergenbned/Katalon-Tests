@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Learn and Write Bundle 29.99 5 Month Non-recurring_sub-check</name>
+   <tag></tag>
+   <elementGuidId>0bb56a91-f7b2-49af-bd1c-e2787b517ff5</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='bartlebyPricesRadioGroup']/div/label/span/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>span.sub-check</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>sub-check</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;bartlebyPricesRadioGroup&quot;)/div[@class=&quot;js-bned-bartleby-variant-selector bned-bartleby-modal-form-option&quot;]/label[@class=&quot;bned-radio-wp&quot;]/span[@class=&quot;checkmark&quot;]/span[@class=&quot;sub-check&quot;]</value>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='bartlebyPricesRadioGroup']/div/label/span/span</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//label/span/span</value>
+   </webElementXpaths>
+</WebElementEntity>

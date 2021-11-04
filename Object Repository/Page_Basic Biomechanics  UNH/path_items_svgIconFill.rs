@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>path_items_svgIconFill</name>
+   <tag></tag>
+   <elementGuidId>a425afeb-ecd0-4954-925f-5e04bf235d73</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>path.svgIconFill</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>path</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>svgIconFill</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>fill</name>
+      <type>Main</type>
+      <value>#ffffff</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>fill-rule</name>
+      <type>Main</type>
+      <value>evenodd</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>d</name>
+      <type>Main</type>
+      <value>M8.56 18.44a1.5 1.5 0 1 1-2.12 2.12 1.5 1.5 0 0 1 2.12-2.12zm10 0a1.5 1.5 0 1 1-2.12 2.12 1.5 1.5 0 0 1 2.12-2.12zM3 3h2a1 1 0 0 1 .964.63L6 3.74 6.58 6h12.8a2 2 0 0 1 1.614.864L21.08 7a2 2 0 0 1 .16 1.723l-.07.167-3.28 6.56a1 1 0 0 1-.766.542L17 16H8a1 1 0 0 1-.964-.63L7 15.26 4.24 5H3a1 1 0 0 1-.117-1.993L3 3h2z</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;headerDesktopView&quot;)/div[@class=&quot;container&quot;]/div[@class=&quot;header-utility-inner&quot;]/ul[@class=&quot;utility-links&quot;]/li[@class=&quot;yCmsContentSlot mini-cart-wp componentContainer&quot;]/div[@class=&quot;yCmsComponent&quot;]/div[@class=&quot;dropdown&quot;]/a[@class=&quot;mobile-icon js-mini-cart-link&quot;]/svg[1]/path[@class=&quot;svgIconFill&quot;]</value>
+   </webElementProperties>
+</WebElementEntity>

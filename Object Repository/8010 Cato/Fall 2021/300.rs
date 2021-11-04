@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>300</name>
+   <tag></tag>
+   <elementGuidId>4510c4a6-3cd2-4779-8eda-9313c7f29231</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>/html/body/main/div[3]/div[1]/div[2]/div/div/div[3]/div[2]/form/div/div[2]/div[2]/div[3]/div/div/span[2]/span/span[2]/ul/li[4]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+</WebElementEntity>

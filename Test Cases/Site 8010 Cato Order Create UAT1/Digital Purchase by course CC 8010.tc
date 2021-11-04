@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Digital Purchase by course CC 8010</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d7d9030f-5d1f-4bec-af8e-08837d7669e6</testCaseGuid>
+   <variable>
+      <defaultValue>'8010'</defaultValue>
+      <description></description>
+      <id>4c2cc54b-c2d1-4e47-86d6-00bd2b9f9093</id>
+      <masked>false</masked>
+      <name>Cato</name>
+   </variable>
+   <variable>
+      <defaultValue>'8010_1_21_F'</defaultValue>
+      <description></description>
+      <id>a8bff77b-6e61-4d78-8dcb-19bd5c1210d8</id>
+      <masked>false</masked>
+      <name>Fall</name>
+   </variable>
+</TestCaseEntity>

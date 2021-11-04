@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Single TB checkout by search CC and Invalid Internal SFA</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>743fd746-8d55-4d65-bafc-114821d9744a</testCaseGuid>
+</TestCaseEntity>

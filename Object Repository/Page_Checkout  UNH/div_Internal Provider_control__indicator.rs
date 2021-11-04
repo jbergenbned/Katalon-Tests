@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Internal Provider_control__indicator</name>
+   <tag></tag>
+   <elementGuidId>743b2fe7-9074-4fb4-a206-8dc15f0640d1</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>id(&quot;asfProviderForm&quot;)/div[@class=&quot;form-group bned-form-group sfa-provider-select-container&quot;]/div[@class=&quot;form-group&quot;]/div[@class=&quot;checkbox&quot;]/label[@class=&quot;control-label element-focusable&quot;]/div[@class=&quot;control__indicator&quot;]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//form[@id='asfProviderForm']/div/div/div/label/div</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>control__indicator</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;asfProviderForm&quot;)/div[@class=&quot;form-group bned-form-group sfa-provider-select-container&quot;]/div[@class=&quot;form-group&quot;]/div[@class=&quot;checkbox&quot;]/label[@class=&quot;control-label element-focusable&quot;]/div[@class=&quot;control__indicator&quot;]</value>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//form[@id='asfProviderForm']/div/div/div/label/div</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/div[2]/div/div/form/div/div/div/label/div</value>
+   </webElementXpaths>
+</WebElementEntity>

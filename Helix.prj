@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project>
    <description></description>
-   <name>Helix</name>
+   <name>Finance</name>
    <tag></tag>
    <UUID>22bb8aa5-c66e-4902-a4a7-193c5c979e91</UUID>
    <migratedVersion>5.9.0</migratedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
-   <projectFileLocation>C:\Users\jbergen\Katalon Studio\Helix\Helix.prj</projectFileLocation>
+   <projectFileLocation>C:\Users\jbergen\OneDrive - Barnes &amp; Noble College\Desktop\Joes Master Files\Finance Regression\Helix.prj</projectFileLocation>
    <sourceContent>
       <sourceFolderList>
          <sourceFolderConfiguration>

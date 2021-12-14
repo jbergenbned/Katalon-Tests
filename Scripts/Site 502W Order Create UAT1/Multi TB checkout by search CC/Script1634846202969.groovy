@@ -19,9 +19,9 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://wilkes.uat1.helixbeta.com/')
-
 WebUI.maximizeWindow()
+
+WebUI.navigateToUrl('https://wilkes.uat1.helixbeta.com/')
 
 WebUI.mouseOver(findTestObject('Page_Apparel, Gifts  Textbooks  University of Michigan Campus Bookstore/button_Sign In  Create Account'))
 

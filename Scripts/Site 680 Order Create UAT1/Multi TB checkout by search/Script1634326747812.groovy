@@ -76,11 +76,11 @@ WebUI.click(findTestObject('COOP pop up/co_op_box_Close'))
 WebUI.setText(findTestObject('Page_Checkout  University of Michigan Campus Bookstore/input_Enter CSV_regularPaymentCsv'), 
     '123', FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_Checkout  UNH/button_Apply Credit Card 235 Visa Joe'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Page_Checkout  UNH/button_Apply Credit Card 680 Visa Joe'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('COOP pop up/co_op_box_Close'))
 
 WebUI.click(findTestObject('Payment Info Proceed to Checkout/a_Proceed to Checkout'))
 
-not_run: WebUI.click(findTestObject('Page_Checkout  University of Michigan Campus Bookstore/button_Place Order'))
+WebUI.click(findTestObject('Page_Checkout  University of Michigan Campus Bookstore/button_Place Order'))
 

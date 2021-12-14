@@ -7,11 +7,16 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='PostSecondary Enrollment Options'])[1]/following::*[name()='svg'][1]</value>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='PostSecondary Enrollment Options'])[1]/following::*[name()='svg'][1]
+</value>
       </entry>
       <entry>
          <key>CSS</key>
          <value>span.payment-mode-option-title > svg</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>/html[1]/body[@class=&quot;page-multiStepCheckoutSummaryPage pageType-ContentPage template-pages-MultiStepCheckoutSummaryPageTemplate pageLabel-multiStepCheckoutSummary smartedit-page-uid-multiStepCheckoutSummaryPage smartedit-page-uuid-eyJpdGVtSWQiOiJtdWx0aVN0ZXBDaGVja291dFN1bW1hcnlQYWdlIiwiY2F0YWxvZ0lkIjoibWFzdGVyQ29udGVudENhdGFsb2ciLCJjYXRhbG9nVmVyc2lvbiI6Ik9ubGluZSJ9 smartedit-catalog-version-uuid-masterContentCatalog/Online  language-en&quot;]/main[1]/div[@class=&quot;main__inner-wrapper&quot;]/div[@class=&quot;container bned-checkout-container bned-payment-accessibility-wp js-bned-payment-accessibility-wp&quot;]/div[@class=&quot;bned-steps-container&quot;]/div[@class=&quot;bned-step-body-container payment&quot;]/div[@class=&quot;checkout-steps&quot;]/div[@class=&quot;step-body&quot;]/div[@class=&quot;checkout-paymentmethod&quot;]/div[@class=&quot;bned-rental-payment-content-editor&quot;]/section[@class=&quot;payment-info-wp&quot;]/div[@class=&quot;payment-modes-list-wp&quot;]/ul[@class=&quot;payment-modes-list js-payment-modes-list payment-hidden-mobile&quot;]/li[@class=&quot;payment-mode-option active-mode&quot;]/span[@class=&quot;payment-mode-option-title&quot;]/svg[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -33,13 +33,13 @@ WebUI.setText(findTestObject('Object Repository/Page_Apparel, Gifts  Textbooks  
 
 WebUI.click(findTestObject('Object Repository/Page_Apparel, Gifts  Textbooks  University _aa7f9e/a_Sign In'))
 
-WebUI.mouseOver(findTestObject('Site 235/course materials and textbooks'))
+not_run: WebUI.mouseOver(findTestObject('Site 235/course materials and textbooks'))
 
-WebUI.click(findTestObject('Site 235/find course materials'))
+not_run: WebUI.click(findTestObject('Site 235/find course materials'))
 
-WebUI.click(findTestObject('Page_CPCC 8008/campus select'))
+not_run: WebUI.click(findTestObject('Page_CPCC 8008/campus select'))
 
-WebUI.click(findTestObject('Page_CPCC 8008/Central'))
+not_run: WebUI.click(findTestObject('Page_CPCC 8008/Central'))
 
 WebUI.setText(findTestObject('Page_Apparel, Gifts  Textbooks  University of Michigan Campus Bookstore/input_Enter your search details'), 
     findTestData('8000 Multi Campus/8000 Central Campus Data').getValue(1, 6))

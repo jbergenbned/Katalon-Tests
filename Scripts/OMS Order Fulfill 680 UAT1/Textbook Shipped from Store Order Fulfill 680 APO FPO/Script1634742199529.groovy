@@ -35,7 +35,7 @@ WebUI.click(findTestObject('Page_IBM Store Engagement/span_Login'))
 
 WebUI.delay(5, FailureHandling.OPTIONAL)
 
-WebUI.setText(findTestObject('Page_IBM Store Engagement/input_Not Started_pick_shipmentOrderBarcodeScanner'), '00819504')
+WebUI.setText(findTestObject('Page_IBM Store Engagement/input_Not Started_pick_shipmentOrderBarcodeScanner'), '00907036')
 
 WebUI.sendKeys(findTestObject('Page_IBM Store Engagement/input_Not Started_pick_shipmentOrderBarcodeScanner'), Keys.chord(
         Keys.ENTER))
@@ -58,14 +58,14 @@ WebUI.click(findTestObject('Page_IBM Store Engagement/li_Payments352'))
 
 WebUI.delay(5)
 
-WebUI.setText(findTestObject('Page_IBM Store Engagement/input_payments_search'), '00819504')
+WebUI.setText(findTestObject('Page_IBM Store Engagement/input_payments_search'), '00907036')
 
 WebUI.sendKeys(findTestObject('Page_IBM Store Engagement/input_payments_search'), Keys.chord(Keys.ENTER))
 
 WebUI.click(findTestObject('Page_IBM Store Engagement/button_APO_Process Payment'))
 
 WebUI.setText(findTestObject('Page_IBM Store Engagement/input_International  APO  FPO Shipping Charge_selectedCharge'), 
-    '35.00')
+    '25.00')
 
 WebUI.setText(findTestObject('Page_IBM Store Engagement/textarea_Customer Acknowledgement_APO'), 'APO test')
 
@@ -75,7 +75,7 @@ WebUI.click(findTestObject('Page_IBM Store Engagement/span_Process Transaction')
 
 WebUI.click(findTestObject('Page_IBM Store Engagement/span_OK'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/span_Finish Payment'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('Page_IBM Store Engagement/Finish Payment Button'), FailureHandling.OPTIONAL)
 
 WebUI.click(findTestObject('Page_IBM Store Engagement/span_Pack Order'), FailureHandling.OPTIONAL)
 
@@ -217,7 +217,7 @@ WebUI.delay(3)
 WebUI.click(findTestObject('Object Repository/Page_IBM Store Engagement/span_Hofstra University Bookstore_app-glyph_738071'))
 
 WebUI.setText(findTestObject('Object Repository/Page_IBM Store Engagement/input_Select box clear_global-search_ORDER__473b34'), 
-    '00819504')
+    '00907036')
 
 WebUI.sendKeys(findTestObject('Object Repository/Page_IBM Store Engagement/input_Select box clear_global-search_ORDER__473b34'), 
     Keys.chord(Keys.ENTER))

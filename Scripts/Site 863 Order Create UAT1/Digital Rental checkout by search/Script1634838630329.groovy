@@ -16,6 +16,10 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import java.awt.Robot as Robot
+import java.awt.event.KeyEvent as KeyEvent
+import java.awt.Toolkit as Toolkit
+import java.awt.datatransfer.StringSelection as StringSelection
 
 WebUI.openBrowser('')
 
@@ -39,7 +43,7 @@ WebUI.setText(findTestObject('Page_Apparel, Gifts  Textbooks  University of Mich
 WebUI.sendKeys(findTestObject('Page_Apparel, Gifts  Textbooks  University of Michigan Campus Bookstore/input_Enter your search details'), 
     Keys.chord(Keys.ENTER))
 
-WebUI.click(findTestObject('Page_Faber College Bookstore/span_used_digital_rental'))
+WebUI.click(findTestObject('Page_Digital Systems Principles and Applications  UNH/span_Digital Rental'))
 
 WebUI.click(findTestObject('Page_Earthquake Nation  University of Michigan Campus Bookstore/a_Add to cart'), FailureHandling.OPTIONAL)
 
@@ -53,6 +57,8 @@ WebUI.click(findTestObject('Page_Your Shopping Cart  University of Michigan Camp
 
 WebUI.click(findTestObject('Page_Checkout  Faber College Bookstore/button_School_Info_Continue_863'))
 
+WebUI.click(findTestObject('COOP pop up/co_op_box_Close'))
+
 WebUI.click(findTestObject('Page_Checkout  UNH/button_Saved Payment Methods'), FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('Page_Checkout  UNH/span_Use This Payment Method Joe Visa'), FailureHandling.CONTINUE_ON_FAILURE)
@@ -60,7 +66,19 @@ WebUI.click(findTestObject('Page_Checkout  UNH/span_Use This Payment Method Joe 
 WebUI.setText(findTestObject('Page_Checkout  University of Michigan Campus Bookstore/input_Enter CSV_regularPaymentCsv'), 
     '123', FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('Page_Checkout  UNH/button_Apply Credit Card 235 Visa Joe'), FailureHandling.OPTIONAL)
+Robot robot = new Robot()
+
+robot.keyPress(KeyEvent.VK_TAB)
+
+robot.keyRelease(KeyEvent.VK_TAB)
+
+robot.keyPress(KeyEvent.VK_TAB)
+
+robot.keyRelease(KeyEvent.VK_TAB)
+
+robot.keyPress(KeyEvent.VK_ENTER)
+
+robot.keyRelease(KeyEvent.VK_ENTER)
 
 WebUI.click(findTestObject('Payment Info Proceed to Checkout/a_Proceed to Checkout'))
 
@@ -68,5 +86,5 @@ WebUI.click(findTestObject('Page_Checkout  University of Michigan Campus Booksto
 
 WebUI.click(findTestObject('Page_Checkout  University of Michigan Rental/button_CONTINUE'))
 
-not_run: WebUI.click(findTestObject('Page_Checkout  University of Michigan Campus Bookstore/button_Place Order'))
+WebUI.click(findTestObject('Page_Checkout  University of Michigan Campus Bookstore/button_Place Order'))
 

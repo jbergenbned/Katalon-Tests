@@ -6,8 +6,11 @@
    <elementGuidId>526ffd2c-583d-41b1-bcc2-df266ad594b6</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = ' New Print Rental' or . = ' New Print Rental')]</value>
+      </entry>
+      <entry>
          <key>CSS</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>

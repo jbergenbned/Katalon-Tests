@@ -16,6 +16,10 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import java.awt.Robot as Robot
+import java.awt.event.KeyEvent as KeyEvent
+import java.awt.Toolkit as Toolkit
+import java.awt.datatransfer.StringSelection as StringSelection
 
 WebUI.openBrowser('')
 
@@ -55,11 +59,69 @@ WebUI.mouseOver(findTestObject('Page_Apparel, Gifts  Textbooks  UNH/span_0 items
 
 WebUI.click(findTestObject('Object Repository/Page_Apparel, Gifts  Textbooks  University _aa7f9e/a_view cart (1 item)'))
 
+WebUI.click(findTestObject('Page_Your Shopping Cart  University of Michigan Campus Bookstore/label_Ship to Address'), FailureHandling.OPTIONAL)
+
+WebUI.click(findTestObject('Page_Your Shopping Cart  University of Michigan Campus Bookstore/label_Ship to Address'), FailureHandling.OPTIONAL)
+
 WebUI.click(findTestObject('Page_Your Shopping Cart  University of Michigan Campus Bookstore/button_Proceed To Checkout'))
 
 WebUI.click(findTestObject('Shipping Method/button_Continue'))
 
-WebUI.click(findTestObject('Page_Checkout  UNH/svg'))
+WebUI.click(findTestObject('COOP pop up/co_op_box_Close'), FailureHandling.OPTIONAL)
+
+WebUI.delay(2)
+
+Robot robot = new Robot()
+
+robot.keyPress(KeyEvent.VK_TAB)
+
+robot.keyRelease(KeyEvent.VK_TAB)
+
+robot.keyPress(KeyEvent.VK_TAB)
+
+robot.keyRelease(KeyEvent.VK_TAB)
+
+robot.keyPress(KeyEvent.VK_TAB)
+
+robot.keyRelease(KeyEvent.VK_TAB)
+
+robot.keyPress(KeyEvent.VK_TAB)
+
+robot.keyRelease(KeyEvent.VK_TAB)
+
+robot.keyPress(KeyEvent.VK_TAB)
+
+robot.keyRelease(KeyEvent.VK_TAB)
+
+robot.keyPress(KeyEvent.VK_TAB)
+
+robot.keyRelease(KeyEvent.VK_TAB)
+
+robot.keyPress(KeyEvent.VK_TAB)
+
+robot.keyRelease(KeyEvent.VK_TAB)
+
+robot.keyPress(KeyEvent.VK_TAB)
+
+robot.keyRelease(KeyEvent.VK_TAB)
+
+robot.keyPress(KeyEvent.VK_TAB)
+
+robot.keyRelease(KeyEvent.VK_TAB)
+
+robot.keyPress(KeyEvent.VK_TAB)
+
+robot.keyRelease(KeyEvent.VK_TAB)
+
+robot.keyPress(KeyEvent.VK_TAB)
+
+robot.keyRelease(KeyEvent.VK_TAB)
+
+robot.keyPress(KeyEvent.VK_ENTER)
+
+robot.keyRelease(KeyEvent.VK_ENTER)
+
+not_run: WebUI.click(findTestObject('Page_Checkout  UNH/svg'))
 
 WebUI.click(findTestObject('Page_Checkout  UNH/span_Apply'))
 
@@ -81,7 +143,9 @@ WebUI.click(findTestObject('Page_Log in to your PayPal account/button_Accept Coo
 
 WebUI.click(findTestObject('Page_PayPal Checkout - Review your payment/button_Agree  Continue'))
 
+WebUI.click(findTestObject('COOP pop up/co_op_box_Close'), FailureHandling.OPTIONAL)
+
 WebUI.click(findTestObject('Page_Checkout  UNH Paypal/a_Proceed To Checkout'))
 
-WebUI.click(findTestObject('Page_Checkout  University of Michigan Campus Bookstore/button_Place Order'))
+not_run: WebUI.click(findTestObject('Page_Checkout  University of Michigan Campus Bookstore/button_Place Order'))
 

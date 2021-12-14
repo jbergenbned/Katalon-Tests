@@ -51,7 +51,7 @@ WebUI.setText(findTestObject('Page_Apparel, Gifts  Textbooks  University of Mich
 WebUI.sendKeys(findTestObject('Page_Apparel, Gifts  Textbooks  University of Michigan Campus Bookstore/input_Enter your search details'), 
     Keys.chord(Keys.ENTER))
 
-WebUI.click(findTestObject('Page_Endless Forms Most Beautiful New Science of Evo Devo  University of Michigan Campus Bookstore/span_Used_Print_checkmark'), 
+WebUI.click(findTestObject('Page_Endless Forms Most Beautiful New Science/span_Used_Print_checkmark'), 
     FailureHandling.OPTIONAL)
 
 WebUI.click(findTestObject('Page_Earthquake Nation  University of Michigan Campus Bookstore/a_Add to cart'), FailureHandling.OPTIONAL)

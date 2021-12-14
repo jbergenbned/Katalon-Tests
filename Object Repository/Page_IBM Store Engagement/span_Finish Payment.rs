@@ -6,12 +6,14 @@
    <elementGuidId>3c1e1214-9a9d-42cd-be2a-0aa6c849df4b</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='mainContentHolder']/div[2]/div/div/div/div[2]/div/div[3]/button/span[2]</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>button.btn.btn-primary > span.btn-text</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='mainContentHolder']/div[2]/div/div/div/div[2]/div/div[3]/button/span[2]
+
+</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -21,63 +21,64 @@ import java.awt.event.KeyEvent as KeyEvent
 import java.awt.Toolkit as Toolkit
 import java.awt.datatransfer.StringSelection as StringSelection
 
-WebUI.openBrowser(findTestData('Site 680/Order fulfill sites').getValue(1, 3))
+WebUI.openBrowser(findTestData('Site 680/Order fulfill sites').getValue(1, 3), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.maximizeWindow()
+WebUI.maximizeWindow(FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.setText(findTestObject('Page_IBM Store Engagement/input_User ID_username'), findTestData('Site 680/Order fulfill sites').getValue(
-        3, 5))
+        3, 5), FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.setText(findTestObject('Page_IBM Store Engagement/input_Password_password'), findTestData('Site 680/Order fulfill sites').getValue(
-        4, 5))
+        4, 5), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/span_Login'))
+WebUI.click(findTestObject('Page_IBM Store Engagement/span_Login'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.delay(5, FailureHandling.OPTIONAL)
+not_run: WebUI.delay(5, FailureHandling.OPTIONAL)
 
-WebUI.setText(findTestObject('Page_IBM Store Engagement/input_Not Started_pick_shipmentOrderBarcodeScanner'), '00825060')
+WebUI.setText(findTestObject('Page_IBM Store Engagement/input_Not Started_pick_shipmentOrderBarcodeScanner'), '00969083', 
+    FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.sendKeys(findTestObject('Page_IBM Store Engagement/input_Not Started_pick_shipmentOrderBarcodeScanner'), Keys.chord(
-        Keys.ENTER))
+        Keys.ENTER), FailureHandling.CONTINUE_ON_FAILURE)
 
 not_run: WebUI.click(findTestObject('Page_IBM Store Engagement/span_Goto Shipment Summary'), FailureHandling.OPTIONAL)
 
 not_run: WebUI.click(findTestObject('Page_IBM Store Engagement/span_Continue Packing'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/span_Pick All'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('Page_IBM Store Engagement/span_Pick All'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/span_OK'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('Page_IBM Store Engagement/span_OK'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/span_Finish Pick'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('Page_IBM Store Engagement/span_Finish Pick'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/span_Yes'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('Page_IBM Store Engagement/span_Yes'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/span_Process Transaction'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('Page_IBM Store Engagement/span_Process Transaction'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/span_OK'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('Page_IBM Store Engagement/span_OK'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/span_Finish Payment'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('Page_IBM Store Engagement/Finish Payment Button'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/span_Pack Order'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('Page_IBM Store Engagement/span_Pack Order'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/span_Pack All'))
+WebUI.click(findTestObject('Page_IBM Store Engagement/span_Pack All'), FailureHandling.CONTINUE_ON_FAILURE)
 
 not_run: WebUI.click(findTestObject('Page_IBM Store Engagement/products already packed span_OK'), FailureHandling.OPTIONAL)
 
-WebUI.setText(findTestObject('Page_IBM Store Engagement/input_Tracking No_weight'), '1', FailureHandling.OPTIONAL)
+WebUI.setText(findTestObject('Page_IBM Store Engagement/input_Tracking No_weight'), '1', FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/button_Update'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('Page_IBM Store Engagement/button_Update'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/label_Print Packing Slip'))
+WebUI.click(findTestObject('Page_IBM Store Engagement/label_Print Packing Slip'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.delay(3)
+WebUI.delay(3, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.switchToWindowIndex(1)
+WebUI.switchToWindowIndex(1, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.executeJavaScript('return document.querySelector("body > print-preview-app").shadowRoot.querySelector("#sidebar").shadowRoot.querySelector("print-preview-button-strip").shadowRoot.querySelector("div > cr-button.action-button")', 
     []).click()
 
-WebUI.delay(1)
+WebUI.delay(1, FailureHandling.CONTINUE_ON_FAILURE)
 
 Robot robot = new Robot()
 
@@ -185,34 +186,35 @@ Thread.sleep(500)
 
 robot.keyPress(KeyEvent.VK_ENTER)
 
-WebUI.switchToDefaultContent()
+WebUI.switchToDefaultContent(FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.delay(1)
+WebUI.delay(1, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/span_Finish Pack'))
+WebUI.click(findTestObject('Page_IBM Store Engagement/span_Finish Pack'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/span_Done'))
+WebUI.click(findTestObject('Page_IBM Store Engagement/span_Done'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/Page_IBM Store Engagement/span_Hofstra University Bookstore_app-glyph_738071'))
+WebUI.click(findTestObject('Object Repository/Page_IBM Store Engagement/span_Hofstra University Bookstore_app-glyph_738071'), 
+    FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.setText(findTestObject('Object Repository/Page_IBM Store Engagement/input_Select box clear_global-search_ORDER__473b34'), 
-    '00825060')
+    '00969083', FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.sendKeys(findTestObject('Object Repository/Page_IBM Store Engagement/input_Select box clear_global-search_ORDER__473b34'), 
-    Keys.chord(Keys.ENTER))
+    Keys.chord(Keys.ENTER), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/button_View Products'))
+WebUI.click(findTestObject('Page_IBM Store Engagement/button_View Products'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/button_Print Order Summary'))
+WebUI.click(findTestObject('Page_IBM Store Engagement/button_Print Order Summary'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.delay(2)
+WebUI.delay(2, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.switchToWindowIndex(1)
+WebUI.switchToWindowIndex(1, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.executeJavaScript('return document.querySelector("body > print-preview-app").shadowRoot.querySelector("#sidebar").shadowRoot.querySelector("print-preview-button-strip").shadowRoot.querySelector("div > cr-button.action-button")', 
     []).click()
 
-WebUI.delay(1)
+WebUI.delay(1, FailureHandling.CONTINUE_ON_FAILURE)
 
 Thread.sleep(1000)
 
@@ -298,9 +300,9 @@ Thread.sleep(500)
 
 robot.keyPress(KeyEvent.VK_ENTER)
 
-WebUI.switchToDefaultContent()
+WebUI.switchToDefaultContent(FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.delay(1)
+WebUI.delay(1, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.closeBrowser()
+WebUI.closeBrowser(FailureHandling.CONTINUE_ON_FAILURE)
 

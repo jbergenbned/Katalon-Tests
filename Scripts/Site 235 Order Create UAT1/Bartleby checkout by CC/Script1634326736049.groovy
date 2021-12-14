@@ -16,6 +16,10 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import java.awt.Robot as Robot
+import java.awt.event.KeyEvent as KeyEvent
+import java.awt.Toolkit as Toolkit
+import java.awt.datatransfer.StringSelection as StringSelection
 
 WebUI.openBrowser('')
 
@@ -58,6 +62,8 @@ WebUI.click(findTestObject('Page_Checkout  UNH School Information/button_Continu
 
 WebUI.click(findTestObject('Page_Checkout  UNH/remove credit card'), FailureHandling.OPTIONAL)
 
+WebUI.click(findTestObject('COOP pop up/co_op_box_Close'), FailureHandling.OPTIONAL)
+
 WebUI.click(findTestObject('Page_Checkout  UNH/button_Saved Payment Methods'))
 
 WebUI.click(findTestObject('Page_Checkout  UNH/span_Use This Payment Method - Copy'))
@@ -65,7 +71,19 @@ WebUI.click(findTestObject('Page_Checkout  UNH/span_Use This Payment Method - Co
 WebUI.setText(findTestObject('Page_Checkout  University of Michigan Campus Bookstore/input_Enter CSV_regularPaymentCsv'), 
     '123', FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('Page_Checkout  UNH/button_Apply Credit Card 235 Visa Joe'), FailureHandling.OPTIONAL)
+Robot robot = new Robot()
+
+robot.keyPress(KeyEvent.VK_TAB)
+
+robot.keyRelease(KeyEvent.VK_TAB)
+
+robot.keyPress(KeyEvent.VK_TAB)
+
+robot.keyRelease(KeyEvent.VK_TAB)
+
+robot.keyPress(KeyEvent.VK_ENTER)
+
+robot.keyRelease(KeyEvent.VK_ENTER)
 
 WebUI.click(findTestObject('Payment Info Proceed to Checkout/a_Proceed to Checkout'))
 

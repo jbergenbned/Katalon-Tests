@@ -75,7 +75,7 @@ WebUI.click(findTestObject('Page_IBM Store Engagement/span_Process Transaction')
 
 WebUI.click(findTestObject('Page_IBM Store Engagement/span_OK'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/span_Finish Payment'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('Page_IBM Store Engagement/Finish Payment Button'), FailureHandling.OPTIONAL)
 
 WebUI.click(findTestObject('Page_IBM Store Engagement/span_Pack Order'), FailureHandling.OPTIONAL)
 

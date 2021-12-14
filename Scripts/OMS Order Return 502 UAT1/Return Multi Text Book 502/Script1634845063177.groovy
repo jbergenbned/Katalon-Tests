@@ -37,7 +37,7 @@ WebUI.delay(5, FailureHandling.OPTIONAL)
 
 WebUI.click(findTestObject('Page_IBM Store Engagement/li_Return Products'))
 
-WebUI.setText(findTestObject('Page_IBM Store Engagement/input_Select box clear_returns_ORDER_scanField'), '00825060')
+WebUI.setText(findTestObject('Page_IBM Store Engagement/input_Select box clear_returns_ORDER_scanField'), '00953026')
 
 WebUI.sendKeys(findTestObject('Page_IBM Store Engagement/input_Select box clear_returns_ORDER_scanField'), Keys.chord(Keys.ENTER))
 

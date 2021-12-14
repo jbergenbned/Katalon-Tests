@@ -35,7 +35,7 @@ WebUI.click(findTestObject('Page_IBM Store Engagement/span_Login'))
 
 WebUI.delay(5, FailureHandling.OPTIONAL)
 
-WebUI.setText(findTestObject('Page_IBM Store Engagement/input_Not Started_pick_shipmentOrderBarcodeScanner'), '00844021')
+WebUI.setText(findTestObject('Page_IBM Store Engagement/input_Not Started_pick_shipmentOrderBarcodeScanner'), '00900082')
 
 WebUI.sendKeys(findTestObject('Page_IBM Store Engagement/input_Not Started_pick_shipmentOrderBarcodeScanner'), Keys.chord(
         Keys.ENTER))
@@ -44,21 +44,21 @@ not_run: WebUI.click(findTestObject('Page_IBM Store Engagement/span_Goto Shipmen
 
 not_run: WebUI.click(findTestObject('Page_IBM Store Engagement/span_Continue Packing'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/span_Pick All'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('Page_IBM Store Engagement/span_Pick All'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/span_OK'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('Page_IBM Store Engagement/span_OK'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/span_Finish Pick'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('Page_IBM Store Engagement/span_Finish Pick'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/span_Yes'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('Page_IBM Store Engagement/span_Yes'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/span_Process Transaction'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('Page_IBM Store Engagement/span_Process Transaction'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/span_OK'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('Page_IBM Store Engagement/span_OK'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/span_Finish Payment'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('Page_IBM Store Engagement/span_Finish Payment'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/span_Pack Order'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('Page_IBM Store Engagement/span_Pack Order'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Page_IBM Store Engagement/span_Pack All'))
 
@@ -202,7 +202,7 @@ WebUI.delay(3)
 WebUI.click(findTestObject('Object Repository/Page_IBM Store Engagement/span_Hofstra University Bookstore_app-glyph_738071'))
 
 WebUI.setText(findTestObject('Object Repository/Page_IBM Store Engagement/input_Select box clear_global-search_ORDER__473b34'), 
-    '00844021')
+    '00900082')
 
 WebUI.sendKeys(findTestObject('Object Repository/Page_IBM Store Engagement/input_Select box clear_global-search_ORDER__473b34'), 
     Keys.chord(Keys.ENTER))

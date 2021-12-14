@@ -35,7 +35,7 @@ WebUI.click(findTestObject('Page_IBM Store Engagement/span_Login'))
 
 WebUI.delay(5, FailureHandling.OPTIONAL)
 
-WebUI.setText(findTestObject('Page_IBM Store Engagement/input_Not Started_pick_shipmentOrderBarcodeScanner'), '00819522')
+WebUI.setText(findTestObject('Page_IBM Store Engagement/input_Not Started_pick_shipmentOrderBarcodeScanner'), '01001045')
 
 WebUI.sendKeys(findTestObject('Page_IBM Store Engagement/input_Not Started_pick_shipmentOrderBarcodeScanner'), Keys.chord(
         Keys.ENTER))
@@ -56,7 +56,7 @@ WebUI.click(findTestObject('Page_IBM Store Engagement/span_Process Transaction')
 
 WebUI.click(findTestObject('Page_IBM Store Engagement/span_OK'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/span_Finish Payment'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('Page_IBM Store Engagement/Finish Payment Button'), FailureHandling.OPTIONAL)
 
 WebUI.click(findTestObject('Page_IBM Store Engagement/button_Print Pickup Label'))
 
@@ -241,7 +241,7 @@ WebUI.delay(5)
 WebUI.click(findTestObject('Object Repository/Page_IBM Store Engagement/span_Hofstra University Bookstore_app-glyph_738071'))
 
 WebUI.setText(findTestObject('Object Repository/Page_IBM Store Engagement/input_Select box clear_global-search_ORDER__473b34'), 
-    '00819522')
+    '01001045')
 
 WebUI.sendKeys(findTestObject('Object Repository/Page_IBM Store Engagement/input_Select box clear_global-search_ORDER__473b34'), 
     Keys.chord(Keys.ENTER))

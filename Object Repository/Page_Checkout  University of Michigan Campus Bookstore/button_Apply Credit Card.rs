@@ -6,20 +6,20 @@
    <elementGuidId>f4b8f7f0-4ef4-4bd6-aa43-befa571c77e0</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>/html/body/main/div[2]/div[3]/div/div[1]/div/div/div[4]/div/section/div[2]/div/div[1]/div[1]/div/div/section/button</value>
-      </entry>
-      <entry>
          <key>BASIC</key>
-         <value>//*[@type = 'button' and @class = 'btn btn-primary js-regular-payment-validate-saved-card preview-payment-button' and (text() = 'Apply Credit Card' or . = 'Apply Credit Card')]</value>
+         <value>//*[(text() = 'Apply Credit Card' or . = 'Apply Credit Card')]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>button.btn.btn-primary.js-regular-payment-validate-saved-card.preview-payment-button
+         <value>body > main > div.main__inner-wrapper > div.container.bned-checkout-container.bned-payment-accessibility-wp.js-bned-payment-accessibility-wp > div > div.bned-step-body-container.payment > div > div > div.checkout-paymentmethod > div > section > div.payment-modes-list-wp > div > div.payment-mode-content.active-mode-desktop.payment-mode-0 > div.regular-saved-credit-card-validation > div > div > section > button</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>/html/body/main/div[2]/div[3]/div/div[1]/div/div/div[4]/div/section/div[2]/div/div[1]/div[1]/div/div/section/button
 </value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -29,14 +29,14 @@
       <value>button</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>type</name>
       <type>Main</type>
       <value>button</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>

@@ -49,6 +49,8 @@ WebUI.mouseOver(findTestObject('Page_Apparel, Gifts  Textbooks  UNH/span_0 items
 
 WebUI.click(findTestObject('Object Repository/Page_Apparel, Gifts  Textbooks  University _aa7f9e/a_view cart (1 item)'))
 
+WebUI.click(findTestObject('Page_Your Shopping Cart  University of Michigan Campus Bookstore/label_Ship to Address'), FailureHandling.OPTIONAL)
+
 WebUI.click(findTestObject('Page_Your Shopping Cart  University of Michigan Campus Bookstore/button_Proceed To Checkout'))
 
 WebUI.click(findTestObject('Shipping Method/button_Continue'))
@@ -60,7 +62,7 @@ WebUI.click(findTestObject('Page_Checkout  UNH/span_Use This Payment Method Joe 
 WebUI.setText(findTestObject('Page_Checkout  University of Michigan Campus Bookstore/input_Enter CSV_regularPaymentCsv'), 
     '123', FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('Page_Checkout  UNH/button_Apply Credit Card 235 Visa Joe'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Page_Checkout  University of Michigan Campus Bookstore/button_Apply Credit Card'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Payment Info Proceed to Checkout/a_Proceed to Checkout'))
 

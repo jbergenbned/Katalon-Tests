@@ -6,12 +6,12 @@
    <elementGuidId>460f6599-d2a5-4bfd-ae9b-7ef431873913</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//form[@id='credit_card_form_8808187101226']/label/div/span</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>span.checkout-modal-action</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//form[@id='credit_card_form_8815295299626']/label/div/span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -49,7 +49,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//form[@id='credit_card_form_8808187101226']/label/div/span</value>
+      <value>//form[@id='credit_card_form_8815295299626']/label/div/span</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>

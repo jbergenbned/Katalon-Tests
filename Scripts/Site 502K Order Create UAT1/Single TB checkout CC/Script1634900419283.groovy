@@ -62,5 +62,5 @@ WebUI.click(findTestObject('Page_Checkout  UNH/button_Apply Credit Card 235 Visa
 
 WebUI.click(findTestObject('Payment Info Proceed to Checkout/a_Proceed to Checkout'))
 
-not_run: WebUI.click(findTestObject('Page_Checkout  University of Michigan Campus Bookstore/button_Place Order'))
+WebUI.click(findTestObject('Page_Checkout  University of Michigan Campus Bookstore/button_Place Order'))
 

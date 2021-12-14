@@ -7,17 +7,22 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-      </entry>
-      <entry>
-         <key>XPATH</key>
-         <value>//button[@type='button']</value>
+         <value>//*[@class = 'btn btn-primary js-regular-payment-validate-saved-card preview-payment-button' and (text() = '
+                    Apply Credit Card' or . = '
+                    Apply Credit Card')]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>button.btn.btn-primary.js-regular-payment-validate-saved-card.preview-payment-button</value>
+         <value>button.btn.btn-primary.js-regular-payment-validate-saved-card.preview-payment-button
+body > main > div.main__inner-wrapper > div.container.bned-checkout-container.bned-payment-accessibility-wp.js-bned-payment-accessibility-wp > div > div.bned-step-body-container.payment > div > div > div.checkout-paymentmethod > div > section > div.payment-modes-list-wp > div > div > div.regular-saved-credit-card-validation > div > div > section > button</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@type='button']
+</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -34,14 +39,14 @@
       <value>button</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
       <value>btn btn-primary js-regular-payment-validate-saved-card preview-payment-button</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>

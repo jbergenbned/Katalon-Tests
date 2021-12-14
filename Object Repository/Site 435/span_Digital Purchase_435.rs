@@ -6,12 +6,15 @@
    <elementGuidId>6f1822ae-ece5-4787-9875-536e8b983311</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='courseGroup_0_0']/div/div[5]/div[2]/div[2]/div[2]/div/div/div/div[2]/div/label/span[2]</value>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Digital Purchase' or . = 'Digital Purchase')]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='courseGroup_0_0']/div/div[5]/div[2]/div[2]/div[2]/div/div/div/div[2]/div/label/span[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

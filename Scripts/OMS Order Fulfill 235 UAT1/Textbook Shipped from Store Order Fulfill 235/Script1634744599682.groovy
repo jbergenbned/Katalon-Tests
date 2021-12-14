@@ -35,12 +35,14 @@ WebUI.click(findTestObject('Page_IBM Store Engagement/span_Login'))
 
 WebUI.delay(5, FailureHandling.OPTIONAL)
 
-WebUI.setText(findTestObject('Page_IBM Store Engagement/input_Not Started_pick_shipmentOrderBarcodeScanner'), '00839112')
+WebUI.setText(findTestObject('Page_IBM Store Engagement/input_Not Started_pick_shipmentOrderBarcodeScanner'), '00878013')
 
 WebUI.sendKeys(findTestObject('Page_IBM Store Engagement/input_Not Started_pick_shipmentOrderBarcodeScanner'), Keys.chord(
         Keys.ENTER))
 
 not_run: WebUI.click(findTestObject('Page_IBM Store Engagement/span_Goto Shipment Summary'), FailureHandling.OPTIONAL)
+
+WebUI.click(findTestObject('Page_IBM Store Engagement/span_Process Transaction'), FailureHandling.OPTIONAL)
 
 not_run: WebUI.click(findTestObject('Page_IBM Store Engagement/span_Continue Packing'), FailureHandling.OPTIONAL)
 
@@ -52,11 +54,9 @@ WebUI.click(findTestObject('Page_IBM Store Engagement/span_Finish Pick'), Failur
 
 WebUI.click(findTestObject('Page_IBM Store Engagement/span_Yes'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/span_Process Transaction'), FailureHandling.OPTIONAL)
-
 WebUI.click(findTestObject('Page_IBM Store Engagement/span_OK'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/span_Finish Payment'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('Page_IBM Store Engagement/Finish Payment Button'), FailureHandling.OPTIONAL)
 
 WebUI.click(findTestObject('Page_IBM Store Engagement/span_Pack Order'), FailureHandling.OPTIONAL)
 
@@ -196,7 +196,7 @@ WebUI.click(findTestObject('Page_IBM Store Engagement/span_Done'))
 WebUI.click(findTestObject('Object Repository/Page_IBM Store Engagement/span_Hofstra University Bookstore_app-glyph_738071'))
 
 WebUI.setText(findTestObject('Object Repository/Page_IBM Store Engagement/input_Select box clear_global-search_ORDER__473b34'), 
-    '00839112')
+    '00878013')
 
 WebUI.sendKeys(findTestObject('Object Repository/Page_IBM Store Engagement/input_Select box clear_global-search_ORDER__473b34'), 
     Keys.chord(Keys.ENTER))

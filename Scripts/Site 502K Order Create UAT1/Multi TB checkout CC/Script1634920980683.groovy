@@ -17,29 +17,30 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+WebUI.openBrowser('', FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.navigateToUrl('https://kings.uat1.helixbeta.com/')
+WebUI.navigateToUrl('https://kings.uat1.helixbeta.com/', FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.maximizeWindow()
+WebUI.maximizeWindow(FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.mouseOver(findTestObject('Page_Apparel, Gifts  Textbooks  University of Michigan Campus Bookstore/button_Sign In  Create Account'))
+WebUI.mouseOver(findTestObject('Page_Apparel, Gifts  Textbooks  University of Michigan Campus Bookstore/button_Sign In  Create Account'), 
+    FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.setText(findTestObject('Object Repository/Page_Apparel, Gifts  Textbooks  University _aa7f9e/input_Email address_j_username'), 
-    findTestData('Site 235/Helix Accounts').getValue(1, 2))
+    findTestData('Site 235/Helix Accounts').getValue(1, 2), FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.setText(findTestObject('Object Repository/Page_Apparel, Gifts  Textbooks  University _aa7f9e/input_Password_j_password'), 
-    findTestData('Site 235/Helix Accounts').getValue(2, 2))
+    findTestData('Site 235/Helix Accounts').getValue(2, 2), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/Page_Apparel, Gifts  Textbooks  University _aa7f9e/a_Sign In'))
+WebUI.click(findTestObject('Object Repository/Page_Apparel, Gifts  Textbooks  University _aa7f9e/a_Sign In'), FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.setText(findTestObject('Page_Apparel, Gifts  Textbooks  University of Michigan Campus Bookstore/input_Enter your search details'), 
     findTestData('Site 502K/502K Data').getValue(1, 2), FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.sendKeys(findTestObject('Page_Apparel, Gifts  Textbooks  University of Michigan Campus Bookstore/input_Enter your search details'), 
-    Keys.chord(Keys.ENTER))
+    Keys.chord(Keys.ENTER), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_Faber College Bookstore/span_new_print'))
+WebUI.click(findTestObject('Page_Faber College Bookstore/span_new_print'), FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('Page_Earthquake Nation  University of Michigan Campus Bookstore/a_Add to cart'), FailureHandling.OPTIONAL)
 
@@ -61,20 +62,25 @@ WebUI.mouseOver(findTestObject('Page_Apparel, Gifts  Textbooks  UNH/span_0 items
 
 WebUI.click(findTestObject('Object Repository/Page_Apparel, Gifts  Textbooks  University _aa7f9e/a_view cart (1 item)'))
 
-WebUI.click(findTestObject('Page_Your Shopping Cart  University of Michigan Campus Bookstore/button_Proceed To Checkout'))
+WebUI.click(findTestObject('Page_Your Shopping Cart  University of Michigan Campus Bookstore/label_Ship to Address'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Shipping Method/button_Continue'))
+WebUI.click(findTestObject('Page_Your Shopping Cart  University of Michigan Campus Bookstore/label_Ship to Address'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_Checkout  UNH/button_Saved Payment Methods'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('Page_Your Shopping Cart  University of Michigan Campus Bookstore/button_Proceed To Checkout'), 
+    FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_Checkout  UNH/span_Use This Payment Method Joe Visa'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('Shipping Method/button_Continue'), FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.click(findTestObject('Page_Checkout  UNH/button_Saved Payment Methods'), FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.click(findTestObject('Page_Checkout  UNH/span_Use This Payment Method Joe Visa'), FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.setText(findTestObject('Page_Checkout  University of Michigan Campus Bookstore/input_Enter CSV_regularPaymentCsv'), 
-    '123', FailureHandling.OPTIONAL)
+    '123', FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_Checkout  UNH/button_Apply Credit Card 235 Visa Joe'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Page_Checkout  UNH/button_Apply Credit Card'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Payment Info Proceed to Checkout/a_Proceed to Checkout'))
+WebUI.click(findTestObject('Payment Info Proceed to Checkout/a_Proceed to Checkout'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_Checkout  University of Michigan Campus Bookstore/button_Place Order'))
+WebUI.click(findTestObject('Page_Checkout  University of Michigan Campus Bookstore/button_Place Order'), FailureHandling.CONTINUE_ON_FAILURE)
 

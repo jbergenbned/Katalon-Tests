@@ -34,7 +34,7 @@ WebUI.setText(findTestObject('Page_Apparel, Gifts  Textbooks  University of Mich
 WebUI.click(findTestObject('Page_Apparel, Gifts  Textbooks  University of Michigan Campus Bookstore/a_Sign In'))
 
 WebUI.setText(findTestObject('Page_Apparel, Gifts  Textbooks  University of Michigan Campus Bookstore/input_Enter your search details'), 
-    findTestData('Site 680/Site 680 Text Book').getValue(1, 2))
+    findTestData('Site 680/Site 680 Text Book').getValue(1, 12))
 
 WebUI.sendKeys(findTestObject('Page_Apparel, Gifts  Textbooks  University of Michigan Campus Bookstore/input_Enter your search details'), 
     Keys.chord(Keys.ENTER))
@@ -55,9 +55,10 @@ WebUI.click(findTestObject('Digital Shipping and pickup Continue/button_Continue
 
 WebUI.click(findTestObject('COOP pop up/co_op_box_Close'))
 
-WebUI.click(findTestObject('Page_Checkout  UNH/button_Saved Payment Methods'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Page_Checkout  University of Michigan Campus Bookstore/button_Saved Payment Methods New'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_Checkout  UNH/span_Use This Payment Method Joe Visa'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Page_Checkout  University of Michigan Campus Bookstore/Use This Payment Method New Visa Joe'), 
+    FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('COOP pop up/co_op_box_Close'))
 

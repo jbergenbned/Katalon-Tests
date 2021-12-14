@@ -6,16 +6,16 @@
    <elementGuidId>66deee7d-e4b6-4c0e-9531-8c9eeeb914a9</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value>//*[(text() = ' used' or . = ' used')]</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//div[@id='courseGroup_0_0']/div/div/div[2]/div[2]/div[2]/div/div/div/div[2]/div[2]/label/span[2]</value>
       </entry>
       <entry>
          <key>CSS</key>
          <value>body > main > div.main__inner-wrapper > div.js-bned-product-details-data.js-bned-add-viewed-product > div > div > div > div.bned-pdp-container > div.product-main-info > div > div.js-textbook-variants-container.bned-variants-wp.js-bned-price-container > div > div:nth-child(2) > div.bned-variant-options-section > div:nth-child(2) > div > label > span:nth-child(2)</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = ' used' or . = ' used')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>

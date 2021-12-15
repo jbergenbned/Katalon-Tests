@@ -124,5 +124,5 @@ WebUI.click(findTestObject('Page_PayPal Checkout - Review your payment/button_Ag
 
 WebUI.click(findTestObject('Page_Checkout  UNH Paypal/a_Proceed To Checkout'), FailureHandling.CONTINUE_ON_FAILURE)
 
-not_run: WebUI.click(findTestObject('Page_Checkout  University of Michigan Campus Bookstore/button_Place Order'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Page_Checkout  University of Michigan Campus Bookstore/button_Place Order'), FailureHandling.CONTINUE_ON_FAILURE)
 

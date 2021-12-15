@@ -41,7 +41,15 @@ WebUI.sendKeys(findTestObject('Page_Apparel, Gifts  Textbooks  University of Mic
 
 WebUI.click(findTestObject('Page_TEST BOOK 1  University of Michigan Campus Bookstore/a_Buy again'))
 
+WebUI.setText(findTestObject('Page_Apparel, Gifts  Textbooks  University of Michigan Campus Bookstore/input_Enter your search details'), 
+    findTestData('Site 235/New Test Data').getValue(1, 2))
+
+WebUI.sendKeys(findTestObject('Page_Apparel, Gifts  Textbooks  University of Michigan Campus Bookstore/input_Enter your search details'), 
+    Keys.chord(Keys.ENTER))
+
 WebUI.click(findTestObject('Page_University of Michigan Campus Bookstore/a_view cart'))
+
+WebUI.click(findTestObject('Page_Your Shopping Cart  University of Michigan Campus Bookstore/label_Ship to Address'), FailureHandling.OPTIONAL)
 
 WebUI.click(findTestObject('Page_Your Shopping Cart  University of Michigan Campus Bookstore/button_Proceed To Checkout'))
 

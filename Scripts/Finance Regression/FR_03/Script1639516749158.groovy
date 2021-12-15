@@ -92,5 +92,5 @@ WebUI.click(findTestObject('COOP pop up/co_op_box_Close'), FailureHandling.CONTI
 
 WebUI.click(findTestObject('Payment Info Proceed to Checkout/a_Proceed to Checkout'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_Checkout  University of Michigan Campus Bookstore/button_Place Order'), FailureHandling.CONTINUE_ON_FAILURE)
+not_run: WebUI.click(findTestObject('Page_Checkout  University of Michigan Campus Bookstore/button_Place Order'), FailureHandling.CONTINUE_ON_FAILURE)
 

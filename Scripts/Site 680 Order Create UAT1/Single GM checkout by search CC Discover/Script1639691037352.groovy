@@ -25,7 +25,7 @@ WebUI.openBrowser('')
 
 WebUI.maximizeWindow()
 
-WebUI.navigateToUrl(findTestData('Site 680/Site 680 Text Book').getValue(1, 17))
+WebUI.navigateToUrl(findTestData('Site 680/Site 680 Text Book').getValue(1, 15))
 
 WebUI.mouseOver(findTestObject('Page_Apparel, Gifts  Textbooks  University of Michigan Campus Bookstore/button_Sign In  Create Account'))
 
@@ -55,7 +55,7 @@ WebUI.click(findTestObject('Page_Your Shopping Cart  UNH/a_No Thanks, Ill  Go It
 
 WebUI.click(findTestObject('Shipping Method/button_Continue'))
 
-WebUI.click(findTestObject('COOP pop up/co_op_box_Close'))
+WebUI.click(findTestObject('COOP pop up/co_op_box_Close'), FailureHandling.OPTIONAL)
 
 WebUI.click(findTestObject('Page_Checkout  University of Michigan Campus Bookstore/button_Saved Payment Methods New'), FailureHandling.CONTINUE_ON_FAILURE)
 

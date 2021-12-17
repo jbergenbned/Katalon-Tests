@@ -35,53 +35,37 @@ WebUI.click(findTestObject('Page_IBM Store Engagement/span_Login'), FailureHandl
 
 WebUI.delay(5, FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/li_Return Products'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Page_IBM Store Engagement/li_Rental Orders'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.setText(findTestObject('Page_IBM Store Engagement/input_Select box clear_returns_ORDER_scanField'), '01052006', FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.setText(findTestObject('Page_IBM Store Engagement/input_rental_search_box'), '01053023', FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.sendKeys(findTestObject('Page_IBM Store Engagement/input_Select box clear_returns_ORDER_scanField'), Keys.chord(Keys.ENTER), 
-    FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.sendKeys(findTestObject('Page_IBM Store Engagement/input_rental_search_box'), Keys.chord(Keys.ENTER), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/button_Add to Return 0'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Page_IBM Store Engagement/button_Rental Check In'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/button_Added_Return_Continue'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Page_IBM Store Engagement/button_Click to decrease picked quantity by 1'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/button_Add_Return_Reason_OK'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Page_IBM Store Engagement/select_Select ConditionSALEABLENON-SALEABLEBUYOUTEND-OF-LIFE'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.setText(findTestObject('Page_IBM Store Engagement/input_Exchanges_itemBarCodeTextBox'), '65882', FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.selectOptionByIndex(findTestObject('Page_IBM Store Engagement/select_Select ConditionSALEABLENON-SALEABLEBUYOUTEND-OF-LIFE'), 
+    1, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.sendKeys(findTestObject('Page_IBM Store Engagement/input_Exchanges_itemBarCodeTextBox'), Keys.chord(Keys.ENTER), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Page_IBM Store Engagement/button_Finish Check In'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/button_Add as Exchange'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Page_IBM Store Engagement/button_Process Transaction Rental Return'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Site 680 objects/View Manage Charges'))
+WebUI.click(findTestObject('Page_IBM Store Engagement/button_Payment_Auth_OK_Rental_Return'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Site 680 objects/Refund Remaining Shipping Charge'))
+WebUI.click(findTestObject('Page_IBM Store Engagement/button_Finish Payment_Rental_Return'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Site 680 objects/View Manage Charges Apply Button'))
-
-WebUI.click(findTestObject('Page_IBM Store Engagement/button_Process Refund'), FailureHandling.CONTINUE_ON_FAILURE)
-
-WebUI.delay(1, FailureHandling.CONTINUE_ON_FAILURE)
-
-WebUI.click(findTestObject('Site 680 objects/Finalize Return'), FailureHandling.CONTINUE_ON_FAILURE)
-
-WebUI.click(findTestObject('Page_IBM Store Engagement/button_Refund'), FailureHandling.OPTIONAL)
-
-WebUI.click(findTestObject('Page_IBM Store Engagement/button_Return_Confirm_Yes'), FailureHandling.OPTIONAL)
-
-WebUI.click(findTestObject('Site 680 objects/Pay'), FailureHandling.CONTINUE_ON_FAILURE)
-
-WebUI.delay(1, FailureHandling.CONTINUE_ON_FAILURE)
-
-WebUI.click(findTestObject('Page_IBM Store Engagement/button_Print_Return_Receipt'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Site 680 objects/Rental Return Print Invoice'), FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.switchToWindowIndex(1, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.delay(1, FailureHandling.CONTINUE_ON_FAILURE)
-
 WebUI.executeJavaScript('return document.querySelector("body > print-preview-app").shadowRoot.querySelector("#sidebar").shadowRoot.querySelector("print-preview-button-strip").shadowRoot.querySelector("div > cr-button.action-button")', 
     []).click()
+
+WebUI.delay(1)
 
 Robot robot = new Robot()
 
@@ -103,37 +87,57 @@ robot.keyPress(KeyEvent.VK_SPACE)
 
 robot.keyRelease(KeyEvent.VK_SPACE)
 
+robot.keyPress(KeyEvent.VK_R)
+
+robot.keyRelease(KeyEvent.VK_R)
+
 robot.keyPress(KeyEvent.VK_E)
 
 robot.keyRelease(KeyEvent.VK_E)
-
-robot.keyPress(KeyEvent.VK_X)
-
-robot.keyRelease(KeyEvent.VK_X)
-
-robot.keyPress(KeyEvent.VK_C)
-
-robot.keyRelease(KeyEvent.VK_C)
-
-robot.keyPress(KeyEvent.VK_H)
-
-robot.keyRelease(KeyEvent.VK_H)
-
-robot.keyPress(KeyEvent.VK_A)
-
-robot.keyRelease(KeyEvent.VK_A)
 
 robot.keyPress(KeyEvent.VK_N)
 
 robot.keyRelease(KeyEvent.VK_N)
 
-robot.keyPress(KeyEvent.VK_G)
+robot.keyPress(KeyEvent.VK_T)
 
-robot.keyRelease(KeyEvent.VK_G)
+robot.keyRelease(KeyEvent.VK_T)
+
+robot.keyPress(KeyEvent.VK_A)
+
+robot.keyRelease(KeyEvent.VK_A)
+
+robot.keyPress(KeyEvent.VK_L)
+
+robot.keyRelease(KeyEvent.VK_L)
+
+robot.keyPress(KeyEvent.VK_SPACE)
+
+robot.keyRelease(KeyEvent.VK_SPACE)
+
+robot.keyPress(KeyEvent.VK_R)
+
+robot.keyRelease(KeyEvent.VK_R)
 
 robot.keyPress(KeyEvent.VK_E)
 
 robot.keyRelease(KeyEvent.VK_E)
+
+robot.keyPress(KeyEvent.VK_T)
+
+robot.keyRelease(KeyEvent.VK_T)
+
+robot.keyPress(KeyEvent.VK_U)
+
+robot.keyRelease(KeyEvent.VK_U)
+
+robot.keyPress(KeyEvent.VK_R)
+
+robot.keyRelease(KeyEvent.VK_R)
+
+robot.keyPress(KeyEvent.VK_N)
+
+robot.keyRelease(KeyEvent.VK_N)
 
 robot.keyPress(KeyEvent.VK_SPACE)
 
@@ -177,7 +181,7 @@ WebUI.switchToDefaultContent(FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.delay(1, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/button_Done'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Page_IBM Store Engagement/button_Done_Rental_Return'), FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.closeBrowser(FailureHandling.CONTINUE_ON_FAILURE)
 

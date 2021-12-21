@@ -16,12 +16,16 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import java.awt.Robot as Robot
+import java.awt.event.KeyEvent as KeyEvent
+import java.awt.Toolkit as Toolkit
+import java.awt.datatransfer.StringSelection as StringSelection
 
 WebUI.openBrowser('', FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.maximizeWindow(FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.navigateToUrl(findTestData('Site 680/Site 680 Text Book').getValue(1, 15), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.navigateToUrl(findTestData('Site 680/Site 680 Text Book').getValue(1, 16), FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.mouseOver(findTestObject('Page_Apparel, Gifts  Textbooks  University of Michigan Campus Bookstore/button_Sign In  Create Account'), 
     FailureHandling.CONTINUE_ON_FAILURE)
@@ -40,50 +44,63 @@ WebUI.click(findTestObject('Page_Sharpie Pen 2 Pack Black  University of Michiga
 WebUI.click(findTestObject('Page_Sharpie Pen 2 Pack Black  University of Michigan Campus Bookstore/button_Add to cart PDP GM'), 
     FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('Page_Complete Solfeggi for Tuba  UNH/a_Buy again'), FailureHandling.OPTIONAL)
+WebUI.navigateToUrl(findTestData('Site 680/Site 680 Text Book').getValue(1, 17), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.setText(findTestObject('Page_Apparel, Gifts  Textbooks  University of Michigan Campus Bookstore/input_Enter your search details'), 
-    findTestData('Site 680/Site 680 Text Book').getValue(1, 21), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Page_Sharpie Pen 2 Pack Black  University of Michigan Campus Bookstore/span_Ship to Address_checkmark PDP'), 
+    FailureHandling.OPTIONAL)
 
-WebUI.sendKeys(findTestObject('Page_Apparel, Gifts  Textbooks  University of Michigan Campus Bookstore/input_Enter your search details'), 
-    Keys.chord(Keys.ENTER), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Page_Sharpie Pen 2 Pack Black  University of Michigan Campus Bookstore/button_Add to cart PDP GM'), 
+    FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('Page_Earthquake Nation  University of Michigan Campus Bookstore/a_Add to cart'), FailureHandling.OPTIONAL)
+WebUI.navigateToUrl(findTestData('Site 680/Site 680 Text Book').getValue(1, 18), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_TEST BOOK 1  University of Michigan Campus Bookstore/a_Buy again'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('Page_Sharpie Pen 2 Pack Black  University of Michigan Campus Bookstore/span_Ship to Address_checkmark PDP'), 
+    FailureHandling.OPTIONAL)
 
-WebUI.mouseOver(findTestObject('Page_Apparel, Gifts  Textbooks  UNH/span_0 items'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Page_Sharpie Pen 2 Pack Black  University of Michigan Campus Bookstore/button_Add to cart PDP GM'), 
+    FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('Page_University of Michigan Campus Bookstore/a_view cart'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.mouseOver(findTestObject('Site 680 objects/cart hover'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('Page_Your Shopping Cart  University of Michigan Campus Bookstore/label_Ship to Address'), FailureHandling.OPTIONAL)
-
-WebUI.setText(findTestObject('Page_Your Shopping Cart  University of Michigan Campus Bookstore/input_Enter Promo Code_voucherCode'), 
-    'save60', FailureHandling.CONTINUE_ON_FAILURE)
-
-WebUI.click(findTestObject('Page_Your Shopping Cart  University of Michigan Campus Bookstore/button_Add'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Page_University of Michigan Campus Bookstore/a_view cart'))
 
 WebUI.click(findTestObject('Page_Your Shopping Cart  University of Michigan Campus Bookstore/button_Proceed To Checkout'), 
     FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_Your Shopping Cart  UNH/a_No Thanks, Ill  Go It Alone'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('Page_Your Shopping Cart  UNH/a_No Thanks, Ill  Go It Alone'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Shipping Method/button_Continue'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Site 680 objects/used books proceed'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('COOP pop up/co_op_box_Close'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('Shipping Method/button_Continue'))
 
-WebUI.click(findTestObject('Page_Checkout  University of Michigan Campus Bookstore/span_ASCA SFA Only'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('COOP pop up/co_op_box_Close'))
 
-WebUI.click(findTestObject('Page_Checkout  UNH/div_Internal Provider_control__indicator'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Page_Checkout  UNH/button_Saved Payment Methods'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.setText(findTestObject('Site 680 objects/Student ID Number NEW'), findTestData('Site 235/SFA Accounts').getValue(1, 
-        5), FailureHandling.CONTINUE_ON_FAILURE)
-
-WebUI.click(findTestObject('Page_Checkout  UNH/button_Apply SFA Funds'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Page_Checkout  UNH/span_Use This Payment Method Joe Visa'), FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('COOP pop up/co_op_box_Close'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('Page_Checkout  UNH/Proceed to Checkout'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.setText(findTestObject('Page_Checkout  University of Michigan Campus Bookstore/input_Enter CSV_regularPaymentCsv'), 
+    '123', FailureHandling.OPTIONAL)
 
-not_run: WebUI.click(findTestObject('Page_Checkout  University of Michigan Campus Bookstore/button_Place Order'), FailureHandling.CONTINUE_ON_FAILURE)
+Robot robot = new Robot()
+
+robot.keyPress(KeyEvent.VK_TAB)
+
+robot.keyRelease(KeyEvent.VK_TAB)
+
+robot.keyPress(KeyEvent.VK_TAB)
+
+robot.keyRelease(KeyEvent.VK_TAB)
+
+robot.keyPress(KeyEvent.VK_ENTER)
+
+robot.keyRelease(KeyEvent.VK_ENTER)
+
+WebUI.click(findTestObject('COOP pop up/co_op_box_Close'), FailureHandling.OPTIONAL)
+
+WebUI.click(findTestObject('Payment Info Proceed to Checkout/a_Proceed to Checkout'), FailureHandling.CONTINUE_ON_FAILURE)
+
+not_run: WebUI.click(findTestObject('Page_Checkout  University of Michigan Campus Bookstore/button_Place Order'))
 

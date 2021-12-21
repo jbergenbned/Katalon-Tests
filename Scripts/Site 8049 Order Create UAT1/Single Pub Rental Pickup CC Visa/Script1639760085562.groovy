@@ -96,5 +96,5 @@ WebUI.click(findTestObject('Page_Checkout  University of Michigan Campus Booksto
 
 WebUI.click(findTestObject('Page_Checkout  University of Michigan Rental/button_CONTINUE'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_Checkout  University of Michigan Campus Bookstore/button_Place Order'), FailureHandling.CONTINUE_ON_FAILURE)
+not_run: WebUI.click(findTestObject('Page_Checkout  University of Michigan Campus Bookstore/button_Place Order'), FailureHandling.CONTINUE_ON_FAILURE)
 

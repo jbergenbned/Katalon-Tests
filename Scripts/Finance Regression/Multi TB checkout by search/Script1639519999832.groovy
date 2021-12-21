@@ -16,12 +16,6 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import java.awt.Robot as Robot
-import java.awt.event.KeyEvent as KeyEvent
-import java.awt.Toolkit as Toolkit
-import java.awt.datatransfer.StringSelection as StringSelection
-
-
 
 WebUI.openBrowser('')
 
@@ -40,24 +34,36 @@ WebUI.setText(findTestObject('Page_Apparel, Gifts  Textbooks  University of Mich
 WebUI.click(findTestObject('Page_Apparel, Gifts  Textbooks  University of Michigan Campus Bookstore/a_Sign In'))
 
 WebUI.setText(findTestObject('Page_Apparel, Gifts  Textbooks  University of Michigan Campus Bookstore/input_Enter your search details'), 
-    findTestData('Site 680/Site 680 Text Book').getValue(1, 9))
+    findTestData('Site 680/Site 680 Text Book').getValue(1, 3))
 
 WebUI.sendKeys(findTestObject('Page_Apparel, Gifts  Textbooks  University of Michigan Campus Bookstore/input_Enter your search details'), 
     Keys.chord(Keys.ENTER))
 
-WebUI.click(findTestObject('Site 680 objects/Digital Rental'))
+WebUI.click(findTestObject('Page_TEST BOOK 1  University of Michigan Campus Bookstore/label_66.65                                         New                                             Print'))
+
+WebUI.click(findTestObject('Page_Earthquake Nation  University of Michigan Campus Bookstore/a_Add to cart'), FailureHandling.OPTIONAL)
+
+WebUI.click(findTestObject('Page_TEST BOOK 1  University of Michigan Campus Bookstore/a_Buy again'), FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.setText(findTestObject('Page_Apparel, Gifts  Textbooks  University of Michigan Campus Bookstore/input_Enter your search details'), 
+    findTestData('Site 680/Site 680 Text Book').getValue(1, 4))
+
+WebUI.sendKeys(findTestObject('Page_Apparel, Gifts  Textbooks  University of Michigan Campus Bookstore/input_Enter your search details'), 
+    Keys.chord(Keys.ENTER))
+
+WebUI.click(findTestObject('Page_TEST BOOK 2  University of Michigan Campus Bookstore/label_40.00                                         New                                             Print'))
 
 WebUI.click(findTestObject('Page_Earthquake Nation  University of Michigan Campus Bookstore/a_Add to cart'), FailureHandling.OPTIONAL)
 
 WebUI.click(findTestObject('Page_TEST BOOK 1  University of Michigan Campus Bookstore/a_Buy again'), FailureHandling.OPTIONAL)
 
-WebUI.mouseOver(findTestObject('Page_Apparel, Gifts  Textbooks  UNH/span_0 items'), FailureHandling.OPTIONAL)
+WebUI.mouseOver(findTestObject('Site 680 objects/cart hover'), FailureHandling.OPTIONAL)
 
 WebUI.click(findTestObject('Page_University of Michigan Campus Bookstore/a_view cart'))
 
 WebUI.click(findTestObject('Page_Your Shopping Cart  University of Michigan Campus Bookstore/button_Proceed To Checkout'))
 
-WebUI.click(findTestObject('Digital Shipping and pickup Continue/button_Continue'))
+WebUI.click(findTestObject('Shipping Method/button_Continue'))
 
 WebUI.click(findTestObject('COOP pop up/co_op_box_Close'))
 
@@ -68,29 +74,13 @@ WebUI.click(findTestObject('Page_Checkout  UNH/span_Use This Payment Method Joe 
 WebUI.click(findTestObject('COOP pop up/co_op_box_Close'))
 
 WebUI.setText(findTestObject('Page_Checkout  University of Michigan Campus Bookstore/input_Enter CSV_regularPaymentCsv'), 
-    '123', FailureHandling.OPTIONAL)
+    '123', FailureHandling.STOP_ON_FAILURE)
 
-Robot robot = new Robot()
-
-robot.keyPress(KeyEvent.VK_TAB)
-
-robot.keyRelease(KeyEvent.VK_TAB)
-
-robot.keyPress(KeyEvent.VK_TAB)
-
-robot.keyRelease(KeyEvent.VK_TAB)
-
-robot.keyPress(KeyEvent.VK_ENTER)
-
-robot.keyRelease(KeyEvent.VK_ENTER)
+WebUI.click(findTestObject('Page_Checkout  UNH/button_Apply Credit Card 680 Visa Joe'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('COOP pop up/co_op_box_Close'))
 
 WebUI.click(findTestObject('Payment Info Proceed to Checkout/a_Proceed to Checkout'))
-
-WebUI.click(findTestObject('Page_Checkout  University of Michigan Campus Bookstore/div_I agree with the BN Rental Terms and Conditions_control__indicator'))
-
-WebUI.click(findTestObject('Page_Checkout  University of Michigan Rental/button_CONTINUE'))
 
 WebUI.click(findTestObject('Page_Checkout  University of Michigan Campus Bookstore/button_Place Order'))
 

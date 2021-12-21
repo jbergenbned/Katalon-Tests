@@ -25,7 +25,8 @@ WebUI.openBrowser('', FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.maximizeWindow(FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.navigateToUrl('https://michigan.uat1.helixbeta.com/', FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.navigateToUrl('https://michigan.uat1.helixbeta.com/Categories/School-Supplies-ArtTech/Writing-Instruments/Pens/Carded/Sharpie-Pen-2-Pack-Black/p/686707', 
+    FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.mouseOver(findTestObject('Page_Apparel, Gifts  Textbooks  University of Michigan Campus Bookstore/button_Sign In  Create Account'), 
     FailureHandling.CONTINUE_ON_FAILURE)
@@ -38,34 +39,46 @@ WebUI.setText(findTestObject('Page_Apparel, Gifts  Textbooks  University of Mich
 
 WebUI.click(findTestObject('Page_Apparel, Gifts  Textbooks  University of Michigan Campus Bookstore/a_Sign In'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.setText(findTestObject('Page_Apparel, Gifts  Textbooks  University of Michigan Campus Bookstore/input_Enter your search details'), 
-    findTestData('Site 680/Site 680 Text Book').getValue(1, 22), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Page_Sharpie Pen 2 Pack Black  University of Michigan Campus Bookstore/span_Ship to Address_checkmark PDP'), 
+    FailureHandling.OPTIONAL)
 
-WebUI.sendKeys(findTestObject('Page_Apparel, Gifts  Textbooks  University of Michigan Campus Bookstore/input_Enter your search details'), 
-    Keys.chord(Keys.ENTER), FailureHandling.CONTINUE_ON_FAILURE)
+not_run: WebUI.setText(findTestObject('Page_Apparel, Gifts  Textbooks  University of Michigan Campus Bookstore/input_Enter your search details'), 
+    findTestData('Site 680/Site 680 Text Book').getValue(1, 6))
 
-WebUI.click(findTestObject('Site 680 objects/Digital Purchase Radio Button'), FailureHandling.CONTINUE_ON_FAILURE)
+not_run: WebUI.sendKeys(findTestObject('Page_Apparel, Gifts  Textbooks  University of Michigan Campus Bookstore/input_Enter your search details'), 
+    Keys.chord(Keys.ENTER))
 
-WebUI.click(findTestObject('Page_Earthquake Nation  University of Michigan Campus Bookstore/a_Add to cart'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('Page_Sharpie Pen 2 Pack Black  University of Michigan Campus Bookstore/button_Add to cart PDP GM'), 
+    FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('Page_TEST BOOK 1  University of Michigan Campus Bookstore/a_Buy again'), FailureHandling.OPTIONAL)
+WebUI.navigateToUrl('https://michigan.uat1.helixbeta.com/Categories/School-Supplies-ArtTech/Art-Supplies/Paints--Mediums/Art--Drafting-Pencils/Lumograph-Drawing-Pencils-1006H/p/117615')
 
-WebUI.mouseOver(findTestObject('Page_Apparel, Gifts  Textbooks  UNH/span_Cart 0 items'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('Page_Sharpie Pen 2 Pack Black  University of Michigan Campus Bookstore/span_Ship to Address_checkmark PDP'), 
+    FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('Page_University of Michigan Campus Bookstore/a_view cart'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Page_Sharpie Pen 2 Pack Black  University of Michigan Campus Bookstore/button_Add to cart PDP GM'), 
+    FailureHandling.OPTIONAL)
+
+WebUI.mouseOver(findTestObject('Site 680 objects/cart hover'), FailureHandling.OPTIONAL)
+
+WebUI.click(findTestObject('Page_University of Michigan Campus Bookstore/a_view cart'))
 
 WebUI.click(findTestObject('Page_Your Shopping Cart  University of Michigan Campus Bookstore/button_Proceed To Checkout'), 
     FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Digital Shipping and pickup Continue/button_Continue'), FailureHandling.CONTINUE_ON_FAILURE)
+not_run: WebUI.click(findTestObject('Page_Your Shopping Cart  UNH/a_No Thanks, Ill  Go It Alone'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('COOP pop up/co_op_box_Close'), FailureHandling.CONTINUE_ON_FAILURE)
+not_run: WebUI.click(findTestObject('Site 680 objects/used books proceed'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('Page_Checkout  University of Michigan Campus Bookstore/button_Saved Payment Methods New'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Shipping Method/button_Continue'))
 
-WebUI.click(findTestObject('Page_Checkout  UNH/span_Use This Payment Method Joe Visa'))
+WebUI.click(findTestObject('COOP pop up/co_op_box_Close'))
 
-WebUI.click(findTestObject('COOP pop up/co_op_box_Close'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Page_Checkout  UNH/button_Saved Payment Methods'), FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.click(findTestObject('Page_Checkout  UNH/span_Use This Payment Method Joe Visa'), FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.click(findTestObject('COOP pop up/co_op_box_Close'), FailureHandling.OPTIONAL)
 
 WebUI.setText(findTestObject('Page_Checkout  University of Michigan Campus Bookstore/input_Enter CSV_regularPaymentCsv'), 
     '123', FailureHandling.OPTIONAL)
@@ -84,9 +97,9 @@ robot.keyPress(KeyEvent.VK_ENTER)
 
 robot.keyRelease(KeyEvent.VK_ENTER)
 
-WebUI.click(findTestObject('COOP pop up/co_op_box_Close'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('COOP pop up/co_op_box_Close'), FailureHandling.OPTIONAL)
 
 WebUI.click(findTestObject('Payment Info Proceed to Checkout/a_Proceed to Checkout'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_Checkout  University of Michigan Campus Bookstore/button_Place Order'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Page_Checkout  University of Michigan Campus Bookstore/button_Place Order'))
 

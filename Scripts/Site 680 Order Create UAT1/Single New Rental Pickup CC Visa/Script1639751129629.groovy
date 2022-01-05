@@ -39,7 +39,7 @@ WebUI.setText(findTestObject('Object Repository/Page_Apparel, Gifts  Textbooks  
 WebUI.click(findTestObject('Object Repository/Page_Apparel, Gifts  Textbooks  University _aa7f9e/a_Sign In'), FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.setText(findTestObject('Page_Apparel, Gifts  Textbooks  University of Michigan Campus Bookstore/input_Enter your search details'), 
-    findTestData('Site 680/Site 680 Text Book').getValue(1, 20), FailureHandling.CONTINUE_ON_FAILURE)
+    findTestData('Site 680/Site 680 Text Book').getValue(1, 10), FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.sendKeys(findTestObject('Page_Apparel, Gifts  Textbooks  University of Michigan Campus Bookstore/input_Enter your search details'), 
     Keys.chord(Keys.ENTER), FailureHandling.CONTINUE_ON_FAILURE)
@@ -93,5 +93,5 @@ WebUI.click(findTestObject('Page_Checkout  University of Michigan Campus Booksto
 
 WebUI.click(findTestObject('Page_Checkout  University of Michigan Rental/button_CONTINUE'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_Checkout  University of Michigan Campus Bookstore/button_Place Order'), FailureHandling.CONTINUE_ON_FAILURE)
+not_run: WebUI.click(findTestObject('Page_Checkout  University of Michigan Campus Bookstore/button_Place Order'), FailureHandling.CONTINUE_ON_FAILURE)
 

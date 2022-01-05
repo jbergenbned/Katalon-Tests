@@ -38,7 +38,7 @@ WebUI.setText(findTestObject('Page_Apparel, Gifts  Textbooks  University of Mich
 WebUI.click(findTestObject('Page_Apparel, Gifts  Textbooks  University of Michigan Campus Bookstore/a_Sign In'))
 
 WebUI.setText(findTestObject('Page_Apparel, Gifts  Textbooks  University of Michigan Campus Bookstore/input_Enter your search details'), 
-    findTestData('Site 680/Site 680 Text Book').getValue(1, 6))
+    findTestData('Site 680/Site 680 Text Book').getValue(1, 23))
 
 WebUI.sendKeys(findTestObject('Page_Apparel, Gifts  Textbooks  University of Michigan Campus Bookstore/input_Enter your search details'), 
     Keys.chord(Keys.ENTER))
@@ -51,7 +51,7 @@ WebUI.click(findTestObject('Page_Complete Solfeggi for Tuba  UNH/a_Buy again'), 
 
 WebUI.mouseOver(findTestObject('Site 680 objects/cart hover'))
 
-WebUI.click(findTestObject('Object Repository/Page_Complete Solfeggi for Tuba  UNH/a_view cart (1 item)'))
+WebUI.click(findTestObject('Page_University of Michigan Campus Bookstore/a_view cart (1 item)master'))
 
 WebUI.click(findTestObject('Page_Your Shopping Cart  University of Michigan Campus Bookstore/label_Ship to Address'), FailureHandling.OPTIONAL)
 

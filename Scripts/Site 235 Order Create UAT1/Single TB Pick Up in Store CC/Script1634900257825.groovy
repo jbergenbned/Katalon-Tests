@@ -23,9 +23,9 @@ import java.awt.datatransfer.StringSelection as StringSelection
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://unh.uat1.helixbeta.com/')
-
 WebUI.maximizeWindow()
+
+WebUI.navigateToUrl('https://unh.uat1.helixbeta.com/')
 
 WebUI.mouseOver(findTestObject('Page_Apparel, Gifts  Textbooks  University of Michigan Campus Bookstore/button_Sign In  Create Account'))
 
@@ -49,7 +49,7 @@ WebUI.click(findTestObject('Page_Complete Solfeggi for Tuba  UNH/a_Buy again'), 
 
 WebUI.mouseOver(findTestObject('Page_Apparel, Gifts  Textbooks  UNH/span_0 items'))
 
-WebUI.click(findTestObject('Object Repository/Page_Apparel, Gifts  Textbooks  University _aa7f9e/a_view cart (1 item)'))
+WebUI.click(findTestObject('Page_University of Michigan Campus Bookstore/a_view cart (1 item)master'))
 
 WebUI.click(findTestObject('Page_Your Shopping Cart  UNH/span_University Of New Hampshire_checkmark pick up'))
 

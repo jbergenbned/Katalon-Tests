@@ -23,9 +23,9 @@ import java.awt.datatransfer.StringSelection as StringSelection
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://unh.uat1.helixbeta.com/')
-
 WebUI.maximizeWindow()
+
+WebUI.navigateToUrl('https://unh.uat1.helixbeta.com/')
 
 WebUI.mouseOver(findTestObject('Page_Apparel, Gifts  Textbooks  University of Michigan Campus Bookstore/button_Sign In  Create Account'))
 
@@ -49,7 +49,7 @@ WebUI.click(findTestObject('Page_Complete Solfeggi for Tuba  UNH/a_Buy again'), 
 
 WebUI.mouseOver(findTestObject('Page_Apparel, Gifts  Textbooks  UNH/span_0 items'))
 
-WebUI.click(findTestObject('Object Repository/Page_Apparel, Gifts  Textbooks  University _aa7f9e/a_view cart (1 item)'))
+WebUI.click(findTestObject('Page_University of Michigan Campus Bookstore/a_view cart (1 item)master'))
 
 WebUI.click(findTestObject('Page_Your Shopping Cart  University of Michigan Campus Bookstore/label_Ship to Address'), FailureHandling.OPTIONAL)
 
@@ -57,13 +57,13 @@ WebUI.click(findTestObject('Page_Your Shopping Cart  University of Michigan Camp
 
 WebUI.click(findTestObject('Shipping Method/button_Continue'))
 
-WebUI.click(findTestObject('COOP pop up/co_op_box_Close'))
+WebUI.click(findTestObject('COOP pop up/co_op_box_Close'), FailureHandling.OPTIONAL)
 
 WebUI.click(findTestObject('Page_Checkout  UNH/button_Saved Payment Methods'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_Checkout  UNH/span_Use This Payment Method Joe Mastercard'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Page_Checkout  UNH/span_Use This Payment Method Joe Visa'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('COOP pop up/co_op_box_Close'))
+WebUI.click(findTestObject('COOP pop up/co_op_box_Close'), FailureHandling.OPTIONAL)
 
 WebUI.setText(findTestObject('Page_Checkout  University of Michigan Campus Bookstore/input_Enter CSV_regularPaymentCsv'), 
     '123', FailureHandling.OPTIONAL)
@@ -82,7 +82,7 @@ robot.keyPress(KeyEvent.VK_ENTER)
 
 robot.keyRelease(KeyEvent.VK_ENTER)
 
-WebUI.click(findTestObject('COOP pop up/co_op_box_Close'))
+WebUI.click(findTestObject('COOP pop up/co_op_box_Close'), FailureHandling.OPTIONAL)
 
 WebUI.click(findTestObject('Payment Info Proceed to Checkout/a_Proceed to Checkout'))
 

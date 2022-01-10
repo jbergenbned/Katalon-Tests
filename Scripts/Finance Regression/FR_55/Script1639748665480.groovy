@@ -28,7 +28,7 @@ WebUI.maximizeWindow(FailureHandling.CONTINUE_ON_FAILURE)
 WebUI.setText(findTestObject('Page_IBM Store Engagement/input_User ID_username'), findTestData('Site 680/Order fulfill sites').getValue(
         3, 2), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.setText(findTestObject('Page_IBM Store Engagement/input_Password_password'), findTestData('Site 680/Order fulfill sites').getValue(
+WebUI.setText(findTestObject('Site 235/Page_IBM Store Engagement/input_Password_password'), findTestData('Site 680/Order fulfill sites').getValue(
         4, 2), FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('Page_IBM Store Engagement/span_Login'), FailureHandling.CONTINUE_ON_FAILURE)
@@ -42,17 +42,17 @@ WebUI.setText(findTestObject('Page_IBM Store Engagement/input_Select box clear_r
 WebUI.sendKeys(findTestObject('Page_IBM Store Engagement/input_Select box clear_returns_ORDER_scanField'), Keys.chord(Keys.ENTER), 
     FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/button_Add to Return 0'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Site 235/Page_IBM Store Engagement/button_Add to Return 0'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/button_Added_Return_Continue'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Site 235/Page_IBM Store Engagement/button_Added_Return_Continue'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/button_Add_Return_Reason_OK'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Site 235/Page_IBM Store Engagement/button_Add_Return_Reason_OK'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.setText(findTestObject('Page_IBM Store Engagement/input_Exchanges_itemBarCodeTextBox'), '65882', FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.setText(findTestObject('Site 235/Page_IBM Store Engagement/input_Exchanges_itemBarCodeTextBox'), '65882', FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.sendKeys(findTestObject('Page_IBM Store Engagement/input_Exchanges_itemBarCodeTextBox'), Keys.chord(Keys.ENTER), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.sendKeys(findTestObject('Site 235/Page_IBM Store Engagement/input_Exchanges_itemBarCodeTextBox'), Keys.chord(Keys.ENTER), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/button_Add as Exchange'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Site 235/Page_IBM Store Engagement/button_Add as Exchange'), FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('Site 680 objects/View Manage Charges'))
 
@@ -60,21 +60,21 @@ WebUI.click(findTestObject('Site 680 objects/Refund Remaining Shipping Charge'))
 
 WebUI.click(findTestObject('Site 680 objects/View Manage Charges Apply Button'))
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/button_Process Refund'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Site 235/Page_IBM Store Engagement/button_Process Refund'), FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.delay(1, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('Site 680 objects/Finalize Return'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/button_Refund'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('Site 235/Page_IBM Store Engagement/button_Refund'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/button_Return_Confirm_Yes'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('Site 235/Page_IBM Store Engagement/button_Return_Confirm_Yes'), FailureHandling.OPTIONAL)
 
 WebUI.click(findTestObject('Site 680 objects/Pay'), FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.delay(1, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/button_Print_Return_Receipt'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Site 235/Page_IBM Store Engagement/button_Print_Return_Receipt'), FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.switchToWindowIndex(1, FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -177,7 +177,7 @@ WebUI.switchToDefaultContent(FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.delay(1, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/button_Done'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Site 235/Page_IBM Store Engagement/button_Done'), FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.closeBrowser(FailureHandling.CONTINUE_ON_FAILURE)
 

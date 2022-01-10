@@ -28,16 +28,16 @@ WebUI.maximizeWindow()
 WebUI.setText(findTestObject('Page_IBM Store Engagement/input_User ID_username'), findTestData('Site 680/Order fulfill sites').getValue(
         3, 2))
 
-WebUI.setText(findTestObject('Page_IBM Store Engagement/input_Password_password'), findTestData('Site 680/Order fulfill sites').getValue(
+WebUI.setText(findTestObject('Site 235/Page_IBM Store Engagement/input_Password_password'), findTestData('Site 680/Order fulfill sites').getValue(
         4, 2))
 
 WebUI.click(findTestObject('Page_IBM Store Engagement/span_Login'))
 
 WebUI.delay(5, FailureHandling.OPTIONAL)
 
-WebUI.setText(findTestObject('Page_IBM Store Engagement/input_Not Started_pick_shipmentOrderBarcodeScanner'), '00907036')
+WebUI.setText(findTestObject('Site 235/Page_IBM Store Engagement/input_Not Started_pick_shipmentOrderBarcodeScanner'), '00907036')
 
-WebUI.sendKeys(findTestObject('Page_IBM Store Engagement/input_Not Started_pick_shipmentOrderBarcodeScanner'), Keys.chord(
+WebUI.sendKeys(findTestObject('Site 235/Page_IBM Store Engagement/input_Not Started_pick_shipmentOrderBarcodeScanner'), Keys.chord(
         Keys.ENTER))
 
 not_run: WebUI.click(findTestObject('Page_IBM Store Engagement/span_Goto Shipment Summary'), FailureHandling.OPTIONAL)
@@ -52,30 +52,30 @@ WebUI.click(findTestObject('Page_IBM Store Engagement/span_Finish Pick'), Failur
 
 WebUI.click(findTestObject('Page_IBM Store Engagement/span_Yes'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/button_Picked_APO_Close'))
+WebUI.click(findTestObject('Site 235/Page_IBM Store Engagement/button_Picked_APO_Close'))
 
 WebUI.click(findTestObject('Page_IBM Store Engagement/li_Payments352'))
 
 WebUI.delay(5)
 
-WebUI.setText(findTestObject('Page_IBM Store Engagement/input_payments_search'), '00907036')
+WebUI.setText(findTestObject('Site 235/Page_IBM Store Engagement/input_payments_search'), '00907036')
 
-WebUI.sendKeys(findTestObject('Page_IBM Store Engagement/input_payments_search'), Keys.chord(Keys.ENTER))
+WebUI.sendKeys(findTestObject('Site 235/Page_IBM Store Engagement/input_payments_search'), Keys.chord(Keys.ENTER))
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/button_APO_Process Payment'))
+WebUI.click(findTestObject('Site 235/Page_IBM Store Engagement/button_APO_Process Payment'))
 
-WebUI.setText(findTestObject('Page_IBM Store Engagement/input_International  APO  FPO Shipping Charge_selectedCharge'), 
+WebUI.setText(findTestObject('Site 235/Page_IBM Store Engagement/input_International  APO  FPO Shipping Charge_selectedCharge'), 
     '25.00')
 
 WebUI.setText(findTestObject('Page_IBM Store Engagement/textarea_Customer Acknowledgement_APO'), 'APO test')
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/button_APO_Charge_Apply'))
+WebUI.click(findTestObject('Site 235/Page_IBM Store Engagement/button_APO_Charge_Apply'))
 
 WebUI.click(findTestObject('Page_IBM Store Engagement/span_Process Transaction'), FailureHandling.OPTIONAL)
 
 WebUI.click(findTestObject('Page_IBM Store Engagement/span_OK'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/Finish Payment Button'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('Site 235/Page_IBM Store Engagement/Finish Payment Button'), FailureHandling.OPTIONAL)
 
 WebUI.click(findTestObject('Page_IBM Store Engagement/span_Pack Order'), FailureHandling.OPTIONAL)
 
@@ -85,7 +85,7 @@ not_run: WebUI.click(findTestObject('Page_IBM Store Engagement/products already 
 
 not_run: WebUI.setText(findTestObject('Page_IBM Store Engagement/input_Tracking No_weight'), '1', FailureHandling.OPTIONAL)
 
-not_run: WebUI.click(findTestObject('Page_IBM Store Engagement/button_Update'), FailureHandling.OPTIONAL)
+not_run: WebUI.click(findTestObject('Site 235/Page_IBM Store Engagement/button_Update'), FailureHandling.OPTIONAL)
 
 WebUI.click(findTestObject('Page_IBM Store Engagement/label_Print Packing Slip'))
 
@@ -222,9 +222,9 @@ WebUI.setText(findTestObject('Object Repository/Page_IBM Store Engagement/input_
 WebUI.sendKeys(findTestObject('Object Repository/Page_IBM Store Engagement/input_Select box clear_global-search_ORDER__473b34'), 
     Keys.chord(Keys.ENTER))
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/button_View Products'))
+WebUI.click(findTestObject('Site 235/Page_IBM Store Engagement/button_View Products'))
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/button_Print Order Summary'))
+WebUI.click(findTestObject('Site 235/Page_IBM Store Engagement/button_Print Order Summary'))
 
 WebUI.delay(2)
 

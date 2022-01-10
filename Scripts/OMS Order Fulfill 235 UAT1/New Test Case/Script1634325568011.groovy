@@ -33,7 +33,7 @@ WebUI.maximizeWindow()
 WebUI.setText(findTestObject('Page_IBM Store Engagement/input_User ID_username'), findTestData('Site 680/Order fulfill sites').getValue(
         3, 3))
 
-WebUI.setText(findTestObject('Page_IBM Store Engagement/input_Password_password'), findTestData('Site 680/Order fulfill sites').getValue(
+WebUI.setText(findTestObject('Site 235/Page_IBM Store Engagement/input_Password_password'), findTestData('Site 680/Order fulfill sites').getValue(
         4, 3))
 
 WebUI.click(findTestObject('Page_IBM Store Engagement/span_Login'))
@@ -43,7 +43,7 @@ WebUI.setText(findTestObject('Page_IBM Store Engagement Pack/input_Not Started_p
 WebUI.sendKeys(findTestObject('Page_IBM Store Engagement Pack/input_Not Started_pack_shipmentOrderBarcodeScanner'), Keys.chord(
         Keys.ENTER))
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/div_Print Packing Slip'))
+WebUI.click(findTestObject('Site 235/Page_IBM Store Engagement/div_Print Packing Slip'))
 
 WebUI.switchToWindowIndex(1)
 

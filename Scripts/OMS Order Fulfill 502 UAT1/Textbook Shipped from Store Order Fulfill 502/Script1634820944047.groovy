@@ -28,17 +28,17 @@ WebUI.maximizeWindow(FailureHandling.CONTINUE_ON_FAILURE)
 WebUI.setText(findTestObject('Page_IBM Store Engagement/input_User ID_username'), findTestData('Site 680/Order fulfill sites').getValue(
         3, 5), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.setText(findTestObject('Page_IBM Store Engagement/input_Password_password'), findTestData('Site 680/Order fulfill sites').getValue(
+WebUI.setText(findTestObject('Site 235/Page_IBM Store Engagement/input_Password_password'), findTestData('Site 680/Order fulfill sites').getValue(
         4, 5), FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('Page_IBM Store Engagement/span_Login'), FailureHandling.CONTINUE_ON_FAILURE)
 
 not_run: WebUI.delay(5, FailureHandling.OPTIONAL)
 
-WebUI.setText(findTestObject('Page_IBM Store Engagement/input_Not Started_pick_shipmentOrderBarcodeScanner'), '00969083', 
+WebUI.setText(findTestObject('Site 235/Page_IBM Store Engagement/input_Not Started_pick_shipmentOrderBarcodeScanner'), '00969083', 
     FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.sendKeys(findTestObject('Page_IBM Store Engagement/input_Not Started_pick_shipmentOrderBarcodeScanner'), Keys.chord(
+WebUI.sendKeys(findTestObject('Site 235/Page_IBM Store Engagement/input_Not Started_pick_shipmentOrderBarcodeScanner'), Keys.chord(
         Keys.ENTER), FailureHandling.CONTINUE_ON_FAILURE)
 
 not_run: WebUI.click(findTestObject('Page_IBM Store Engagement/span_Goto Shipment Summary'), FailureHandling.OPTIONAL)
@@ -57,7 +57,7 @@ WebUI.click(findTestObject('Page_IBM Store Engagement/span_Process Transaction')
 
 WebUI.click(findTestObject('Page_IBM Store Engagement/span_OK'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/Finish Payment Button'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Site 235/Page_IBM Store Engagement/Finish Payment Button'), FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('Page_IBM Store Engagement/span_Pack Order'), FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -67,7 +67,7 @@ not_run: WebUI.click(findTestObject('Page_IBM Store Engagement/products already 
 
 WebUI.setText(findTestObject('Page_IBM Store Engagement/input_Tracking No_weight'), '1', FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/button_Update'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Site 235/Page_IBM Store Engagement/button_Update'), FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('Page_IBM Store Engagement/label_Print Packing Slip'), FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -203,9 +203,9 @@ WebUI.setText(findTestObject('Object Repository/Page_IBM Store Engagement/input_
 WebUI.sendKeys(findTestObject('Object Repository/Page_IBM Store Engagement/input_Select box clear_global-search_ORDER__473b34'), 
     Keys.chord(Keys.ENTER), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/button_View Products'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Site 235/Page_IBM Store Engagement/button_View Products'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/button_Print Order Summary'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Site 235/Page_IBM Store Engagement/button_Print Order Summary'), FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.delay(2, FailureHandling.CONTINUE_ON_FAILURE)
 

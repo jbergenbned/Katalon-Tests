@@ -28,7 +28,7 @@ WebUI.maximizeWindow()
 WebUI.setText(findTestObject('Page_IBM Store Engagement/input_User ID_username'), findTestData('Site 680/Order fulfill sites').getValue(
         3, 2))
 
-WebUI.setText(findTestObject('Page_IBM Store Engagement/input_Password_password'), findTestData('Site 680/Order fulfill sites').getValue(
+WebUI.setText(findTestObject('Site 235/Page_IBM Store Engagement/input_Password_password'), findTestData('Site 680/Order fulfill sites').getValue(
         4, 2))
 
 WebUI.click(findTestObject('Page_IBM Store Engagement/span_Login'))
@@ -37,26 +37,26 @@ WebUI.delay(5, FailureHandling.OPTIONAL)
 
 WebUI.click(findTestObject('Page_IBM Store Engagement/li_Rental Orders'))
 
-WebUI.setText(findTestObject('Page_IBM Store Engagement/input_rental_search_box'), '00574046')
+WebUI.setText(findTestObject('Site 235/Page_IBM Store Engagement/input_rental_search_box'), '00574046')
 
-WebUI.sendKeys(findTestObject('Page_IBM Store Engagement/input_rental_search_box'), Keys.chord(Keys.ENTER))
+WebUI.sendKeys(findTestObject('Site 235/Page_IBM Store Engagement/input_rental_search_box'), Keys.chord(Keys.ENTER))
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/button_Rental Check In'))
+WebUI.click(findTestObject('Site 235/Page_IBM Store Engagement/button_Rental Check In'))
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/button_Click to decrease picked quantity by 1'))
+WebUI.click(findTestObject('Site 235/Page_IBM Store Engagement/button_Click to decrease picked quantity by 1'))
 
 WebUI.click(findTestObject('Page_IBM Store Engagement/select_Select ConditionSALEABLENON-SALEABLEBUYOUTEND-OF-LIFE'))
 
 WebUI.selectOptionByIndex(findTestObject('Page_IBM Store Engagement/select_Select ConditionSALEABLENON-SALEABLEBUYOUTEND-OF-LIFE'), 
     1)
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/button_Finish Check In'))
+WebUI.click(findTestObject('Site 235/Page_IBM Store Engagement/button_Finish Check In'))
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/button_Process Transaction Rental Return'))
+WebUI.click(findTestObject('Site 235/Page_IBM Store Engagement/button_Process Transaction Rental Return'))
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/button_Payment_Auth_OK_Rental_Return'))
+WebUI.click(findTestObject('Site 235/Page_IBM Store Engagement/button_Payment_Auth_OK_Rental_Return'))
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/button_Finish Payment_Rental_Return'))
+WebUI.click(findTestObject('Site 235/Page_IBM Store Engagement/button_Finish Payment_Rental_Return'))
 
 WebUI.click(findTestObject('Site 680 objects/Rental Return Print Invoice'))
 
@@ -181,7 +181,7 @@ WebUI.switchToDefaultContent()
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/button_Done_Rental_Return'))
+WebUI.click(findTestObject('Site 235/Page_IBM Store Engagement/button_Done_Rental_Return'))
 
 WebUI.closeBrowser()
 

@@ -1,32 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_Refund</name>
+   <name>button_Save</name>
    <tag></tag>
-   <elementGuidId>6504601a-e46b-4ae4-bae6-c3b27d982293</elementGuidId>
+   <elementGuidId>b010c745-c7ca-440d-9bc7-d9ad802c71d0</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value>//*[@type = 'submit' and (text() = '
-													
-							
-							Refund
-						' or . = '
-													
-							
-							Refund
-						')]</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
-         <value></value>
+         <value>(//button[@type='button'])[3]</value>
       </entry>
       <entry>
          <key>CSS</key>
          <value>button.btn.btn-default.btn-primary</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -47,7 +35,14 @@
       <matchCondition>equals</matchCondition>
       <name>type</name>
       <type>Main</type>
-      <value>submit</value>
+      <value>button</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ng-if</name>
+      <type>Main</type>
+      <value>!ui.showPaymentButton || model.getCompleteOrderDetails.Order.HasPendingChanges == 'Y'</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -59,16 +54,9 @@
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>ng-if</name>
+      <name>ng-click</name>
       <type>Main</type>
-      <value>ui.isRefundMode</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>ng-disabled</name>
-      <type>Main</type>
-      <value>ui.uiRefundClick</value>
+      <value>uiCheckDirtyStateBeforePayment()</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -76,31 +64,30 @@
       <name>text</name>
       <type>Main</type>
       <value>
-													
-							
-							Refund
-						</value>
+                            
+                            Save
+                        </value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;mainContentHolder&quot;)/div[@class=&quot;screen-container&quot;]/div[@class=&quot;wizard-template&quot;]/div[@class=&quot;wizard-page&quot;]/div[@class=&quot;payment-screen-holder&quot;]/form[@class=&quot;payment-capture ng-pristine ng-valid&quot;]/div[@class=&quot;screen-holder&quot;]/div[@class=&quot;screen-header tile-layout&quot;]/div[2]/div[@class=&quot;action-holder pull-right&quot;]/div[6]/button[@class=&quot;btn btn-default btn-primary&quot;]</value>
+      <value>id(&quot;mainContentHolder&quot;)/div[@class=&quot;screen-container&quot;]/div[@class=&quot;wizard-template&quot;]/div[@class=&quot;wizard-page&quot;]/div[@class=&quot;view-cart-details edit-order-details cart-summary-holder ng-pristine ng-valid ng-valid-isc-datatype-validator ng-valid-isc-custom-validator&quot;]/div[@class=&quot;top-holder screen-holder has-header-secondary&quot;]/div[@class=&quot;screen-header tile-layout&quot;]/div[2]/div[@class=&quot;action-holder pull-right&quot;]/div[1]/button[@class=&quot;btn btn-default btn-primary&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//button[@type='submit']</value>
+      <value>(//button[@type='button'])[3]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='mainContentHolder']/div[2]/div/div[2]/div/form/div/div/div[2]/div/div[6]/button</value>
+      <value>//div[@id='mainContentHolder']/div[2]/div/div[2]/div/div/div/div[2]/div/div/button[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -114,20 +101,20 @@
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Process Offline'])[1]/following::button[2]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='joe bergen'])[1]/following::button[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Return #'])[1]/preceding::button[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Order Total has changed to $9.00.'])[1]/preceding::button[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[6]/button</value>
+      <value>//button[2]</value>
    </webElementXpaths>
 </WebElementEntity>

@@ -28,7 +28,7 @@ WebUI.maximizeWindow()
 WebUI.setText(findTestObject('Page_IBM Store Engagement/input_User ID_username'), findTestData('Site 680/Order fulfill sites').getValue(
         3, 9))
 
-WebUI.setText(findTestObject('Page_IBM Store Engagement/input_Password_password'), findTestData('Site 680/Order fulfill sites').getValue(
+WebUI.setText(findTestObject('Site 235/Page_IBM Store Engagement/input_Password_password'), findTestData('Site 680/Order fulfill sites').getValue(
         4, 9))
 
 WebUI.click(findTestObject('Page_IBM Store Engagement/span_Login'))
@@ -47,7 +47,7 @@ robot.keyPress(KeyEvent.VK_ENTER)
 
 robot.keyRelease(KeyEvent.VK_ENTER)
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/button_Login to Store_8008'))
+WebUI.click(findTestObject('Site 235/Page_IBM Store Engagement/button_Login to Store_8008'))
 
 WebUI.click(findTestObject('Page_IBM Store Engagement/select_store_left'))
 
@@ -59,23 +59,23 @@ WebUI.setText(findTestObject('Page_IBM Store Engagement/input_Select box clear_r
 
 WebUI.sendKeys(findTestObject('Page_IBM Store Engagement/input_Select box clear_returns_ORDER_scanField'), Keys.chord(Keys.ENTER))
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/button_Add to Return 0'))
+WebUI.click(findTestObject('Site 235/Page_IBM Store Engagement/button_Add to Return 0'))
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/button_Added_Return_Continue'))
+WebUI.click(findTestObject('Site 235/Page_IBM Store Engagement/button_Added_Return_Continue'))
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/button_Add_Return_Reason_OK'))
+WebUI.click(findTestObject('Site 235/Page_IBM Store Engagement/button_Add_Return_Reason_OK'))
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/button_Process Refund'))
-
-WebUI.delay(1)
-
-WebUI.click(findTestObject('Page_IBM Store Engagement/button_Refund'))
-
-WebUI.click(findTestObject('Page_IBM Store Engagement/button_Return_Confirm_Yes'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('Site 235/Page_IBM Store Engagement/button_Process Refund'))
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/button_Print_Return_Receipt'))
+WebUI.click(findTestObject('Site 235/Page_IBM Store Engagement/button_Refund'))
+
+WebUI.click(findTestObject('Site 235/Page_IBM Store Engagement/button_Return_Confirm_Yes'), FailureHandling.OPTIONAL)
+
+WebUI.delay(1)
+
+WebUI.click(findTestObject('Site 235/Page_IBM Store Engagement/button_Print_Return_Receipt'))
 
 WebUI.switchToWindowIndex(1)
 
@@ -172,7 +172,7 @@ WebUI.switchToDefaultContent()
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/button_Done'))
+WebUI.click(findTestObject('Site 235/Page_IBM Store Engagement/button_Done'))
 
 WebUI.closeBrowser()
 

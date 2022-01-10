@@ -28,7 +28,7 @@ WebUI.maximizeWindow(FailureHandling.CONTINUE_ON_FAILURE)
 WebUI.setText(findTestObject('Page_IBM Store Engagement/input_User ID_username'), findTestData('Site 680/Order fulfill sites').getValue(
         3, 2), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.setText(findTestObject('Page_IBM Store Engagement/input_Password_password'), findTestData('Site 680/Order fulfill sites').getValue(
+WebUI.setText(findTestObject('Site 235/Page_IBM Store Engagement/input_Password_password'), findTestData('Site 680/Order fulfill sites').getValue(
         4, 2), FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('Page_IBM Store Engagement/span_Login'), FailureHandling.CONTINUE_ON_FAILURE)
@@ -37,26 +37,26 @@ WebUI.delay(5, FailureHandling.OPTIONAL)
 
 WebUI.click(findTestObject('Page_IBM Store Engagement/li_Rental Orders'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.setText(findTestObject('Page_IBM Store Engagement/input_rental_search_box'), '01052033', FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.setText(findTestObject('Site 235/Page_IBM Store Engagement/input_rental_search_box'), '01052033', FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.sendKeys(findTestObject('Page_IBM Store Engagement/input_rental_search_box'), Keys.chord(Keys.ENTER), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.sendKeys(findTestObject('Site 235/Page_IBM Store Engagement/input_rental_search_box'), Keys.chord(Keys.ENTER), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/button_Rental Check In'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Site 235/Page_IBM Store Engagement/button_Rental Check In'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/button_Click to decrease picked quantity by 1'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Site 235/Page_IBM Store Engagement/button_Click to decrease picked quantity by 1'), FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('Page_IBM Store Engagement/select_Select ConditionSALEABLENON-SALEABLEBUYOUTEND-OF-LIFE'), FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.selectOptionByIndex(findTestObject('Page_IBM Store Engagement/select_Select ConditionSALEABLENON-SALEABLEBUYOUTEND-OF-LIFE'), 
     1, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/button_Finish Check In'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Site 235/Page_IBM Store Engagement/button_Finish Check In'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/button_Process Transaction Rental Return'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Site 235/Page_IBM Store Engagement/button_Process Transaction Rental Return'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/button_Payment_Auth_OK_Rental_Return'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Site 235/Page_IBM Store Engagement/button_Payment_Auth_OK_Rental_Return'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/button_Finish Payment_Rental_Return'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Site 235/Page_IBM Store Engagement/button_Finish Payment_Rental_Return'), FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('Site 680 objects/Rental Return Print Invoice'), FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -181,7 +181,7 @@ WebUI.switchToDefaultContent(FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.delay(1, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/button_Done_Rental_Return'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Site 235/Page_IBM Store Engagement/button_Done_Rental_Return'), FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.closeBrowser(FailureHandling.CONTINUE_ON_FAILURE)
 

@@ -28,7 +28,7 @@ WebUI.maximizeWindow()
 WebUI.setText(findTestObject('Page_IBM Store Engagement/input_User ID_username'), findTestData('Site 680/Order fulfill sites').getValue(
         3, 2))
 
-WebUI.setText(findTestObject('Page_IBM Store Engagement/input_Password_password'), findTestData('Site 680/Order fulfill sites').getValue(
+WebUI.setText(findTestObject('Site 235/Page_IBM Store Engagement/input_Password_password'), findTestData('Site 680/Order fulfill sites').getValue(
         4, 2))
 
 WebUI.click(findTestObject('Page_IBM Store Engagement/span_Login'))
@@ -43,9 +43,9 @@ WebUI.setText(findTestObject('Object Repository/Page_IBM Store Engagement/input_
 WebUI.sendKeys(findTestObject('Object Repository/Page_IBM Store Engagement/input_Select box clear_global-search_ORDER__473b34'), 
     Keys.chord(Keys.ENTER))
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/button_View Products'))
+WebUI.click(findTestObject('Site 235/Page_IBM Store Engagement/button_View Products'))
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/button_Print Order Summary'))
+WebUI.click(findTestObject('Site 235/Page_IBM Store Engagement/button_Print Order Summary'))
 
 WebUI.delay(2)
 

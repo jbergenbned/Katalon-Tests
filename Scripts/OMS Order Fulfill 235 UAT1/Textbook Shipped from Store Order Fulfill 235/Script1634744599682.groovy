@@ -42,10 +42,6 @@ WebUI.sendKeys(findTestObject('Site 235/Page_IBM Store Engagement/input_Not Star
 
 not_run: WebUI.click(findTestObject('Page_IBM Store Engagement/span_Goto Shipment Summary'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/span_Process Transaction'), FailureHandling.OPTIONAL)
-
-not_run: WebUI.click(findTestObject('Page_IBM Store Engagement/span_Continue Packing'), FailureHandling.OPTIONAL)
-
 WebUI.click(findTestObject('Page_IBM Store Engagement/span_Pick All'), FailureHandling.OPTIONAL)
 
 WebUI.click(findTestObject('Page_IBM Store Engagement/span_OK'), FailureHandling.OPTIONAL)
@@ -53,6 +49,8 @@ WebUI.click(findTestObject('Page_IBM Store Engagement/span_OK'), FailureHandling
 WebUI.click(findTestObject('Page_IBM Store Engagement/span_Finish Pick'), FailureHandling.OPTIONAL)
 
 WebUI.click(findTestObject('Page_IBM Store Engagement/span_Yes'), FailureHandling.OPTIONAL)
+
+WebUI.click(findTestObject('Page_IBM Store Engagement/span_Process Transaction'), FailureHandling.OPTIONAL)
 
 WebUI.click(findTestObject('Page_IBM Store Engagement/span_OK'), FailureHandling.OPTIONAL)
 
@@ -70,7 +68,7 @@ WebUI.click(findTestObject('Site 235/Page_IBM Store Engagement/button_Update'), 
 
 WebUI.click(findTestObject('Page_IBM Store Engagement/label_Print Packing Slip'))
 
-WebUI.delay(3)
+WebUI.delay(2)
 
 WebUI.switchToWindowIndex(1)
 

@@ -37,8 +37,7 @@ WebUI.delay(5, FailureHandling.OPTIONAL)
 
 WebUI.click(findTestObject('Object Repository/Page_IBM Store Engagement/span_Hofstra University Bookstore_app-glyph_738071'))
 
-WebUI.setText(findTestObject('Site 235/Page_IBM Store Engagement/input_Select box clear_global-search_ORDER__473b34'), 
-    '00825039')
+WebUI.setText(findTestObject('Site 235/Page_IBM Store Engagement/input_Select box clear_global-search_ORDER__473b34'), '01098012')
 
 WebUI.sendKeys(findTestObject('Site 235/Page_IBM Store Engagement/input_Select box clear_global-search_ORDER__473b34'), 
     Keys.chord(Keys.ENTER))
@@ -47,14 +46,14 @@ WebUI.click(findTestObject('Site 235/Page_IBM Store Engagement/button_View Produ
 
 WebUI.click(findTestObject('Site 235/Page_IBM Store Engagement/button_Print Order Summary'))
 
-WebUI.delay(2)
+WebUI.delay(1)
 
 WebUI.switchToWindowIndex(1)
 
 WebUI.executeJavaScript('return document.querySelector("body > print-preview-app").shadowRoot.querySelector("#sidebar").shadowRoot.querySelector("print-preview-button-strip").shadowRoot.querySelector("div > cr-button.action-button")', 
     []).click()
 
-WebUI.delay(2)
+WebUI.delay(1)
 
 Robot robot = new Robot()
 

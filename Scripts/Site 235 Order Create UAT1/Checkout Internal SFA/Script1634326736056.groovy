@@ -43,7 +43,9 @@ WebUI.click(findTestObject('Page_TEST BOOK 1  University of Michigan Campus Book
 
 WebUI.mouseOver(findTestObject('Page_Apparel, Gifts  Textbooks  UNH/span_0 items'))
 
-WebUI.click(findTestObject('Page_University of Michigan Campus Bookstore/a_view cart'))
+WebUI.click(findTestObject('Page_University of Michigan Campus Bookstore/a_view cart (1 item)master'))
+
+WebUI.click(findTestObject('Page_Your Shopping Cart  University of Michigan Campus Bookstore/label_Ship to Address'), FailureHandling.OPTIONAL)
 
 WebUI.click(findTestObject('Page_Your Shopping Cart  University of Michigan Campus Bookstore/button_Proceed To Checkout'))
 

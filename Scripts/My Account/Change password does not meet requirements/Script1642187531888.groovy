@@ -44,7 +44,7 @@ WebUI.click(findTestObject('Page_Apparel, Gifts  Textbooks  Faber College Bookst
 WebUI.click(findTestObject('Page_Update Forgotten Password  Faber College Bookstore/button_Change Password'))
 
 WebUI.setText(findTestObject('Page_Update Forgotten Password  Faber College Bookstore/input_Current Password_currentPassword'), 
-    '123')
+    'Newpass1!')
 
 WebUI.setText(findTestObject('Page_Update Forgotten Password  Faber College Bookstore/input_New Password_newPassword'), 
     '1234')
@@ -53,6 +53,8 @@ WebUI.setText(findTestObject('Page_Update Forgotten Password  Faber College Book
     '1234')
 
 WebUI.click(findTestObject('Page_Update Profile  Faber College Bookstore/div_Change Password'))
+
+WebUI.verifyTextPresent('Please correct the errors below.', false)
 
 WebUI.verifyTextPresent('Password does not meet minimum requirements.', false)
 

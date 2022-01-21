@@ -63,16 +63,16 @@ WebUI.click(findTestObject('Page_Your Shopping Cart  University of Michigan Camp
 
 WebUI.click(findTestObject('Shipping Method/button_Continue'))
 
-WebUI.click(findTestObject('Page_Checkout  UNH/button_Saved Payment Methods'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('Page_Checkout  UNH/span_Financial Aid'))
 
-WebUI.click(findTestObject('Page_Checkout  UNH/span_Use This Payment Method Joe Visa'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('Page_Checkout  UNH/div_Internal Provider_control__indicator'))
 
-WebUI.setText(findTestObject('Page_Checkout  University of Michigan Campus Bookstore/input_Enter CSV_regularPaymentCsv'), 
-    '123', FailureHandling.OPTIONAL)
+WebUI.setText(findTestObject('Page_Checkout  UNH/input_Student ID Number_primaryProviderStudentId'), findTestData('Site 235/SFA Accounts').getValue(
+        1, 6))
 
-WebUI.click(findTestObject('Page_Checkout  UNH/button_Apply Credit Card 235 Visa Joe'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Page_Checkout  UNH/button_Apply SFA Funds'))
 
-WebUI.click(findTestObject('Payment Info Proceed to Checkout/a_Proceed to Checkout'))
+WebUI.click(findTestObject('Page_Checkout  UNH/Proceed to Checkout'))
 
-WebUI.click(findTestObject('Page_Checkout  University of Michigan Campus Bookstore/button_Place Order'))
+not_run: WebUI.click(findTestObject('Page_Checkout  University of Michigan Campus Bookstore/button_Place Order'))
 

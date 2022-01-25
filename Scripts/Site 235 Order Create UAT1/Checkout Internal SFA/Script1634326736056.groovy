@@ -21,7 +21,9 @@ WebUI.openBrowser('')
 
 WebUI.maximizeWindow()
 
-WebUI.navigateToUrl('https://unh.uat1.helixbeta.com/')
+not_run: WebUI.navigateToUrl('https://unh.uat1.helixbeta.com/')
+
+WebUI.navigateToUrl(findTestData('Site 235/New Test Data').getValue(1, 20))
 
 WebUI.mouseOver(findTestObject('Page_Apparel, Gifts  Textbooks  University of Michigan Campus Bookstore/button_Sign In  Create Account'))
 
@@ -33,13 +35,15 @@ WebUI.setText(findTestObject('Page_Apparel, Gifts  Textbooks  University of Mich
 
 WebUI.click(findTestObject('Page_Apparel, Gifts  Textbooks  University of Michigan Campus Bookstore/a_Sign In'))
 
-WebUI.setText(findTestObject('Page_Apparel, Gifts  Textbooks  University of Michigan Campus Bookstore/input_Enter your search details'), 
+WebUI.click(findTestObject('Site 235/Buy Again'))
+
+not_run: WebUI.setText(findTestObject('Page_Apparel, Gifts  Textbooks  University of Michigan Campus Bookstore/input_Enter your search details'), 
     findTestData('Site 235/New Test Data').getValue(1, 2))
 
-WebUI.sendKeys(findTestObject('Page_Apparel, Gifts  Textbooks  University of Michigan Campus Bookstore/input_Enter your search details'), 
+not_run: WebUI.sendKeys(findTestObject('Page_Apparel, Gifts  Textbooks  University of Michigan Campus Bookstore/input_Enter your search details'), 
     Keys.chord(Keys.ENTER))
 
-WebUI.click(findTestObject('Page_TEST BOOK 1  University of Michigan Campus Bookstore/a_Buy again'))
+not_run: WebUI.click(findTestObject('Page_TEST BOOK 1  University of Michigan Campus Bookstore/a_Buy again'))
 
 WebUI.mouseOver(findTestObject('Page_Apparel, Gifts  Textbooks  UNH/span_0 items'))
 
@@ -51,12 +55,16 @@ WebUI.click(findTestObject('Page_Your Shopping Cart  University of Michigan Camp
 
 WebUI.click(findTestObject('Shipping Method/button_Continue'))
 
+WebUI.click(findTestObject('COOP pop up/co_op_box_Close'), FailureHandling.OPTIONAL)
+
 WebUI.click(findTestObject('Page_Checkout  UNH/span_Financial Aid'))
 
 WebUI.click(findTestObject('Page_Checkout  UNH/div_Internal Provider_control__indicator'))
 
-WebUI.setText(findTestObject('Page_Checkout  UNH/input_Student ID Number_primaryProviderStudentId'), findTestData('Site 235/SFA Accounts').getValue(
-        1, 4))
+WebUI.setText(findTestObject('Site 235/SFA Student ID'), findTestData('Site 235/SFA Accounts').getValue(1, 7))
+
+not_run: WebUI.setText(findTestObject('Page_Checkout  UNH/input_Student ID Number_primaryProviderStudentId'), findTestData(
+        'Site 235/SFA Accounts').getValue(1, 6))
 
 WebUI.click(findTestObject('Page_Checkout  UNH/button_Apply SFA Funds'))
 

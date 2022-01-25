@@ -23,9 +23,9 @@ import java.awt.datatransfer.StringSelection as StringSelection
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://unh.uat1.helixbeta.com/')
-
 WebUI.maximizeWindow()
+
+WebUI.navigateToUrl('https://unh.uat1.helixbeta.com/')
 
 WebUI.mouseOver(findTestObject('Page_Apparel, Gifts  Textbooks  University of Michigan Campus Bookstore/button_Sign In  Create Account'))
 

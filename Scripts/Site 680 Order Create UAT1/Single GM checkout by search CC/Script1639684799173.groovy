@@ -25,7 +25,7 @@ WebUI.openBrowser('')
 
 WebUI.maximizeWindow()
 
-WebUI.navigateToUrl('https://michigan.uat1.helixbeta.com/Categories/School-Supplies-ArtTech/Art-Supplies/Storage--Presentation/Art-Bins-Tubes-Portfolios/ArtBin-Pen--Nib-Box/p/83917')
+WebUI.navigateToUrl('https://michigan.uat1.helixbeta.com/Categories/School-Supplies-ArtTech/Art-Supplies/Paints--Mediums/Art--Drafting-Pencils/General-Pencil-Charcoal-Pencil-4B/p/303561')
 
 WebUI.mouseOver(findTestObject('Page_Apparel, Gifts  Textbooks  University of Michigan Campus Bookstore/button_Sign In  Create Account'))
 
@@ -57,7 +57,7 @@ WebUI.click(findTestObject('Page_Your Shopping Cart  UNH/a_No Thanks, Ill  Go It
 
 WebUI.click(findTestObject('Shipping Method/button_Continue'))
 
-WebUI.click(findTestObject('COOP pop up/co_op_box_Close'))
+WebUI.click(findTestObject('COOP pop up/co_op_box_Close'), FailureHandling.OPTIONAL)
 
 WebUI.click(findTestObject('Page_Checkout  University of Michigan Campus Bookstore/button_Saved Payment Methods New'), FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -88,5 +88,5 @@ WebUI.click(findTestObject('COOP pop up/co_op_box_Close'), FailureHandling.OPTIO
 
 WebUI.click(findTestObject('Payment Info Proceed to Checkout/a_Proceed to Checkout'))
 
-WebUI.click(findTestObject('Page_Checkout  University of Michigan Campus Bookstore/button_Place Order'))
+not_run: WebUI.click(findTestObject('Page_Checkout  University of Michigan Campus Bookstore/button_Place Order'))
 

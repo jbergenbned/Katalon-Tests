@@ -4,5 +4,6 @@
    <name>Checkout Valid UDC</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>e96477c6-a02a-43f6-bb68-8169e7948cdf</testCaseGuid>
 </TestCaseEntity>

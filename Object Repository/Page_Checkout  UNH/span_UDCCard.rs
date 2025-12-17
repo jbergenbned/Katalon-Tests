@@ -6,21 +6,21 @@
    <elementGuidId>1541ca32-0429-44ac-be14-e3108a4838f5</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value></value>
-      </entry>
-      <entry>
          <key>BASIC</key>
          <value>//*[(text() = '
         UDCCard' or . = '
         UDCCard')]</value>
       </entry>
       <entry>
+         <key>CSS</key>
+      </entry>
+      <entry>
          <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='PostSecondary Enrollment Options'])[1]/following::span[2]</value>
+         <value>//span[@class='payment-mode-option-title']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -28,6 +28,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
+      <webElementGuid>3de93a8e-0ea0-49f1-8fde-5fa6f7f0bc63</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -35,6 +36,7 @@
       <name>class</name>
       <type>Main</type>
       <value>payment-mode-option-title</value>
+      <webElementGuid>3c6dde5e-5f31-448a-a686-921df91c1e4d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -42,6 +44,7 @@
       <name>role</name>
       <type>Main</type>
       <value>link</value>
+      <webElementGuid>b8d1170f-be53-4293-9880-422b78d35a53</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -50,6 +53,7 @@
       <type>Main</type>
       <value>
         UDCCard</value>
+      <webElementGuid>8399f1a1-d0df-4dc7-885f-85f142a3374b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -57,6 +61,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>/html[1]/body[@class=&quot;page-multiStepCheckoutSummaryPage pageType-ContentPage template-pages-MultiStepCheckoutSummaryPageTemplate pageLabel-multiStepCheckoutSummary smartedit-page-uid-multiStepCheckoutSummaryPage smartedit-page-uuid-eyJpdGVtSWQiOiJtdWx0aVN0ZXBDaGVja291dFN1bW1hcnlQYWdlIiwiY2F0YWxvZ0lkIjoibWFzdGVyQ29udGVudENhdGFsb2ciLCJjYXRhbG9nVmVyc2lvbiI6Ik9ubGluZSJ9 smartedit-catalog-version-uuid-masterContentCatalog/Online  language-en&quot;]/main[1]/div[@class=&quot;main__inner-wrapper&quot;]/div[@class=&quot;container bned-checkout-container bned-payment-accessibility-wp js-bned-payment-accessibility-wp&quot;]/div[@class=&quot;bned-steps-container&quot;]/div[@class=&quot;bned-step-body-container payment&quot;]/div[@class=&quot;checkout-steps&quot;]/div[@class=&quot;step-body&quot;]/div[@class=&quot;checkout-paymentmethod&quot;]/div[@class=&quot;bned-rental-payment-content-editor&quot;]/section[@class=&quot;payment-info-wp&quot;]/div[@class=&quot;payment-modes-list-wp&quot;]/ul[@class=&quot;payment-modes-list js-payment-modes-list&quot;]/li[@class=&quot;payment-mode-option&quot;]/span[@class=&quot;payment-mode-option-title&quot;]</value>
+      <webElementGuid>a654c2ea-f40b-45a7-9329-748211ec135e</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -64,6 +69,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='PostSecondary Enrollment Options'])[1]/following::span[2]</value>
+      <webElementGuid>ff133452-12d5-465b-b06e-ab2df990caf0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -71,6 +77,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Student Financial Aid'])[1]/following::span[2]</value>
+      <webElementGuid>d2d3bac5-4093-4e48-90b8-0a683cfb8a89</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,6 +85,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Change Payment Method'])[1]/preceding::span[4]</value>
+      <webElementGuid>ce07fb3c-299f-49d6-a18c-44384b764ffe</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,6 +93,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='UDCCard']/parent::*</value>
+      <webElementGuid>39153f45-9ffb-40d6-9c1a-07bc16ce402a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -92,5 +101,6 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//li[3]/span[2]</value>
+      <webElementGuid>f89120e4-81eb-41c7-839e-3391ef6e0fcd</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

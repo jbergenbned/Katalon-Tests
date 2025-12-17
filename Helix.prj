@@ -4,9 +4,12 @@
    <name>Finance</name>
    <tag></tag>
    <UUID>22bb8aa5-c66e-4902-a4a7-193c5c979e91</UUID>
+   <freeLicense>false</freeLicense>
    <migratedVersion>5.9.0</migratedVersion>
+   <modifiedEdition>ENTERPRISE</modifiedEdition>
+   <modifiedVersion>10.4.1</modifiedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
-   <projectFileLocation>C:\Users\jbergen\OneDrive - Barnes &amp; Noble College\Desktop\Joes Master Files\Finance Regression\Helix.prj</projectFileLocation>
+   <projectFileLocation>C:\Users\jbergen\Katalon Studio\Helix Order and Fulfillment\Helix.prj</projectFileLocation>
    <sourceContent>
       <sourceFolderList>
          <sourceFolderConfiguration>
@@ -25,5 +28,6 @@
          </systemFolderConfiguration>
       </systemFolderList>
    </sourceContent>
+   <timeStampInProperties>true</timeStampInProperties>
    <type>WEBUI</type>
 </Project>

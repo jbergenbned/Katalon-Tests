@@ -4,5 +4,6 @@
    <name>Checkout Internal SFA</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>5c8e6046-6e7c-452d-bfc1-e94dc47f958b</testCaseGuid>
 </TestCaseEntity>

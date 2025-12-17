@@ -23,67 +23,75 @@ WebUI.maximizeWindow(FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.navigateToUrl('https://michigan.uat1.helixbeta.com/', FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.mouseOver(findTestObject('Page_Apparel, Gifts  Textbooks  University of Michigan Campus Bookstore/button_Sign In  Create Account'), 
-    FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Page_Apparel, Gifts  Textbooks  University of Michigan Campus Bookstore/button_Sign In  Create Account'))
 
-WebUI.setText(findTestObject('Page_Apparel, Gifts  Textbooks  University of Michigan Campus Bookstore/input_Email address_j_username'), 
-    findTestData('Site 235/Helix Accounts').getValue(1, 2), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Page_Apparel, Gifts  Textbooks  University of Michigan Campus Bookstore/input_Email address_email'))
 
-WebUI.setText(findTestObject('Page_Apparel, Gifts  Textbooks  University of Michigan Campus Bookstore/input_Password_j_password'), 
-    findTestData('Site 235/Helix Accounts').getValue(2, 2), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.setText(findTestObject('Page_Apparel, Gifts  Textbooks  University of Michigan Campus Bookstore/input_Email address_email'), 
+    'jbergen@bncollege.com')
 
-WebUI.click(findTestObject('Page_Apparel, Gifts  Textbooks  University of Michigan Campus Bookstore/a_Sign In'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Page_Apparel, Gifts  Textbooks  University of Michigan Campus Bookstore/input_Password_password'))
 
-not_run: WebUI.click(findTestObject('Page_Sharpie Pen 2 Pack Black  University of Michigan Campus Bookstore/span_Ship to Address_checkmark PDP'), 
-    FailureHandling.OPTIONAL)
+WebUI.setText(findTestObject('Page_Apparel, Gifts  Textbooks  University of Michigan Campus Bookstore/input_Password_password'), 
+    'Newpass1!')
 
-not_run: WebUI.click(findTestObject('Page_Sharpie Pen 2 Pack Black  University of Michigan Campus Bookstore/button_Add to cart PDP GM'), 
-    FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('Site 680 objects/user account sign in button'))
 
-not_run: WebUI.click(findTestObject('Page_Complete Solfeggi for Tuba  UNH/a_Buy again'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('Page_Apparel, Gifts  Textbooks  University of Michigan Campus Bookstore/input_Enter your search details'))
 
 WebUI.setText(findTestObject('Page_Apparel, Gifts  Textbooks  University of Michigan Campus Bookstore/input_Enter your search details'), 
-    findTestData('Site 680/Site 680 Text Book').getValue(1, 4), FailureHandling.CONTINUE_ON_FAILURE)
+    findTestData('Site 680/Site 680 Text Book').getValue(1, 89), FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.sendKeys(findTestObject('Page_Apparel, Gifts  Textbooks  University of Michigan Campus Bookstore/input_Enter your search details'), 
     Keys.chord(Keys.ENTER), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_Earthquake Nation  University of Michigan Campus Bookstore/a_Add to cart'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('Site 680 objects/course info submit button'))
 
-WebUI.click(findTestObject('Page_TEST BOOK 1  University of Michigan Campus Bookstore/a_Buy again'), FailureHandling.OPTIONAL)
+WebUI.delay(2)
 
-WebUI.mouseOver(findTestObject('Page_Apparel, Gifts  Textbooks  UNH/span_0 items'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Site 680 objects/new print book'))
 
-WebUI.click(findTestObject('Page_University of Michigan Campus Bookstore/a_view cart (1 item)master'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Site 680 objects/add to cart'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('Page_Your Shopping Cart  University of Michigan Campus Bookstore/label_Ship to Address'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('Site 680 objects/Mini Cart'))
+
+not_run: WebUI.click(findTestObject('Page_Earthquake Nation  University of Michigan Campus Bookstore/a_Add to cart'), FailureHandling.OPTIONAL)
+
+not_run: WebUI.click(findTestObject('Page_TEST BOOK 1  University of Michigan Campus Bookstore/a_Buy again'), FailureHandling.OPTIONAL)
+
+not_run: WebUI.mouseOver(findTestObject('Page_Apparel, Gifts  Textbooks  UNH/span_0 items'), FailureHandling.CONTINUE_ON_FAILURE)
+
+not_run: WebUI.click(findTestObject('Page_University of Michigan Campus Bookstore/a_view cart (1 item)master'), FailureHandling.CONTINUE_ON_FAILURE)
+
+not_run: WebUI.click(findTestObject('Page_Your Shopping Cart  University of Michigan Campus Bookstore/label_Ship to Address'), 
+    FailureHandling.OPTIONAL)
 
 not_run: WebUI.setText(findTestObject('Page_Your Shopping Cart  University of Michigan Campus Bookstore/input_Enter Promo Code_voucherCode'), 
     'save60', FailureHandling.CONTINUE_ON_FAILURE)
 
 not_run: WebUI.click(findTestObject('Page_Your Shopping Cart  University of Michigan Campus Bookstore/button_Add'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_Your Shopping Cart  University of Michigan Campus Bookstore/button_Proceed To Checkout'), 
+not_run: WebUI.click(findTestObject('Page_Your Shopping Cart  University of Michigan Campus Bookstore/button_Proceed To Checkout'), 
     FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_Your Shopping Cart  UNH/a_No Thanks, Ill  Go It Alone'), FailureHandling.OPTIONAL)
+not_run: WebUI.click(findTestObject('Page_Your Shopping Cart  UNH/a_No Thanks, Ill  Go It Alone'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('Shipping Method/button_Continue'), FailureHandling.CONTINUE_ON_FAILURE)
+not_run: WebUI.click(findTestObject('Shipping Method/button_Continue'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('COOP pop up/co_op_box_Close'), FailureHandling.OPTIONAL)
+not_run: WebUI.click(findTestObject('COOP pop up/co_op_box_Close'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('Page_Checkout  University of Michigan Campus Bookstore/span_ASCA SFA Only'), FailureHandling.CONTINUE_ON_FAILURE)
+not_run: WebUI.click(findTestObject('Page_Checkout  University of Michigan Campus Bookstore/span_ASCA SFA Only'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_Checkout  UNH/div_Internal Provider_control__indicator'), FailureHandling.CONTINUE_ON_FAILURE)
+not_run: WebUI.click(findTestObject('Page_Checkout  UNH/div_Internal Provider_control__indicator'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.setText(findTestObject('Site 680 objects/Student ID Number NEW'), findTestData('Site 235/SFA Accounts').getValue(1, 
-        8), FailureHandling.CONTINUE_ON_FAILURE)
+not_run: WebUI.setText(findTestObject('Site 680 objects/Student ID Number NEW'), findTestData('Site 235/SFA Accounts').getValue(
+        1, 8), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_Checkout  UNH/button_Apply SFA Funds'), FailureHandling.CONTINUE_ON_FAILURE)
+not_run: WebUI.click(findTestObject('Page_Checkout  UNH/button_Apply SFA Funds'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('COOP pop up/co_op_box_Close'), FailureHandling.OPTIONAL)
+not_run: WebUI.click(findTestObject('COOP pop up/co_op_box_Close'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('Page_Checkout  UNH/Proceed to Checkout'), FailureHandling.CONTINUE_ON_FAILURE)
+not_run: WebUI.click(findTestObject('Page_Checkout  UNH/Proceed to Checkout'), FailureHandling.CONTINUE_ON_FAILURE)
 
 not_run: WebUI.click(findTestObject('Page_Checkout  University of Michigan Campus Bookstore/button_Place Order'), FailureHandling.CONTINUE_ON_FAILURE)
 

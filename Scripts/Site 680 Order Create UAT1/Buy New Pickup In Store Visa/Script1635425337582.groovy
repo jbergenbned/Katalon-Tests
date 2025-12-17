@@ -53,45 +53,33 @@ WebUI.click(findTestObject('Site 680 objects/new print book'))
 
 WebUI.click(findTestObject('Site 680 objects/add to cart'), FailureHandling.OPTIONAL)
 
+WebUI.click(findTestObject('Site 680 objects/buy again button'), FailureHandling.OPTIONAL)
+
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Site 680 objects/Mini Cart'))
 
-not_run: WebUI.click(findTestObject('Page_Earthquake Nation  University of Michigan Campus Bookstore/a_Add to cart'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('Site 680 objects/shipping cart proceed to checkout'))
 
-not_run: WebUI.click(findTestObject('Page_TEST BOOK 1  University of Michigan Campus Bookstore/a_Buy again'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('Site 680 objects/book condition proceed to checkout'))
 
-not_run: WebUI.mouseOver(findTestObject('Page_Apparel, Gifts  Textbooks  UNH/span_0 items'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Site 680 objects/pickup info continue button'))
 
-not_run: WebUI.click(findTestObject('Page_University of Michigan Campus Bookstore/a_view cart (1 item)master'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Site 680 objects/coop close'))
 
-not_run: WebUI.click(findTestObject('Page_Your Shopping Cart  University of Michigan Campus Bookstore/label_Ship to Address'), 
-    FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('Site 680 objects/credit debit payment option'))
 
-not_run: WebUI.setText(findTestObject('Page_Your Shopping Cart  University of Michigan Campus Bookstore/input_Enter Promo Code_voucherCode'), 
-    'save60', FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Site 680 objects/saved payment method'))
 
-not_run: WebUI.click(findTestObject('Page_Your Shopping Cart  University of Michigan Campus Bookstore/button_Add'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Site 680 objects/visa'))
 
-not_run: WebUI.click(findTestObject('Page_Your Shopping Cart  University of Michigan Campus Bookstore/button_Proceed To Checkout'), 
-    FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Site 680 objects/cc cvc'))
 
-not_run: WebUI.click(findTestObject('Page_Your Shopping Cart  UNH/a_No Thanks, Ill  Go It Alone'), FailureHandling.OPTIONAL)
+WebUI.setText(findTestObject('Site 680 objects/cc cvc'), '737')
 
-not_run: WebUI.click(findTestObject('Shipping Method/button_Continue'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Site 680 objects/apply cc'))
 
-not_run: WebUI.click(findTestObject('COOP pop up/co_op_box_Close'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('Site 680 objects/payment info proceed to checkout'))
 
-not_run: WebUI.click(findTestObject('Page_Checkout  University of Michigan Campus Bookstore/span_ASCA SFA Only'), FailureHandling.CONTINUE_ON_FAILURE)
-
-not_run: WebUI.click(findTestObject('Page_Checkout  UNH/div_Internal Provider_control__indicator'), FailureHandling.CONTINUE_ON_FAILURE)
-
-not_run: WebUI.setText(findTestObject('Site 680 objects/Student ID Number NEW'), findTestData('Site 235/SFA Accounts').getValue(
-        1, 8), FailureHandling.CONTINUE_ON_FAILURE)
-
-not_run: WebUI.click(findTestObject('Page_Checkout  UNH/button_Apply SFA Funds'), FailureHandling.CONTINUE_ON_FAILURE)
-
-not_run: WebUI.click(findTestObject('COOP pop up/co_op_box_Close'), FailureHandling.OPTIONAL)
-
-not_run: WebUI.click(findTestObject('Page_Checkout  UNH/Proceed to Checkout'), FailureHandling.CONTINUE_ON_FAILURE)
-
-not_run: WebUI.click(findTestObject('Page_Checkout  University of Michigan Campus Bookstore/button_Place Order'), FailureHandling.CONTINUE_ON_FAILURE)
+not_run: WebUI.click(findTestObject('Site 680 objects/place order button'))
 

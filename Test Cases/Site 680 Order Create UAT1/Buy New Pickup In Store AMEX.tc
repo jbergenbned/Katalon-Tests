@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Buy New Pickup In Store AMEX</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>9518b99e-a656-4844-8e89-3eb88ec74023</testCaseGuid>
+</TestCaseEntity>

@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Finish Payment Button</name>
+   <name>start customer pickup button</name>
    <tag></tag>
-   <elementGuidId>82ed05c6-4da8-4392-9e8c-87b84766ae60</elementGuidId>
+   <elementGuidId>c8ffb692-83ee-4751-9ee6-7f3e6605103b</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
+         <key>BASIC</key>
          <value></value>
       </entry>
       <entry>
-         <key>BASIC</key>
-      </entry>
-      <entry>
          <key>XPATH</key>
-         <value>//button[@type='button' and normalize-space(text())='Finish Payment']</value>
+         <value>//button[text()=' Start Customer Pickup ']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Finish Payment Button</name>
+   <name>pack hamburger menu</name>
    <tag></tag>
-   <elementGuidId>82ed05c6-4da8-4392-9e8c-87b84766ae60</elementGuidId>
+   <elementGuidId>414a87cc-c25a-4139-a940-6c5e2b70b27a</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
+         <key>BASIC</key>
          <value></value>
       </entry>
       <entry>
-         <key>BASIC</key>
-      </entry>
-      <entry>
          <key>XPATH</key>
-         <value>//button[@type='button' and normalize-space(text())='Finish Payment']</value>
+         <value>//span[contains(@class,'app-icon-more_active_vert_20') and @tid='undefinedMoreOptionsButton']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

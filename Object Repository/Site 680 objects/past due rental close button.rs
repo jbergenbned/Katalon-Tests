@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Finish Payment Button</name>
+   <name>past due rental close button</name>
    <tag></tag>
-   <elementGuidId>82ed05c6-4da8-4392-9e8c-87b84766ae60</elementGuidId>
+   <elementGuidId>348a346f-05b1-4b6c-bd78-c2861c1b1b73</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
+         <key>BASIC</key>
          <value></value>
       </entry>
       <entry>
-         <key>BASIC</key>
-      </entry>
-      <entry>
          <key>XPATH</key>
-         <value>//button[@type='button' and normalize-space(text())='Finish Payment']</value>
+         <value>//button[@tid='ModalCancel' and text()='Close']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

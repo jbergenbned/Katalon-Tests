@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Finish Payment Button</name>
+   <name>confirm all products picked up yes button</name>
    <tag></tag>
-   <elementGuidId>82ed05c6-4da8-4392-9e8c-87b84766ae60</elementGuidId>
+   <elementGuidId>6b6dff01-65a4-410c-a0b3-d53d598583ef</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
+         <key>BASIC</key>
          <value></value>
       </entry>
       <entry>
-         <key>BASIC</key>
-      </entry>
-      <entry>
          <key>XPATH</key>
-         <value>//button[@type='button' and normalize-space(text())='Finish Payment']</value>
+         <value>//button[@tid='isfpopup-confirmation-ok']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

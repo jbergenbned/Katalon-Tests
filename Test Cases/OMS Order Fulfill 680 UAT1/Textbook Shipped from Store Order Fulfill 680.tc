@@ -4,5 +4,6 @@
    <name>Textbook Shipped from Store Order Fulfill 680</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>7f769576-5654-4a9d-b0f5-09164ea514c5</testCaseGuid>
 </TestCaseEntity>

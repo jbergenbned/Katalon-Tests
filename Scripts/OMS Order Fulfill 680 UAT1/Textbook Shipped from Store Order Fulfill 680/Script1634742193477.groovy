@@ -33,276 +33,335 @@ WebUI.setText(findTestObject('Site 235/Page_IBM Store Engagement/input_Password_
 
 WebUI.click(findTestObject('Page_IBM Store Engagement/span_Login'))
 
-not_run: WebUI.delay(5, FailureHandling.OPTIONAL)
+WebUI.delay(5, FailureHandling.OPTIONAL)
 
-WebUI.setText(findTestObject('Site 235/Page_IBM Store Engagement/input_Not Started_pick_shipmentOrderBarcodeScanner'), '01092011')
+WebUI.setText(findTestObject('Site 235/Page_IBM Store Engagement/input_Not Started_pick_shipmentOrderBarcodeScanner'), '1005778082')
 
 WebUI.sendKeys(findTestObject('Site 235/Page_IBM Store Engagement/input_Not Started_pick_shipmentOrderBarcodeScanner'), 
     Keys.chord(Keys.ENTER))
 
-not_run: WebUI.click(findTestObject('Page_IBM Store Engagement/span_Goto Shipment Summary'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('Page_IBM Store Engagement/span_Pick All'), FailureHandling.OPTIONAL)
 
-not_run: WebUI.click(findTestObject('Page_IBM Store Engagement/span_Continue Packing'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('Page_IBM Store Engagement/span_Finish Pick'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/span_Pick All'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Page_IBM Store Engagement/span_Process Transaction'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/span_OK'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Site 235/Page_IBM Store Engagement/Finish Payment Button'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/span_Finish Pick'), FailureHandling.STOP_ON_FAILURE)
+not_run: WebUI.click(findTestObject('Site 680 objects/start customer pickup button'))
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/span_Yes'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Site 680 objects/past due rental close button'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/span_Process Transaction'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Site 680 objects/pack order button'))
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/span_OK'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Site 680 objects/pack all button'))
 
-WebUI.click(findTestObject('Site 235/Page_IBM Store Engagement/Finish Payment Button'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Site 680 objects/pounds input box'))
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/span_Pack Order'), FailureHandling.STOP_ON_FAILURE)
+WebUI.clearText(findTestObject('Site 680 objects/pounds input box'))
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/span_Pack All'))
+WebUI.setText(findTestObject('Site 680 objects/pounds input box'), '1')
 
-not_run: WebUI.click(findTestObject('Page_IBM Store Engagement/products already packed span_OK'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('Site 680 objects/pack hamburger menu'))
 
-WebUI.setText(findTestObject('Page_IBM Store Engagement/input_Tracking No_weight'), '1', FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('Site 680 objects/finish pickup button'))
 
-WebUI.click(findTestObject('Site 235/Page_IBM Store Engagement/button_Update'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('Site 680 objects/confirm all products picked up yes button'))
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/label_Print Packing Slip'))
+WebUI.click(findTestObject('Site 680 objects/pickup order processed OK button'))
 
-WebUI.delay(3)
+WebUI.click(findTestObject('Site 680 objects/pickup done button'))
 
-WebUI.switchToWindowIndex(1)
+not_run: WebUI.click(findTestObject('Site 680 objects/New Print Pickup Label'))
 
-WebUI.executeJavaScript('return document.querySelector("body > print-preview-app").shadowRoot.querySelector("#sidebar").shadowRoot.querySelector("print-preview-button-strip").shadowRoot.querySelector("div > cr-button.action-button")', 
+not_run: WebUI.switchToWindowIndex(1)
+
+not_run: WebUI.executeJavaScript('return document.querySelector("body > print-preview-app").shadowRoot.querySelector("#sidebar").shadowRoot.querySelector("print-preview-button-strip").shadowRoot.querySelector("div > cr-button.action-button")', 
     []).click()
 
-WebUI.delay(1)
+not_run: WebUI.delay(3)
 
-Robot robot = new Robot()
+not_run: Robot robot = new Robot()
 
-Thread.sleep(1000)
+not_run: Thread.sleep(1000)
 
-robot.keyPress(KeyEvent.VK_6)
+not_run: robot.keyPress(KeyEvent.VK_6)
 
-robot.keyRelease(KeyEvent.VK_6)
+not_run: robot.keyRelease(KeyEvent.VK_6)
 
-robot.keyPress(KeyEvent.VK_8)
+not_run: robot.keyPress(KeyEvent.VK_8)
 
-robot.keyRelease(KeyEvent.VK_8)
+not_run: robot.keyRelease(KeyEvent.VK_8)
 
-robot.keyPress(KeyEvent.VK_0)
+not_run: robot.keyPress(KeyEvent.VK_0)
 
-robot.keyRelease(KeyEvent.VK_0)
+not_run: robot.keyRelease(KeyEvent.VK_0)
 
-robot.keyPress(KeyEvent.VK_SPACE)
+not_run: robot.keyPress(KeyEvent.VK_SPACE)
 
-robot.keyRelease(KeyEvent.VK_SPACE)
+not_run: robot.keyRelease(KeyEvent.VK_SPACE)
 
-robot.keyPress(KeyEvent.VK_P)
+not_run: robot.keyPress(KeyEvent.VK_P)
 
-robot.keyRelease(KeyEvent.VK_P)
+not_run: robot.keyRelease(KeyEvent.VK_P)
 
-robot.keyPress(KeyEvent.VK_A)
+not_run: robot.keyPress(KeyEvent.VK_U)
 
-robot.keyRelease(KeyEvent.VK_A)
+not_run: robot.keyRelease(KeyEvent.VK_U)
 
-robot.keyPress(KeyEvent.VK_C)
+not_run: robot.keyPress(KeyEvent.VK_SPACE)
 
-robot.keyRelease(KeyEvent.VK_C)
+not_run: robot.keyRelease(KeyEvent.VK_SPACE)
 
-robot.keyPress(KeyEvent.VK_K)
+not_run: robot.keyPress(KeyEvent.VK_L)
 
-robot.keyRelease(KeyEvent.VK_K)
+not_run: robot.keyRelease(KeyEvent.VK_L)
 
-robot.keyPress(KeyEvent.VK_I)
+not_run: robot.keyPress(KeyEvent.VK_A)
 
-robot.keyRelease(KeyEvent.VK_I)
+not_run: robot.keyRelease(KeyEvent.VK_A)
 
-robot.keyPress(KeyEvent.VK_N)
+not_run: robot.keyPress(KeyEvent.VK_B)
 
-robot.keyRelease(KeyEvent.VK_N)
+not_run: robot.keyRelease(KeyEvent.VK_B)
 
-robot.keyPress(KeyEvent.VK_G)
+not_run: robot.keyPress(KeyEvent.VK_E)
 
-robot.keyRelease(KeyEvent.VK_G)
+not_run: robot.keyRelease(KeyEvent.VK_E)
 
-robot.keyPress(KeyEvent.VK_SPACE)
+not_run: robot.keyPress(KeyEvent.VK_L)
 
-robot.keyRelease(KeyEvent.VK_SPACE)
+not_run: robot.keyRelease(KeyEvent.VK_L)
 
-robot.keyPress(KeyEvent.VK_S)
+not_run: robot.keyPress(KeyEvent.VK_TAB)
 
-robot.keyRelease(KeyEvent.VK_S)
+not_run: Thread.sleep(500)
 
-robot.keyPress(KeyEvent.VK_L)
+not_run: robot.keyPress(KeyEvent.VK_TAB)
 
-robot.keyRelease(KeyEvent.VK_L)
+not_run: Thread.sleep(500)
 
-robot.keyPress(KeyEvent.VK_I)
+not_run: robot.keyPress(KeyEvent.VK_TAB)
 
-robot.keyRelease(KeyEvent.VK_I)
+not_run: Thread.sleep(500)
 
-robot.keyPress(KeyEvent.VK_P)
+not_run: robot.keyPress(KeyEvent.VK_ENTER)
 
-robot.keyRelease(KeyEvent.VK_P)
+not_run: WebUI.switchToDefaultContent()
 
-robot.keyPress(KeyEvent.VK_SPACE)
+not_run: WebUI.delay(3)
 
-robot.keyRelease(KeyEvent.VK_SPACE)
+not_run: WebUI.click(findTestObject('Site 235/Page_IBM Store Engagement/button_Start Customer Pickup'))
 
-robot.keyPress(KeyEvent.VK_O)
+not_run: WebUI.delay(3)
 
-robot.keyRelease(KeyEvent.VK_O)
+not_run: WebUI.click(findTestObject('Site 235/Page_IBM Store Engagement/button_Print Runner Slip'), FailureHandling.OPTIONAL)
 
-robot.keyPress(KeyEvent.VK_R)
+not_run: WebUI.switchToWindowIndex(1, FailureHandling.OPTIONAL)
 
-robot.keyRelease(KeyEvent.VK_R)
+not_run: WebUI.executeJavaScript('return document.querySelector("body > print-preview-app").shadowRoot.querySelector("#sidebar").shadowRoot.querySelector("print-preview-button-strip").shadowRoot.querySelector("div > cr-button.action-button")', 
+    []).click()
 
-robot.keyPress(KeyEvent.VK_D)
+not_run: WebUI.delay(3)
 
-robot.keyRelease(KeyEvent.VK_D)
+not_run: Thread.sleep(1000)
 
-robot.keyPress(KeyEvent.VK_E)
+not_run: robot.keyPress(KeyEvent.VK_6)
 
-robot.keyRelease(KeyEvent.VK_E)
+not_run: robot.keyRelease(KeyEvent.VK_6)
 
-robot.keyPress(KeyEvent.VK_R)
+not_run: robot.keyPress(KeyEvent.VK_8)
 
-robot.keyRelease(KeyEvent.VK_R)
+not_run: robot.keyRelease(KeyEvent.VK_8)
 
-robot.keyPress(KeyEvent.VK_TAB)
+not_run: robot.keyPress(KeyEvent.VK_0)
 
-Thread.sleep(500)
+not_run: robot.keyRelease(KeyEvent.VK_0)
 
-robot.keyPress(KeyEvent.VK_TAB)
+not_run: robot.keyPress(KeyEvent.VK_SPACE)
 
-Thread.sleep(500)
+not_run: robot.keyRelease(KeyEvent.VK_SPACE)
 
-robot.keyPress(KeyEvent.VK_TAB)
+not_run: robot.keyPress(KeyEvent.VK_R)
 
-Thread.sleep(500)
+not_run: robot.keyRelease(KeyEvent.VK_R)
 
-robot.keyPress(KeyEvent.VK_ENTER)
+not_run: robot.keyPress(KeyEvent.VK_U)
 
-WebUI.switchToDefaultContent()
+not_run: robot.keyRelease(KeyEvent.VK_U)
 
-WebUI.delay(1)
+not_run: robot.keyPress(KeyEvent.VK_N)
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/span_Finish Pack'))
+not_run: robot.keyRelease(KeyEvent.VK_N)
 
-WebUI.click(findTestObject('Page_IBM Store Engagement/span_Done'))
+not_run: robot.keyPress(KeyEvent.VK_N)
 
-WebUI.delay(3)
+not_run: robot.keyRelease(KeyEvent.VK_N)
 
-WebUI.click(findTestObject('Object Repository/Page_IBM Store Engagement/span_Hofstra University Bookstore_app-glyph_738071'))
+not_run: robot.keyPress(KeyEvent.VK_E)
 
-WebUI.setText(findTestObject('Object Repository/Page_IBM Store Engagement/input_Select box clear_global-search_ORDER__473b34'), 
-    '01092011')
+not_run: robot.keyRelease(KeyEvent.VK_E)
 
-WebUI.sendKeys(findTestObject('Object Repository/Page_IBM Store Engagement/input_Select box clear_global-search_ORDER__473b34'), 
+not_run: robot.keyPress(KeyEvent.VK_R)
+
+not_run: robot.keyRelease(KeyEvent.VK_R)
+
+not_run: robot.keyPress(KeyEvent.VK_SPACE)
+
+not_run: robot.keyRelease(KeyEvent.VK_SPACE)
+
+not_run: robot.keyPress(KeyEvent.VK_S)
+
+not_run: robot.keyRelease(KeyEvent.VK_S)
+
+not_run: robot.keyPress(KeyEvent.VK_L)
+
+not_run: robot.keyRelease(KeyEvent.VK_L)
+
+not_run: robot.keyPress(KeyEvent.VK_I)
+
+not_run: robot.keyRelease(KeyEvent.VK_I)
+
+not_run: robot.keyPress(KeyEvent.VK_P)
+
+not_run: robot.keyRelease(KeyEvent.VK_P)
+
+not_run: robot.keyPress(KeyEvent.VK_TAB)
+
+not_run: Thread.sleep(500)
+
+not_run: robot.keyPress(KeyEvent.VK_TAB)
+
+not_run: Thread.sleep(500)
+
+not_run: robot.keyPress(KeyEvent.VK_TAB)
+
+not_run: Thread.sleep(500)
+
+not_run: robot.keyPress(KeyEvent.VK_ENTER)
+
+not_run: WebUI.switchToDefaultContent()
+
+not_run: WebUI.delay(3)
+
+not_run: WebUI.click(findTestObject('Site 235/Page_IBM Store Engagement/button_Finish Pickup'))
+
+not_run: WebUI.click(findTestObject('Site 235/Page_IBM Store Engagement/button_All_Products_Picked_Up_Yes'))
+
+not_run: WebUI.click(findTestObject('Site 235/Page_IBM Store Engagement/button_Pickup_Order_Processed_Success_OK'))
+
+not_run: WebUI.click(findTestObject('Site 235/Page_IBM Store Engagement/button_Pickup_Done'))
+
+not_run: WebUI.delay(5)
+
+not_run: WebUI.click(findTestObject('Object Repository/Page_IBM Store Engagement/span_Hofstra University Bookstore_app-glyph_738071'))
+
+not_run: WebUI.setText(findTestObject('Object Repository/Page_IBM Store Engagement/input_Select box clear_global-search_ORDER__473b34'), 
+    '01052033')
+
+not_run: WebUI.sendKeys(findTestObject('Object Repository/Page_IBM Store Engagement/input_Select box clear_global-search_ORDER__473b34'), 
     Keys.chord(Keys.ENTER))
 
-WebUI.click(findTestObject('Site 235/Page_IBM Store Engagement/button_View Products'))
+not_run: WebUI.click(findTestObject('Site 235/Page_IBM Store Engagement/button_View Products'))
 
-WebUI.click(findTestObject('Site 235/Page_IBM Store Engagement/button_Print Order Summary'))
+not_run: WebUI.click(findTestObject('Site 235/Page_IBM Store Engagement/button_Print Order Summary'))
 
-WebUI.delay(2)
+not_run: WebUI.delay(2)
 
-WebUI.switchToWindowIndex(1)
+not_run: WebUI.switchToWindowIndex(1)
 
-WebUI.executeJavaScript('return document.querySelector("body > print-preview-app").shadowRoot.querySelector("#sidebar").shadowRoot.querySelector("print-preview-button-strip").shadowRoot.querySelector("div > cr-button.action-button")', 
+not_run: WebUI.executeJavaScript('return document.querySelector("body > print-preview-app").shadowRoot.querySelector("#sidebar").shadowRoot.querySelector("print-preview-button-strip").shadowRoot.querySelector("div > cr-button.action-button")', 
     []).click()
 
-WebUI.delay(2)
+not_run: WebUI.delay(2)
 
-Thread.sleep(1000)
+not_run: Thread.sleep(1000)
 
-robot.keyPress(KeyEvent.VK_6)
+not_run: robot.keyPress(KeyEvent.VK_6)
 
-robot.keyRelease(KeyEvent.VK_6)
+not_run: robot.keyRelease(KeyEvent.VK_6)
 
-robot.keyPress(KeyEvent.VK_8)
+not_run: robot.keyPress(KeyEvent.VK_8)
 
-robot.keyRelease(KeyEvent.VK_8)
+not_run: robot.keyRelease(KeyEvent.VK_8)
 
-robot.keyPress(KeyEvent.VK_0)
+not_run: robot.keyPress(KeyEvent.VK_0)
 
-robot.keyRelease(KeyEvent.VK_0)
+not_run: robot.keyRelease(KeyEvent.VK_0)
 
-robot.keyPress(KeyEvent.VK_SPACE)
+not_run: robot.keyPress(KeyEvent.VK_SPACE)
 
-robot.keyRelease(KeyEvent.VK_SPACE)
+not_run: robot.keyRelease(KeyEvent.VK_SPACE)
 
-robot.keyPress(KeyEvent.VK_O)
+not_run: robot.keyPress(KeyEvent.VK_O)
 
-robot.keyRelease(KeyEvent.VK_O)
+not_run: robot.keyRelease(KeyEvent.VK_O)
 
-robot.keyPress(KeyEvent.VK_R)
+not_run: robot.keyPress(KeyEvent.VK_R)
 
-robot.keyRelease(KeyEvent.VK_R)
+not_run: robot.keyRelease(KeyEvent.VK_R)
 
-robot.keyPress(KeyEvent.VK_D)
+not_run: robot.keyPress(KeyEvent.VK_D)
 
-robot.keyRelease(KeyEvent.VK_D)
+not_run: robot.keyRelease(KeyEvent.VK_D)
 
-robot.keyPress(KeyEvent.VK_E)
+not_run: robot.keyPress(KeyEvent.VK_E)
 
-robot.keyRelease(KeyEvent.VK_E)
+not_run: robot.keyRelease(KeyEvent.VK_E)
 
-robot.keyPress(KeyEvent.VK_R)
+not_run: robot.keyPress(KeyEvent.VK_R)
 
-robot.keyRelease(KeyEvent.VK_R)
+not_run: robot.keyRelease(KeyEvent.VK_R)
 
-robot.keyPress(KeyEvent.VK_SPACE)
+not_run: robot.keyPress(KeyEvent.VK_SPACE)
 
-robot.keyRelease(KeyEvent.VK_SPACE)
+not_run: robot.keyRelease(KeyEvent.VK_SPACE)
 
-robot.keyPress(KeyEvent.VK_S)
+not_run: robot.keyPress(KeyEvent.VK_S)
 
-robot.keyRelease(KeyEvent.VK_S)
+not_run: robot.keyRelease(KeyEvent.VK_S)
 
-robot.keyPress(KeyEvent.VK_U)
+not_run: robot.keyPress(KeyEvent.VK_U)
 
-robot.keyRelease(KeyEvent.VK_U)
+not_run: robot.keyRelease(KeyEvent.VK_U)
 
-robot.keyPress(KeyEvent.VK_M)
+not_run: robot.keyPress(KeyEvent.VK_M)
 
-robot.keyRelease(KeyEvent.VK_M)
+not_run: robot.keyRelease(KeyEvent.VK_M)
 
-robot.keyPress(KeyEvent.VK_M)
+not_run: robot.keyPress(KeyEvent.VK_M)
 
-robot.keyRelease(KeyEvent.VK_M)
+not_run: robot.keyRelease(KeyEvent.VK_M)
 
-robot.keyPress(KeyEvent.VK_A)
+not_run: robot.keyPress(KeyEvent.VK_A)
 
-robot.keyRelease(KeyEvent.VK_A)
+not_run: robot.keyRelease(KeyEvent.VK_A)
 
-robot.keyPress(KeyEvent.VK_R)
+not_run: robot.keyPress(KeyEvent.VK_R)
 
-robot.keyRelease(KeyEvent.VK_R)
+not_run: robot.keyRelease(KeyEvent.VK_R)
 
-robot.keyPress(KeyEvent.VK_Y)
+not_run: robot.keyPress(KeyEvent.VK_Y)
 
-robot.keyRelease(KeyEvent.VK_Y)
+not_run: robot.keyRelease(KeyEvent.VK_Y)
 
-robot.keyPress(KeyEvent.VK_TAB)
+not_run: robot.keyPress(KeyEvent.VK_TAB)
 
-Thread.sleep(500)
+not_run: Thread.sleep(500)
 
-robot.keyPress(KeyEvent.VK_TAB)
+not_run: robot.keyPress(KeyEvent.VK_TAB)
 
-Thread.sleep(500)
+not_run: Thread.sleep(500)
 
-robot.keyPress(KeyEvent.VK_TAB)
+not_run: robot.keyPress(KeyEvent.VK_TAB)
 
-Thread.sleep(500)
+not_run: Thread.sleep(500)
 
-robot.keyPress(KeyEvent.VK_ENTER)
+not_run: robot.keyPress(KeyEvent.VK_ENTER)
 
-WebUI.switchToDefaultContent()
+not_run: WebUI.switchToDefaultContent()
 
-WebUI.delay(1)
+not_run: WebUI.delay(1)
 
-WebUI.closeBrowser()
+not_run: WebUI.closeBrowser()
 

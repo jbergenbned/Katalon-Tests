@@ -6,15 +6,16 @@
    <elementGuidId>a9e47063-d336-4a40-8f86-bd41aff20d19</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='pick_shipmentOrderBarcodeScanner']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#pick_shipmentOrderBarcodeScanner</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@tid='ScanInput']</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,6 +23,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
+      <webElementGuid>4bd12ae6-a018-4153-8247-5004bc0e4c6c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -29,6 +31,7 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
+      <webElementGuid>5117bb08-0810-4482-a7d0-1e27dbfb0519</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -36,6 +39,7 @@
       <name>class</name>
       <type>Main</type>
       <value>form-control ng-pristine ng-untouched ng-valid ng-empty</value>
+      <webElementGuid>ea1cb3a4-8047-4909-98eb-46b12006da1b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -43,6 +47,7 @@
       <name>isc-i18n</name>
       <type>Main</type>
       <value>[placeholder]shipmentorderbarcode.LABEL_ScanPickBarCode[}{][aria-label]shipmentorderbarcode.LABEL_ScanPickBarCode[}{][title]shipmentorderbarcode.LABEL_ScanPickBarCode</value>
+      <webElementGuid>e98851ff-0fd7-488e-9bd3-d77bda11d9c7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -50,6 +55,7 @@
       <name>ng-model</name>
       <type>Main</type>
       <value>model.scanInput.value</value>
+      <webElementGuid>63c30662-9ee2-43d4-9ec0-c95561e50538</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -57,6 +63,7 @@
       <name>isc-enter</name>
       <type>Main</type>
       <value>uiScanBarCodeData('SCAN',$event)</value>
+      <webElementGuid>4a547946-33d0-4c97-a873-8ebcb98b2111</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -64,6 +71,7 @@
       <name>isc-barcode-scanner</name>
       <type>Main</type>
       <value>DEFAULT</value>
+      <webElementGuid>bd18ac4b-73ed-4a53-9318-ee74ca8d54ea</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -71,6 +79,7 @@
       <name>id</name>
       <type>Main</type>
       <value>pick_shipmentOrderBarcodeScanner</value>
+      <webElementGuid>d591e3a3-4f7d-4702-903d-8867aae1a283</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -78,6 +87,7 @@
       <name>title</name>
       <type>Main</type>
       <value>Scan or enter order or shipment #</value>
+      <webElementGuid>211724fa-87d5-47d2-95ed-fc4b132383b4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -85,6 +95,7 @@
       <name>aria-label</name>
       <type>Main</type>
       <value>Scan or enter order or shipment #</value>
+      <webElementGuid>65fb7670-e004-4a0a-bef8-27fc2554dc09</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -92,6 +103,7 @@
       <name>placeholder</name>
       <type>Main</type>
       <value>Scan or enter order or shipment #</value>
+      <webElementGuid>fcf3aaf9-5638-4f25-9941-bd04a3048ccb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -99,6 +111,7 @@
       <name>aria-invalid</name>
       <type>Main</type>
       <value>false</value>
+      <webElementGuid>05845b71-f013-41c7-a5f9-b0e57b1c3a27</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -106,6 +119,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pick_shipmentOrderBarcodeScanner&quot;)</value>
+      <webElementGuid>3db89be9-eb11-44dd-9a22-6fc5688764f8</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -113,6 +127,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//input[@id='pick_shipmentOrderBarcodeScanner']</value>
+      <webElementGuid>60258ece-49ef-471d-aa05-5c78f96078e3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -120,6 +135,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='mainContentHolder']/div[2]/div/div[2]/div[2]/div/div/div/div/div/div/div/div/isc-shipment-order-barcode-scanner/div/input</value>
+      <webElementGuid>5b2ee6ef-eb0a-4a1d-8b10-dba6e918dfd9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -127,5 +143,6 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//input</value>
+      <webElementGuid>df9ce02d-8ee2-4fd4-8165-e50235542f2c</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

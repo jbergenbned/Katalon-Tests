@@ -43,7 +43,7 @@ WebUI.sendKeys(findTestObject('chub/search for dropdown menu'), Keys.chord(Keys.
 
 WebUI.click(findTestObject('chub/search for input box'))
 
-WebUI.setText(findTestObject('chub/search for input box'), '00248094')
+WebUI.setText(findTestObject('chub/search for input box'), '00257021')
 
 WebUI.click(findTestObject('chub/search go button'))
 
@@ -67,7 +67,7 @@ WebUI.sendKeys(findTestObject('chub/shipping method'), Keys.chord(Keys.ARROW_DOW
 
 WebUI.click(findTestObject('chub/ship qty'))
 
-WebUI.setText(findTestObject('chub/ship qty'), '10')
+WebUI.setText(findTestObject('chub/ship qty'), '1')
 
 WebUI.click(findTestObject('chub/submit button'))
 

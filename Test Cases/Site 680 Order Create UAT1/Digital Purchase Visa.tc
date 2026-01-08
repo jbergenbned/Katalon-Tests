@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Digital Purchase Visa</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c925b6a0-44ac-444f-9fa2-770733ff63e0</testCaseGuid>
+</TestCaseEntity>

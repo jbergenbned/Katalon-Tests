@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Rent Only ship to address Visa</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>23b3bc81-d4e5-4b4c-a714-acd430a16010</testCaseGuid>
+</TestCaseEntity>

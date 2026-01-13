@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Buy New Pickup In Store Visa</name>
+   <name>Digital Rental Visa</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>8c67f27d-43fd-4aae-86bb-8197026f00cf</testCaseGuid>
+   <testCaseGuid>5c8e6046-6e7c-452d-bfc1-e94dc47f958b</testCaseGuid>
 </TestCaseEntity>

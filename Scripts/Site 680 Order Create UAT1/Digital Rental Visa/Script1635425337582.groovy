@@ -49,7 +49,7 @@ WebUI.click(findTestObject('Site 680 objects/course info submit button'))
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Site 680 objects/new print book'))
+WebUI.click(findTestObject('Site 680 objects/Digital Rental'))
 
 WebUI.click(findTestObject('Site 680 objects/add to cart'), FailureHandling.OPTIONAL)
 
@@ -59,29 +59,29 @@ WebUI.delay(1)
 
 WebUI.click(findTestObject('Site 680 objects/Mini Cart'))
 
-WebUI.click(findTestObject('Site 680 objects/ship to address radio button'))
-
 WebUI.click(findTestObject('Site 680 objects/shipping cart proceed to checkout'))
 
-WebUI.click(findTestObject('Site 680 objects/book condition proceed to checkout'))
+WebUI.click(findTestObject('Site 680 objects/book condition proceed to checkout'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('Site 680 objects/shipping method continue button'))
+WebUI.click(findTestObject('Site 680 objects/pickup info continue button'))
 
 WebUI.delay(2)
 
 WebUI.click(findTestObject('Site 680 objects/coop close'))
 
-WebUI.click(findTestObject('Site 680 objects/sfa payment option'))
+WebUI.click(findTestObject('Site 680 objects/credit debit payment option'))
 
-WebUI.click(findTestObject('Site 680 objects/sfa internal checkbox'))
+WebUI.click(findTestObject('Site 680 objects/saved payment method'))
 
-WebUI.click(findTestObject('Site 680 objects/sfa student ID'))
+WebUI.click(findTestObject('Site 680 objects/visa'))
 
-WebUI.setText(findTestObject('Site 680 objects/sfa student ID'), '68050435')
+WebUI.click(findTestObject('Site 680 objects/cc cvc'))
 
-WebUI.click(findTestObject('Site 680 objects/apply SFA funds button'))
+WebUI.setText(findTestObject('Site 680 objects/cc cvc'), '737')
 
-WebUI.click(findTestObject('Site 680 objects/sfa proceed to checkout'))
+WebUI.click(findTestObject('Site 680 objects/apply cc'))
+
+WebUI.click(findTestObject('Site 680 objects/payment info proceed to checkout'))
 
 not_run: WebUI.click(findTestObject('Site 680 objects/place order button'))
 

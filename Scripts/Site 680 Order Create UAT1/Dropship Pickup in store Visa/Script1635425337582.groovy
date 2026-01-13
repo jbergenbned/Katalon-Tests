@@ -21,7 +21,8 @@ WebUI.openBrowser('', FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.maximizeWindow(FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.navigateToUrl('https://michigan.uat1.helixbeta.com/', FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.navigateToUrl('https://michigan.uat1.helixbeta.com/Computer-Hardware--Accessories/Computers/Printer/Printer/HP-Deskjet-2655-Inkjet-Multifunction-Printer/p/463969395', 
+    FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('Page_Apparel, Gifts  Textbooks  University of Michigan Campus Bookstore/button_Sign In  Create Account'))
 
@@ -37,21 +38,7 @@ WebUI.setText(findTestObject('Page_Apparel, Gifts  Textbooks  University of Mich
 
 WebUI.click(findTestObject('Site 680 objects/user account sign in button'))
 
-WebUI.click(findTestObject('Page_Apparel, Gifts  Textbooks  University of Michigan Campus Bookstore/input_Enter your search details'))
-
-WebUI.setText(findTestObject('Page_Apparel, Gifts  Textbooks  University of Michigan Campus Bookstore/input_Enter your search details'), 
-    findTestData('Site 680/Site 680 Text Book').getValue(1, 89), FailureHandling.CONTINUE_ON_FAILURE)
-
-WebUI.sendKeys(findTestObject('Page_Apparel, Gifts  Textbooks  University of Michigan Campus Bookstore/input_Enter your search details'), 
-    Keys.chord(Keys.ENTER), FailureHandling.CONTINUE_ON_FAILURE)
-
-WebUI.click(findTestObject('Site 680 objects/course info submit button'))
-
-WebUI.delay(2)
-
-WebUI.click(findTestObject('Site 680 objects/new print book'))
-
-WebUI.click(findTestObject('Site 680 objects/add to cart'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('Site 680 objects/dropship add to cart'), FailureHandling.OPTIONAL)
 
 WebUI.click(findTestObject('Site 680 objects/buy again button'), FailureHandling.OPTIONAL)
 
@@ -59,29 +46,35 @@ WebUI.delay(1)
 
 WebUI.click(findTestObject('Site 680 objects/Mini Cart'))
 
-WebUI.click(findTestObject('Site 680 objects/ship to address radio button'))
+WebUI.click(findTestObject('Site 680 objects/ship to my store button'))
 
 WebUI.click(findTestObject('Site 680 objects/shipping cart proceed to checkout'))
 
-WebUI.click(findTestObject('Site 680 objects/book condition proceed to checkout'))
-
-WebUI.click(findTestObject('Site 680 objects/shipping method continue button'))
+WebUI.click(findTestObject('Site 680 objects/book condition proceed to checkout'), FailureHandling.OPTIONAL)
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Site 680 objects/coop close'))
+WebUI.click(findTestObject('Site 680 objects/shipping method continue button'))
 
-WebUI.click(findTestObject('Site 680 objects/sfa payment option'))
+WebUI.click(findTestObject('Site 680 objects/dropship pickup information button'))
 
-WebUI.click(findTestObject('Site 680 objects/sfa internal checkbox'))
+WebUI.delay(2)
 
-WebUI.click(findTestObject('Site 680 objects/sfa student ID'))
+WebUI.click(findTestObject('Site 680 objects/coop close'), FailureHandling.OPTIONAL)
 
-WebUI.setText(findTestObject('Site 680 objects/sfa student ID'), '68050435')
+WebUI.click(findTestObject('Site 680 objects/credit debit payment option'))
 
-WebUI.click(findTestObject('Site 680 objects/apply SFA funds button'))
+WebUI.click(findTestObject('Site 680 objects/saved payment method'))
 
-WebUI.click(findTestObject('Site 680 objects/sfa proceed to checkout'))
+WebUI.click(findTestObject('Site 680 objects/visa'))
+
+WebUI.click(findTestObject('Site 680 objects/cc cvc'))
+
+WebUI.setText(findTestObject('Site 680 objects/cc cvc'), '737')
+
+WebUI.click(findTestObject('Site 680 objects/apply cc'))
+
+WebUI.click(findTestObject('Site 680 objects/payment info proceed to checkout'))
 
 not_run: WebUI.click(findTestObject('Site 680 objects/place order button'))
 

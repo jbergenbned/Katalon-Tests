@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Buy New Pickup In Store Visa</name>
+   <name>Dropship Pickup in store Visa</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>8c67f27d-43fd-4aae-86bb-8197026f00cf</testCaseGuid>
+   <testCaseGuid>199c76db-beda-4c6e-a8c1-c18d167b72e3</testCaseGuid>
 </TestCaseEntity>

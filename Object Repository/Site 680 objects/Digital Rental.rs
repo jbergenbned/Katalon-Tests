@@ -7,13 +7,22 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
+         <value>//*[@id = 'digital-MBS_8773023_dg-0']</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>body > main > div.main__inner-wrapper > div.js-bned-product-details-data.js-bned-add-viewed-product > div > div > div > div.bned-pdp-container > div.product-main-info > div > div.js-textbook-variants-container.bned-variants-wp.js-bned-price-container > div > div:nth-child(2) > div.bned-variant-options-section > div:nth-child(2) > div > label > span:nth-child(2)</value>
+         <value></value>
       </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>digital-MBS_8773023_dg-0</value>
+      <webElementGuid>59f78240-6d5c-48ea-97e4-d7c66477691a</webElementGuid>
+   </webElementProperties>
 </WebElementEntity>

@@ -77,11 +77,25 @@ WebUI.click(findTestObject('Site 680 objects/sfa internal checkbox'))
 
 WebUI.click(findTestObject('Site 680 objects/sfa student ID'))
 
-WebUI.setText(findTestObject('Site 680 objects/sfa student ID'), '68050435')
+WebUI.setText(findTestObject('Site 680 objects/sfa student ID'), '700700')
 
 WebUI.click(findTestObject('Site 680 objects/apply SFA funds button'))
 
-WebUI.click(findTestObject('Site 680 objects/sfa proceed to checkout'))
+WebUI.click(findTestObject('Site 680 objects/credit debit payment option'))
+
+WebUI.click(findTestObject('Site 680 objects/saved payment method'))
+
+WebUI.click(findTestObject('Site 680 objects/visa'))
+
+WebUI.click(findTestObject('Site 680 objects/cc cvc'))
+
+WebUI.setText(findTestObject('Site 680 objects/cc cvc'), '737')
+
+WebUI.click(findTestObject('Site 680 objects/apply cc'))
+
+WebUI.click(findTestObject('Site 680 objects/payment info proceed to checkout'))
+
+not_run: WebUI.click(findTestObject('Site 680 objects/sfa proceed to checkout'))
 
 not_run: WebUI.click(findTestObject('Site 680 objects/place order button'))
 

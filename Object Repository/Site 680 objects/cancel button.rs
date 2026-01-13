@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>update tracking option</name>
+   <name>cancel button</name>
    <tag></tag>
-   <elementGuidId>1c627685-09e2-459c-b0e7-b7f0990ad16d</elementGuidId>
+   <elementGuidId>190904b7-78db-4229-a8fa-105dc4a4874e</elementGuidId>
    <selectorCollection>
-      <entry>
-         <key>XPATH</key>
-         <value>//span[@class='menu-text' and text()='Update Tracking No']</value>
-      </entry>
       <entry>
          <key>BASIC</key>
          <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//cr-button[@class='cancel-button']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

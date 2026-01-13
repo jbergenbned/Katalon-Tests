@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>update tracking option</name>
+   <name>pack done button</name>
    <tag></tag>
-   <elementGuidId>1c627685-09e2-459c-b0e7-b7f0990ad16d</elementGuidId>
+   <elementGuidId>048f5213-1293-47d3-8f82-ca28167e6ea3</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//span[@class='menu-text' and text()='Update Tracking No']</value>
+         <value>//button[@tid='shipmentSummaryPageDoneActionButton']</value>
       </entry>
       <entry>
          <key>BASIC</key>

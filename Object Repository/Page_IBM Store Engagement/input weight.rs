@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>input weight</name>
+   <tag></tag>
+   <elementGuidId>6de0b7c4-d7c2-4e8f-a6a6-151722d5acd1</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='single-spa-application:homeContainer']/isf-pack-order-extn-root/isf-pack-order-page/form/div/div[3]/div[2]/div[2]/div/div/isf-packages/div/div[3]/div/div[2]/div/input</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.col.p-0.bg-white > isf-packages > div.row.bg-white.m-0 > div.col-12.p-0 > div.row.m-0.isf-padding-x-20.isf-padding-bottom-10.border-bottom > div.col-md-4.col-6.p-0.float-end.justify-content-end.align-items-center.d-flex.flex-column.d-flex > div > input.quantity-textbox.text-center.ng-untouched.ng-pristine.ng-valid</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=textbox >> nth=1</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>input</value>
+      <webElementGuid>84576a6d-dd2c-48c7-b31e-9dc89ab886e6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>quantity-textbox text-center ng-untouched ng-pristine ng-valid</value>
+      <webElementGuid>2f422e5c-51ee-4612-bf54-ee87bb16ee77</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>min</name>
+      <type>Main</type>
+      <value>0</value>
+      <webElementGuid>3c24affd-a287-471b-82fb-c7662dbd9d07</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;single-spa-application:homeContainer&quot;)/isf-pack-order-extn-root[1]/isf-pack-order-page[1]/form[@class=&quot;ng-untouched ng-pristine ng-valid&quot;]/div[@class=&quot;isf-page-content row pack-page-font-size&quot;]/div[@class=&quot;col-12&quot;]/div[@class=&quot;row d-none d-md-flex&quot;]/div[@class=&quot;col-md-8 ps-3&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;col p-0 bg-white&quot;]/isf-packages[1]/div[@class=&quot;row bg-white m-0&quot;]/div[@class=&quot;col-12 p-0&quot;]/div[@class=&quot;row m-0 isf-padding-x-20 isf-padding-bottom-10 border-bottom&quot;]/div[@class=&quot;col-md-4 col-6 p-0 float-end justify-content-end align-items-center d-flex flex-column d-flex&quot;]/div[1]/input[@class=&quot;quantity-textbox text-center ng-untouched ng-pristine ng-valid&quot;]</value>
+      <webElementGuid>b309aff5-3b01-427d-b7d2-d1108906cea7</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='single-spa-application:homeContainer']/isf-pack-order-extn-root/isf-pack-order-page/form/div/div[3]/div[2]/div[2]/div/div/isf-packages/div/div[3]/div/div[2]/div/input</value>
+      <webElementGuid>dcb32824-04fc-4550-9491-6145b9c21fa9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/div/isf-packages/div/div[3]/div/div[2]/div/input</value>
+      <webElementGuid>f0f9a2e4-f736-47aa-972f-ff9c915a9af4</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

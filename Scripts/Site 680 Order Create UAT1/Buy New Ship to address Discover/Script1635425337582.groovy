@@ -67,6 +67,8 @@ WebUI.click(findTestObject('Site 680 objects/book condition proceed to checkout'
 
 WebUI.click(findTestObject('Site 680 objects/shipping method continue button'))
 
+WebUI.delay(2)
+
 WebUI.click(findTestObject('Site 680 objects/coop close'))
 
 WebUI.click(findTestObject('Site 680 objects/credit debit payment option'))

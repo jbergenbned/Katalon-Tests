@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>update tracking option</name>
+   <name>tracking number input field</name>
    <tag></tag>
-   <elementGuidId>1c627685-09e2-459c-b0e7-b7f0990ad16d</elementGuidId>
+   <elementGuidId>ce8cb3cb-5dc2-4740-9b4c-ce513cf05fe2</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
          <key>XPATH</key>
-         <value>//span[@class='menu-text' and text()='Update Tracking No']</value>
+         <value>//label[@for='inputField']</value>
       </entry>
       <entry>
          <key>BASIC</key>

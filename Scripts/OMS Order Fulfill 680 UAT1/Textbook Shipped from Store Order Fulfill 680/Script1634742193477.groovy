@@ -35,7 +35,7 @@ WebUI.click(findTestObject('Page_IBM Store Engagement/span_Login'))
 
 WebUI.delay(5, FailureHandling.OPTIONAL)
 
-WebUI.setText(findTestObject('Site 235/Page_IBM Store Engagement/input_Not Started_pick_shipmentOrderBarcodeScanner'), '1005778082')
+WebUI.setText(findTestObject('Site 235/Page_IBM Store Engagement/input_Not Started_pick_shipmentOrderBarcodeScanner'), '1005799054')
 
 WebUI.sendKeys(findTestObject('Site 235/Page_IBM Store Engagement/input_Not Started_pick_shipmentOrderBarcodeScanner'), 
     Keys.chord(Keys.ENTER))
@@ -46,7 +46,9 @@ WebUI.click(findTestObject('Page_IBM Store Engagement/span_Finish Pick'), Failur
 
 WebUI.click(findTestObject('Page_IBM Store Engagement/span_Process Transaction'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('Site 235/Page_IBM Store Engagement/Finish Payment Button'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.delay(3)
+
+WebUI.click(findTestObject('Site 235/Page_IBM Store Engagement/Finish Payment Button'), FailureHandling.STOP_ON_FAILURE)
 
 not_run: WebUI.click(findTestObject('Site 680 objects/start customer pickup button'))
 
@@ -56,28 +58,44 @@ WebUI.click(findTestObject('Site 680 objects/pack order button'))
 
 WebUI.click(findTestObject('Site 680 objects/pack all button'))
 
-WebUI.click(findTestObject('Site 680 objects/pounds input box'))
+WebUI.delay(2)
 
-WebUI.clearText(findTestObject('Site 680 objects/pounds input box'))
+WebUI.click(findTestObject('Page_IBM Store Engagement/input weight'))
 
-WebUI.setText(findTestObject('Site 680 objects/pounds input box'), '1')
+WebUI.clearText(findTestObject('Page_IBM Store Engagement/input weight'))
+
+WebUI.setText(findTestObject('Page_IBM Store Engagement/input weight'), '1')
 
 WebUI.click(findTestObject('Site 680 objects/pack hamburger menu'))
 
-WebUI.click(findTestObject('Site 680 objects/finish pickup button'))
+WebUI.click(findTestObject('Site 680 objects/update tracking option'))
 
-WebUI.click(findTestObject('Site 680 objects/confirm all products picked up yes button'))
+WebUI.delay(2)
 
-WebUI.click(findTestObject('Site 680 objects/pickup order processed OK button'))
+WebUI.click(findTestObject('Page_IBM Store Engagement/input_Tracking'))
 
-WebUI.click(findTestObject('Site 680 objects/pickup done button'))
+WebUI.setText(findTestObject('Page_IBM Store Engagement/input_Tracking'), '1Z1F98Y70320711511')
 
-not_run: WebUI.click(findTestObject('Site 680 objects/New Print Pickup Label'))
+WebUI.click(findTestObject('Site 680 objects/tracking number save button'))
 
-not_run: WebUI.switchToWindowIndex(1)
+WebUI.click(findTestObject('Site 680 objects/print packing slip'), FailureHandling.OPTIONAL)
 
-not_run: WebUI.executeJavaScript('return document.querySelector("body > print-preview-app").shadowRoot.querySelector("#sidebar").shadowRoot.querySelector("print-preview-button-strip").shadowRoot.querySelector("div > cr-button.action-button")', 
+WebUI.switchToWindowIndex(1)
+
+WebUI.delay(1)
+
+WebUI.executeJavaScript('return document.querySelector("print-preview-app").shadowRoot.querySelector("print-preview-sidebar#sidebar").shadowRoot.querySelector("print-preview-button-strip").shadowRoot.querySelector("cr-button.cancel-button")', 
     []).click()
+
+WebUI.delay(3)
+
+WebUI.switchToDefaultContent()
+
+not_run: WebUI.delay(2)
+
+WebUI.click(findTestObject('Site 680 objects/finish pack button'))
+
+WebUI.click(findTestObject('Site 680 objects/pack done button'))
 
 not_run: WebUI.delay(3)
 

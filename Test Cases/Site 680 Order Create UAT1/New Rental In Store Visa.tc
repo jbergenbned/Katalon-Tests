@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>New Rental In Store Visa</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a1950360-ac25-4de0-b7ae-d6ff5470a7d7</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Buy GM Pickup In Store Visa</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>41de0a3f-8863-42c6-b54b-85c5a9f8c9c8</testCaseGuid>
+</TestCaseEntity>

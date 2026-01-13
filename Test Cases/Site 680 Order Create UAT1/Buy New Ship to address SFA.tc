@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Buy New Ship to address SFA</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>0f08c30b-3a44-4ffa-941d-0a00d3ba2a79</testCaseGuid>
+</TestCaseEntity>

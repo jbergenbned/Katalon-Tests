@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>New Rental Ship to Address Visa</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>e5862653-df8d-45c5-943c-e73fb52aec74</testCaseGuid>
+</TestCaseEntity>

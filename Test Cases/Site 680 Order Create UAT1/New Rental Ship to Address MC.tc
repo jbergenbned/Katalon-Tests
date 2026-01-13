@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>New Rental Ship to Address MC</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>6be6e8e8-337d-4880-b03f-91c72d37f129</testCaseGuid>
+</TestCaseEntity>

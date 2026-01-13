@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>New Rental Ship to Address Discover</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>3cfb6aae-cb80-405a-83aa-f5e7e8eb5f11</testCaseGuid>
+</TestCaseEntity>

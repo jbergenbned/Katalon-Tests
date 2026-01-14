@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Digital Purchase print order summary</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>ce7e6556-d44b-45ff-8823-f4ba368c9277</testCaseGuid>
+</TestCaseEntity>

@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>pack done button</name>
+   <name>order summary hamburger menu</name>
    <tag></tag>
-   <elementGuidId>048f5213-1293-47d3-8f82-ca28167e6ea3</elementGuidId>
+   <elementGuidId>b03e099c-9f5e-4e02-b8cc-28c57efbeae7</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//button[normalize-space(text())='Done']</value>
+         <value>//isf-related-task[@tid='orderSummaryPageRelatedTaskDesktop']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Digital Purchase Print Order Summary 680</name>
+   <name>Digital Purchase view order summary then cancel</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>

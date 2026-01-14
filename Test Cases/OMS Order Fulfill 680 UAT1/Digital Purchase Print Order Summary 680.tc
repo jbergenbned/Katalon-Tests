@@ -4,5 +4,6 @@
    <name>Digital Purchase Print Order Summary 680</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>0fe54b06-26a8-42c5-b435-85f443005966</testCaseGuid>
 </TestCaseEntity>

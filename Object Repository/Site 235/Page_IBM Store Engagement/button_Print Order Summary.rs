@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//button[@type='button'])[5]</value>
+         <value>//button[@tid='orderSummaryPageReceiptButton']</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -15,6 +15,7 @@
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,6 +23,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
+      <webElementGuid>ee560124-656f-4808-8771-a04e729004db</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -29,6 +31,7 @@
       <name>class</name>
       <type>Main</type>
       <value>btn btn-special-default long-field</value>
+      <webElementGuid>c50e434f-72dd-46d2-bb3b-f23f74ea2ed9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -36,6 +39,7 @@
       <name>type</name>
       <type>Main</type>
       <value>button</value>
+      <webElementGuid>7423c4e6-66f9-49b3-9fcb-a96135d6ece2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -43,6 +47,7 @@
       <name>role</name>
       <type>Main</type>
       <value>button</value>
+      <webElementGuid>dbf09473-6db4-4f0f-bedb-51da02df53a0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -50,6 +55,7 @@
       <name>ng-click</name>
       <type>Main</type>
       <value>uiPrintSummaryScreen()</value>
+      <webElementGuid>bdaeb2d7-14b8-4120-b9cc-477672260cb7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -59,6 +65,7 @@
       <value>
 			 Print Order Summary 
 		</value>
+      <webElementGuid>e602eb1d-ca3f-407c-9733-939a175b43ad</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -66,6 +73,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;mainContentHolder&quot;)/div[@class=&quot;screen-container&quot;]/div[@class=&quot;view-cart-details order-summary&quot;]/div[@class=&quot;cart-additional-info display-blocks col-equal&quot;]/div[@class=&quot;cart-additional-action bottom-menu col-table-cell&quot;]/div[1]/div[@class=&quot;print-panel-holder cart-additional-action-item ng-pristine ng-valid&quot;]/div[@class=&quot;print-actions&quot;]/button[@class=&quot;btn btn-special-default long-field&quot;]</value>
+      <webElementGuid>f446e606-ff7d-4b83-8cb7-0fa2c24ad943</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -73,6 +81,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//button[@type='button'])[5]</value>
+      <webElementGuid>55e3bc76-5a4e-4660-bba4-0f9529488e08</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -80,6 +89,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='mainContentHolder']/div[2]/div/div[2]/div/div/div/div/button</value>
+      <webElementGuid>814d1b1c-a7a1-46f1-85b4-41fc3e9233dc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -87,6 +97,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='$10.00'])[1]/following::button[1]</value>
+      <webElementGuid>debfbe77-6d09-4024-8b78-8515ac808312</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,6 +105,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Unit Price'])[1]/following::button[1]</value>
+      <webElementGuid>98156bf5-2fb1-46f4-b32c-c3e0aa387673</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,6 +113,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Payment Method'])[1]/preceding::button[1]</value>
+      <webElementGuid>ce3f5f31-5f5f-46dd-84af-b64286d5a808</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -108,5 +121,6 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div/div/div/div/button</value>
+      <webElementGuid>4d17c945-7fcd-4733-8cfa-c8bf1db13406</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

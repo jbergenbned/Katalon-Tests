@@ -85,5 +85,5 @@ WebUI.click(findTestObject('Site 680 objects/apply cc'))
 
 WebUI.click(findTestObject('Site 680 objects/payment info proceed to checkout'))
 
-not_run: WebUI.click(findTestObject('Site 680 objects/place order button'))
+WebUI.click(findTestObject('Site 680 objects/place order button'))
 

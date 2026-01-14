@@ -35,7 +35,7 @@ WebUI.click(findTestObject('Page_IBM Store Engagement/span_Login'))
 
 WebUI.delay(5, FailureHandling.OPTIONAL)
 
-WebUI.setText(findTestObject('Site 235/Page_IBM Store Engagement/input_Not Started_pick_shipmentOrderBarcodeScanner'), '1005804158')
+WebUI.setText(findTestObject('Site 235/Page_IBM Store Engagement/input_Not Started_pick_shipmentOrderBarcodeScanner'), '1005807009')
 
 WebUI.sendKeys(findTestObject('Site 235/Page_IBM Store Engagement/input_Not Started_pick_shipmentOrderBarcodeScanner'), 
     Keys.chord(Keys.ENTER))
@@ -80,20 +80,19 @@ WebUI.click(findTestObject('Site 680 objects/tracking number save button'))
 
 not_run: WebUI.click(findTestObject('Site 680 objects/print packing slip'), FailureHandling.OPTIONAL)
 
-WebUI.switchToWindowIndex(1)
+WebUI.delay(2)
 
-WebUI.delay(1)
+Robot robot = new Robot()
 
-WebUI.executeJavaScript('return document.querySelector("print-preview-app").shadowRoot.querySelector("print-preview-sidebar#sidebar").shadowRoot.querySelector("print-preview-button-strip").shadowRoot.querySelector("cr-button.cancel-button")', 
-    []).click()
+robot.delay(2000)
 
-WebUI.delay(3)
+robot.keyPress(KeyEvent.VK_ESCAPE)
 
-WebUI.switchToDefaultContent()
-
-not_run: WebUI.delay(2)
+robot.keyRelease(KeyEvent.VK_ESCAPE)
 
 WebUI.click(findTestObject('Site 680 objects/finish pack button'))
+
+WebUI.delay(2)
 
 WebUI.click(findTestObject('Site 680 objects/pack done button'))
 

@@ -16,10 +16,6 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import java.awt.Robot as Robot
-import java.awt.event.KeyEvent as KeyEvent
-import java.awt.Toolkit as Toolkit
-import java.awt.datatransfer.StringSelection as StringSelection
 
 WebUI.openBrowser(findTestData('Site 680/Order fulfill sites').getValue(1, 3))
 
@@ -37,32 +33,17 @@ WebUI.delay(5, FailureHandling.OPTIONAL)
 
 WebUI.click(findTestObject('Site 680 objects/oms global search'))
 
-WebUI.setText(findTestObject('Site 680 objects/oms global search input'), '00825073')
+WebUI.setText(findTestObject('Site 680 objects/oms global search input'), '1005807002')
 
 WebUI.sendKeys(findTestObject('Site 680 objects/oms global search input'), Keys.chord(Keys.ENTER))
 
-WebUI.click(findTestObject('Site 235/Page_IBM Store Engagement/button_Print Order Summary'))
+WebUI.click(findTestObject('Site 680 objects/order summary hamburger menu'))
 
-not_run: WebUI.switchToWindowIndex(1)
+WebUI.click(findTestObject('Site 680 objects/appease customer option'))
 
-Robot robot = new Robot()
+WebUI.click(findTestObject('Site 680 objects/select reason code'))
 
-robot.delay(2000 // wait for dialog to appear
-    )
+WebUI.selectOptionByValue(findTestObject('Site 680 objects/select reason code'), '180', false)
 
-robot.keyPress(KeyEvent.VK_ESCAPE // press Enter to confirm print
-    )
-
-robot.keyRelease(KeyEvent.VK_ESCAPE)
-
-not_run: WebUI.waitForPageLoad(3)
-
-not_run: WebUI.switchToWindowIndex(1, FailureHandling.STOP_ON_FAILURE)
-
-not_run: WebUI.executeJavaScript('return document.querySelector("body > print-preview-app").shadowRoot.querySelector("print-preview-sidebar#sidebar").shadowRoot.querySelector("print-preview-button-strip").shadowRoot.querySelector("cr-button.cancel-button")', 
-    []).click()
-
-not_run: WebUI.delay(3)
-
-WebUI.click(findTestObject('Page_IBM Store Engagement/button_Notes (0)_btn btn-sm button-secondary'))
+WebUI.click(findTestObject('Site 680 objects/select reason code'))
 

@@ -21,7 +21,7 @@ WebUI.openBrowser('', FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.maximizeWindow(FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.navigateToUrl('https://clemson-roomservice.uat1.helixbeta.com/Necessities/Heaters-and-Humidifiers/Room-Service-TEST-91/p/698464501', 
+WebUI.navigateToUrl('https://clemson-roomservice.uat1.helixbeta.com/Bath/Storage-and-Organization/Room-Service-TEST-17/p/698414141', 
     FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('Page_Apparel, Gifts  Textbooks  University of Michigan Campus Bookstore/button_Sign In  Create Account'))

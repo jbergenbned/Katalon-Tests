@@ -37,17 +37,11 @@ WebUI.click(findTestObject('chub/sign in continue button'))
 
 WebUI.click(findTestObject('chub/d and h'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('chub/search for dropdown menu'))
-
-WebUI.sendKeys(findTestObject('chub/search for dropdown menu'), Keys.chord(Keys.ARROW_DOWN, Keys.ENTER))
-
 WebUI.click(findTestObject('chub/search for input box'))
 
-WebUI.setText(findTestObject('chub/search for input box'), '00163013')
+WebUI.setText(findTestObject('chub/search for input box'), 'Y100008540')
 
 WebUI.click(findTestObject('chub/search go button'))
-
-WebUI.click(findTestObject('chub/order number column'))
 
 WebUI.click(findTestObject('chub/action drpdown'))
 

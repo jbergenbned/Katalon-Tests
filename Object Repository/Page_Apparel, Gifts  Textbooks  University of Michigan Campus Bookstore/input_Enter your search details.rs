@@ -6,15 +6,16 @@
    <elementGuidId>66eec6a8-a4e4-4650-b526-a8655fd1c43e</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>XPATH</key>
+         <value>//input[@class='form-control js-site-search-input bned-site-search ui-autocomplete-input']</value>
+      </entry>
+      <entry>
          <key>CSS</key>
          <value>#bned_site_search</value>
       </entry>
-      <entry>
-         <key>XPATH</key>
-         <value>//input[@id='bned_site_search']</value>
-      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,6 +23,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
+      <webElementGuid>a6d69acd-f160-44bb-ae05-25696aa3cd2c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -29,6 +31,7 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>0</value>
+      <webElementGuid>46d3de37-c856-41bc-9e9c-ed9b73edb154</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -36,6 +39,7 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
+      <webElementGuid>b36a6310-d5ec-473e-8091-96b54d08f1bd</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -43,6 +47,7 @@
       <name>id</name>
       <type>Main</type>
       <value>bned_site_search</value>
+      <webElementGuid>0c4b36ef-2d8b-45a4-8746-c48501effa88</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -50,6 +55,7 @@
       <name>aria-label</name>
       <type>Main</type>
       <value>Search</value>
+      <webElementGuid>bce424fd-7360-4502-b2e7-9ec99652a6b3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -57,6 +63,7 @@
       <name>class</name>
       <type>Main</type>
       <value>form-control js-site-search-input bned-site-search ui-autocomplete-input</value>
+      <webElementGuid>3a58059e-59e3-4fc8-9add-410b4838c1e3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -64,6 +71,7 @@
       <name>name</name>
       <type>Main</type>
       <value>text</value>
+      <webElementGuid>ef0d643b-7b8f-4513-b007-aed22b8b3764</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -71,6 +79,7 @@
       <name>maxlength</name>
       <type>Main</type>
       <value>100</value>
+      <webElementGuid>45c1352f-e2af-44be-b714-8d6bc207816e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -78,6 +87,7 @@
       <name>placeholder</name>
       <type>Main</type>
       <value>Enter your search details (product title, author, ISBN, keyword, etc.)</value>
+      <webElementGuid>9d48979f-1088-4cae-83ce-53f2e79e06ce</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -90,6 +100,7 @@
 						&quot;waitTimeBeforeRequest&quot; : &quot;500&quot;,
 						&quot;displayProductImages&quot; : &quot;true&quot;
 					}</value>
+      <webElementGuid>95545d22-a729-40e8-aa73-32d9e4911da3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -97,6 +108,7 @@
       <name>autocomplete</name>
       <type>Main</type>
       <value>off</value>
+      <webElementGuid>44182007-dfab-4002-b05b-2dfb1a0071e1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -104,6 +116,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;bned_site_search&quot;)</value>
+      <webElementGuid>8bd1b4eb-fccd-4d65-a09c-995cb4fbc721</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -111,6 +124,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//input[@id='bned_site_search']</value>
+      <webElementGuid>ee16f1e1-74fa-4762-8f7d-e32f8eb1a85d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,5 +132,6 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div/div/form/div/input</value>
+      <webElementGuid>64fc8484-dec2-46fa-8c8c-45d9054d1baf</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

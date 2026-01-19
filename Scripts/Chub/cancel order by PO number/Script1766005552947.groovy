@@ -39,7 +39,7 @@ WebUI.click(findTestObject('chub/d and h'), FailureHandling.OPTIONAL)
 
 WebUI.click(findTestObject('chub/search for input box'))
 
-WebUI.setText(findTestObject('chub/search for input box'), 'Y100008540')
+WebUI.setText(findTestObject('chub/search for input box'), 'Y100005286')
 
 WebUI.click(findTestObject('chub/search go button'))
 

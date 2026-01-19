@@ -71,9 +71,11 @@ not_run: WebUI.click(findTestObject('Site 680 objects/pickup info continue butto
 
 WebUI.click(findTestObject('Site 680 objects/rental information saved payments button'), FailureHandling.OPTIONAL)
 
+WebUI.click(findTestObject('Site 680 objects/AMEX'), FailureHandling.OPTIONAL)
+
 WebUI.click(findTestObject('Site 680 objects/rental info cvv'), FailureHandling.OPTIONAL)
 
-WebUI.setText(findTestObject('Site 680 objects/rental info cvv'), '737', FailureHandling.OPTIONAL)
+WebUI.setText(findTestObject('Site 680 objects/rental info cvv'), '7373', FailureHandling.OPTIONAL)
 
 WebUI.click(findTestObject('Site 680 objects/rental info continue button'), FailureHandling.OPTIONAL)
 

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Buy GM Pickup In Store Paypal</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>4620a85b-1aba-48c2-a055-ce0715936f9e</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Buy New Pickup In Store Paypal</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>6b984b61-bc97-400a-9094-d63a26b148db</testCaseGuid>
+</TestCaseEntity>

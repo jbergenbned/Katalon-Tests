@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Digital Rental Paypal</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>146a4ab1-f611-4d15-88e3-056507718cdb</testCaseGuid>
+</TestCaseEntity>

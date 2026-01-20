@@ -56,5 +56,5 @@ WebUI.click(findTestObject('Site 680 objects/appease amount input box'))
 WebUI.sendKeys(findTestObject('Site 680 objects/appease amount input box'), Keys.chord(Keys.BACK_SPACE, Keys.BACK_SPACE, 
         Keys.BACK_SPACE, Keys.BACK_SPACE))
 
-WebUI.setText(findTestObject('Site 680 objects/appease amount input box'), '10.00')
+WebUI.setText(findTestObject('Site 680 objects/appease amount input box'), '5.00')
 

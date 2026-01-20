@@ -35,7 +35,7 @@ WebUI.click(findTestObject('Page_IBM Store Engagement/span_Login'))
 
 WebUI.delay(5, FailureHandling.OPTIONAL)
 
-WebUI.setText(findTestObject('Site 235/Page_IBM Store Engagement/input_Not Started_pick_shipmentOrderBarcodeScanner'), '1005798064')
+WebUI.setText(findTestObject('Site 235/Page_IBM Store Engagement/input_Not Started_pick_shipmentOrderBarcodeScanner'), '1005846038')
 
 WebUI.sendKeys(findTestObject('Site 235/Page_IBM Store Engagement/input_Not Started_pick_shipmentOrderBarcodeScanner'), 
     Keys.chord(Keys.ENTER))
@@ -45,6 +45,8 @@ WebUI.click(findTestObject('Page_IBM Store Engagement/span_Pick All'), FailureHa
 WebUI.click(findTestObject('Page_IBM Store Engagement/span_Finish Pick'), FailureHandling.OPTIONAL)
 
 WebUI.click(findTestObject('Page_IBM Store Engagement/span_Process Transaction'), FailureHandling.OPTIONAL)
+
+WebUI.delay(5, FailureHandling.OPTIONAL)
 
 WebUI.click(findTestObject('Site 235/Page_IBM Store Engagement/Finish Payment Button'), FailureHandling.CONTINUE_ON_FAILURE)
 

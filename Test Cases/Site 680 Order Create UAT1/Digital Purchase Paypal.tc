@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Digital Purchase Paypal</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>bd27e780-381c-422c-bd70-7c0e1eec2671</testCaseGuid>
+</TestCaseEntity>

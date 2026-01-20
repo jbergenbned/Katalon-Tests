@@ -16,35 +16,34 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import java.awt.Robot as Robot
-import java.awt.event.KeyEvent as KeyEvent
-import java.awt.Toolkit as Toolkit
-import java.awt.datatransfer.StringSelection as StringSelection
 
 WebUI.openBrowser('')
 
 WebUI.maximizeWindow()
 
-WebUI.navigateToUrl('https://erqa.uathbncollege.com/home?storeId=680')
+WebUI.navigateToUrl('https://helix-reports-non-prod.bnedloudcloud.com/login')
 
-WebUI.click(findTestObject('Page_Rental Quick App  Home Page/button_Rental Check-In'))
+WebUI.click(findTestObject('helix reports/login username'))
 
-WebUI.click(findTestObject('Page_Rental Quick App  Home Page/input_Customer Phone Number_searchCriteria'))
+WebUI.setText(findTestObject('helix reports/login username'), 'jbergen@bncollege.com')
 
-WebUI.setText(findTestObject('Page_Rental Quick App  Home Page/input_Order Number_OrderId'), '00928081')
+WebUI.click(findTestObject('helix reports/password'))
 
-WebUI.click(findTestObject('Page_Rental Quick App  Home Page/button_Search'))
+WebUI.setEncryptedText(findTestObject('helix reports/password'), 'sXgvmPwHuWxjI2gua7XmJg==')
 
-WebUI.click(findTestObject('Page_Rental Quick App  Home Page/Arrow Select'))
+WebUI.click(findTestObject('helix reports/login button'))
 
-WebUI.click(findTestObject('Page_Rental Quick App  Home Page/button_Select'))
+WebUI.delay(3)
 
-WebUI.selectOptionByValue(findTestObject('Page_Rental Quick App  Home Page/select_SaleableNon-SaleablePurchase 17.35'), 
-    'Purchase', false)
+WebUI.click(findTestObject('helix reports/hamburger menu'))
 
-WebUI.click(findTestObject('Page_Rental Quick App  Home Page/button_Complete'))
+WebUI.click(findTestObject('helix reports/rental reports menu option'))
 
-WebUI.verifyTextPresent('Rental purchases must be completed in OMS and not via this application.', false)
+WebUI.click(findTestObject('Page_Helix Reports/input_From Date_input-78'))
 
-WebUI.click(findTestObject('Page_Rental Quick App  Home Page/button_Ok'))
+WebUI.setText(findTestObject('Page_Helix Reports/input_From Date_input-78'), '2025-11-02')
+
+WebUI.click(findTestObject('Page_Helix Reports/input_To Date_input-81'))
+
+WebUI.setText(findTestObject('Page_Helix Reports/input_To Date_input-81'), '2026-01-16')
 

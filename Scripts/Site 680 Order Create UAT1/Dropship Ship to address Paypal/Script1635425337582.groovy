@@ -21,7 +21,7 @@ WebUI.openBrowser('', FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.maximizeWindow(FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.navigateToUrl('https://michigan.uat1.helixbeta.com/Categories/School-Supplies-ArtTech/Art-Supplies/Paints--Mediums/Art--Drafting-Pencils/Ebony-Sketch-Pencil/p/4213', 
+WebUI.navigateToUrl('https://michigan.uat1.helixbeta.com/Computer-Hardware--Accessories/Computers/Printer/Printer/HP-Deskjet-2655-Inkjet-Multifunction-Printer/p/463969395', 
     FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('Page_Apparel, Gifts  Textbooks  University of Michigan Campus Bookstore/button_Sign In  Create Account'))
@@ -38,15 +38,13 @@ WebUI.setText(findTestObject('Page_Apparel, Gifts  Textbooks  University of Mich
 
 WebUI.click(findTestObject('Site 680 objects/user account sign in button'))
 
-WebUI.click(findTestObject('Site 680 objects/add to cart GM'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('Site 680 objects/dropship add to cart'), FailureHandling.OPTIONAL)
 
 WebUI.click(findTestObject('Site 680 objects/buy again button'), FailureHandling.OPTIONAL)
 
 WebUI.delay(1)
 
 WebUI.click(findTestObject('Site 680 objects/Mini Cart'))
-
-WebUI.click(findTestObject('Site 680 objects/ship to address radio button'))
 
 WebUI.click(findTestObject('Site 680 objects/shipping cart proceed to checkout'))
 
@@ -58,19 +56,27 @@ WebUI.delay(2)
 
 WebUI.click(findTestObject('Site 680 objects/coop close'))
 
-WebUI.click(findTestObject('Site 680 objects/credit debit payment option'))
+WebUI.click(findTestObject('Site 680 objects/paypal payment option'))
 
-WebUI.click(findTestObject('Site 680 objects/saved payment method'))
+WebUI.click(findTestObject('Site 680 objects/apply paypal button'))
 
-WebUI.click(findTestObject('Site 680 objects/visa'))
+WebUI.click(findTestObject('Site 680 objects/paypal email address input'))
 
-WebUI.click(findTestObject('Site 680 objects/cc cvc'))
+WebUI.setText(findTestObject('Site 680 objects/paypal email address input'), 'bntest150@gmail.com')
 
-WebUI.setText(findTestObject('Site 680 objects/cc cvc'), '737')
+WebUI.click(findTestObject('Site 680 objects/paypal next button'))
 
-WebUI.click(findTestObject('Site 680 objects/apply cc'))
+WebUI.click(findTestObject('Site 680 objects/paypal try another way link'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('Site 680 objects/payment info proceed to checkout'))
+WebUI.click(findTestObject('Site 680 objects/use password instead link'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('Site 680 objects/place order button'))
+WebUI.click(findTestObject('Site 680 objects/paypal password field'))
+
+WebUI.setText(findTestObject('Site 680 objects/paypal password field'), 'Welcome1')
+
+WebUI.click(findTestObject('Site 680 objects/paypal login button'))
+
+WebUI.click(findTestObject('Site 680 objects/paypal agree and continue'))
+
+not_run: WebUI.click(findTestObject('Site 680 objects/place order button'))
 

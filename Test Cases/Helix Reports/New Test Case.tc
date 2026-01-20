@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>New Rental Check In Saleable 680</name>
+   <name>New Test Case</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>f7cb155a-1dbb-4fef-91cd-59eff5d2247b</testCaseGuid>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>315fa21d-4c28-4555-83b2-69f4b1a7868f</testCaseGuid>
 </TestCaseEntity>

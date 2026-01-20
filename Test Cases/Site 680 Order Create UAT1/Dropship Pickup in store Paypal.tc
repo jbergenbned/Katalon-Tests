@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Dropship Pickup in store Paypal</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c236a40e-bd18-4c78-ade5-bf4554f2f38c</testCaseGuid>
+</TestCaseEntity>

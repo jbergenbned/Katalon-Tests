@@ -43,7 +43,7 @@ WebUI.click(findTestObject('Site 680 objects/find course materials'))
 
 WebUI.click(findTestObject('Page_University of Michigan Campus Bookstore/term'))
 
-WebUI.click(findTestObject('Page_University of Michigan Campus Bookstore/li_WINTER-1 2025'))
+WebUI.click(findTestObject('Page_University of Michigan Campus Bookstore/Spring 2025'))
 
 WebUI.click(findTestObject('Page_University of Michigan Campus Bookstore/department'))
 
@@ -55,7 +55,7 @@ WebUI.click(findTestObject('Page_University of Michigan Campus Bookstore/course 
 
 WebUI.click(findTestObject('Page_University of Michigan Campus Bookstore/section'))
 
-WebUI.click(findTestObject('Page_University of Michigan Campus Bookstore/section select'))
+WebUI.click(findTestObject('Page_University of Michigan Campus Bookstore/section select 1 Normal'))
 
 WebUI.delay(1)
 
@@ -63,7 +63,7 @@ WebUI.click(findTestObject('Page_University of Michigan Campus Bookstore/retriev
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Site 680 objects/course select new print'))
+WebUI.click(findTestObject('Site 680 objects/Digital Purchase course lookup'))
 
 WebUI.click(findTestObject('Site 680 objects/add to cart'), FailureHandling.OPTIONAL)
 
@@ -73,37 +73,37 @@ WebUI.delay(1)
 
 WebUI.click(findTestObject('Site 680 objects/Mini Cart'))
 
-WebUI.click(findTestObject('Site 680 objects/ship to address radio button'))
-
 WebUI.click(findTestObject('Site 680 objects/shipping cart proceed to checkout'))
 
 WebUI.click(findTestObject('Site 680 objects/book condition proceed to checkout'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('Site 680 objects/shipping cart proceed to checkout'))
-
-WebUI.click(findTestObject('Site 680 objects/book condition proceed to checkout'), FailureHandling.OPTIONAL)
-
-WebUI.delay(2)
-
-WebUI.click(findTestObject('Site 680 objects/shipping method continue button'))
+WebUI.click(findTestObject('Site 680 objects/pickup info continue button'))
 
 WebUI.delay(2)
 
 WebUI.click(findTestObject('Site 680 objects/coop close'))
 
-WebUI.click(findTestObject('Site 680 objects/credit debit payment option'))
+WebUI.click(findTestObject('Site 680 objects/paypal payment option'))
 
-WebUI.click(findTestObject('Site 680 objects/saved payment method'))
+WebUI.click(findTestObject('Site 680 objects/apply paypal button'))
 
-WebUI.click(findTestObject('Site 680 objects/visa'))
+WebUI.click(findTestObject('Site 680 objects/paypal email address input'))
 
-WebUI.click(findTestObject('Site 680 objects/cc cvc'))
+WebUI.setText(findTestObject('Site 680 objects/paypal email address input'), 'bntest150@gmail.com')
 
-WebUI.setText(findTestObject('Site 680 objects/cc cvc'), '737')
+WebUI.click(findTestObject('Site 680 objects/paypal next button'))
 
-WebUI.click(findTestObject('Site 680 objects/apply cc'))
+WebUI.click(findTestObject('Site 680 objects/paypal try another way link'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('Site 680 objects/payment info proceed to checkout'))
+WebUI.click(findTestObject('Site 680 objects/use password instead link'), FailureHandling.OPTIONAL)
+
+WebUI.click(findTestObject('Site 680 objects/paypal password field'))
+
+WebUI.setText(findTestObject('Site 680 objects/paypal password field'), 'Welcome1')
+
+WebUI.click(findTestObject('Site 680 objects/paypal login button'))
+
+WebUI.click(findTestObject('Site 680 objects/paypal agree and continue'))
 
 not_run: WebUI.click(findTestObject('Site 680 objects/place order button'))
 

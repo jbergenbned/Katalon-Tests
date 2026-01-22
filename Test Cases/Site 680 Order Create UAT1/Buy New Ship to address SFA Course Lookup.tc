@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Buy New Ship to address SFA Course Lookup</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b5d6dfb4-f534-4ce0-a374-9c00f84d3ba5</testCaseGuid>
+</TestCaseEntity>

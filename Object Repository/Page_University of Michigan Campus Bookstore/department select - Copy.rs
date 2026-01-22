@@ -1,24 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>shipping method continue button</name>
+   <name>department select - Copy</name>
    <tag></tag>
-   <elementGuidId>d08bcff6-9c8d-4321-a41c-a5e1f566bb17</elementGuidId>
+   <elementGuidId>68163f67-50fd-4e41-8bb7-2a5b5de8fce3</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>CSS</key>
-         <value>div.bned-checkout-box-continue:nth-child(2)</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//button[normalize-space(text())='Continue']</value>
+         <value>//li[text() = 'ACC']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>

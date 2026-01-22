@@ -1,24 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>shipping method continue button</name>
+   <name>section select 1 Normal</name>
    <tag></tag>
-   <elementGuidId>d08bcff6-9c8d-4321-a41c-a5e1f566bb17</elementGuidId>
+   <elementGuidId>22515598-d43b-4569-90a7-2fb76b759ab9</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>CSS</key>
-         <value>div.bned-checkout-box-continue:nth-child(2)</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//button[normalize-space(text())='Continue']</value>
+         <value>//li[contains(@class, 'select2-results__option--highlighted') and text()='1 - NORMAL']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>

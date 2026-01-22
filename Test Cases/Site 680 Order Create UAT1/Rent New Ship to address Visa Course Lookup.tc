@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Rent New Ship to address Visa Course Lookup</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>584995b2-7169-4e54-affd-cf246bed3d56</testCaseGuid>
+</TestCaseEntity>

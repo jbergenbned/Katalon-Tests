@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>click term</name>
+   <name>retrieve materials</name>
    <tag></tag>
-   <elementGuidId>9cb7c692-c76b-4958-b2ec-48c099e58d7c</elementGuidId>
+   <elementGuidId>98697612-d403-4eb1-8517-626f24a20f44</elementGuidId>
    <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.bned-campus-form:nth-child(1) > div:nth-child(4) > div:nth-child(2) > a:nth-child(1)</value>
+      </entry>
       <entry>
          <key>BASIC</key>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//span[contains(@class,'select2-selection--single') and @role='combobox']</value>
+         <value>//div[contains(@class,'bned-retrieve-materials-btn')]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>

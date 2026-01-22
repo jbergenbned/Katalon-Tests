@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>new print book</name>
+   <name>course select new print</name>
    <tag></tag>
-   <elementGuidId>873ab8e1-bf4f-4abe-864c-1110cce2da20</elementGuidId>
+   <elementGuidId>52c1fd9c-a30d-4d57-974f-4acf6fc773ba</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value>//*[@value = 'MBS_206854_new']</value>
+         <key>XPATH</key>
+         <value>//span[@class='variantPriceText' and contains(., '$107.15')]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='print-MBS_1024802_new-5']</value>
+         <key>BASIC</key>
+         <value>//*[@name = 'radio_MBS_9372229_680_1_25_B_30_100_1']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -20,9 +20,9 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>value</name>
+      <name>name</name>
       <type>Main</type>
-      <value>MBS_206854_new</value>
-      <webElementGuid>c90f2f42-f86d-424f-9248-7c5c3c6f6f43</webElementGuid>
+      <value>radio_MBS_9372229_680_1_25_B_30_100_1</value>
+      <webElementGuid>7968bd37-1d94-493c-aef8-ab840d1e2369</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

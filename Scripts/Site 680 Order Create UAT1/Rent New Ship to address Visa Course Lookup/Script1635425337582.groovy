@@ -21,8 +21,7 @@ WebUI.openBrowser('', FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.maximizeWindow(FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.navigateToUrl('https://michigan.uat1.helixbeta.com/Categories/School-Supplies-ArtTech/Writing-Instruments/Pens/Carded/Pilot-Precise-V5-Stick-Rolling-Ball-Pen-Extra-Fine-0-5mm-7Pack-Assorted/p/359118881', 
-    FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.navigateToUrl('https://michigan.uat1.helixbeta.com/', FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('Page_Apparel, Gifts  Textbooks  University of Michigan Campus Bookstore/button_Sign In  Create Account'))
 
@@ -38,11 +37,39 @@ WebUI.setText(findTestObject('Page_Apparel, Gifts  Textbooks  University of Mich
 
 WebUI.click(findTestObject('Site 680 objects/user account sign in button'))
 
-WebUI.click(findTestObject('Site 680 objects/add to cart GM'), FailureHandling.OPTIONAL)
+WebUI.delay(5)
 
-WebUI.click(findTestObject('Site 680 objects/buy again button'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('Site 680 objects/find course materials'))
+
+WebUI.click(findTestObject('Page_University of Michigan Campus Bookstore/term'))
+
+WebUI.click(findTestObject('Page_University of Michigan Campus Bookstore/li_WINTER-1 2025'))
+
+WebUI.click(findTestObject('Page_University of Michigan Campus Bookstore/department'))
+
+WebUI.click(findTestObject('Page_University of Michigan Campus Bookstore/department select'))
+
+WebUI.click(findTestObject('Page_University of Michigan Campus Bookstore/course'))
+
+WebUI.click(findTestObject('Page_University of Michigan Campus Bookstore/course select'))
+
+WebUI.click(findTestObject('Page_University of Michigan Campus Bookstore/section'))
+
+WebUI.click(findTestObject('Page_University of Michigan Campus Bookstore/section select'))
 
 WebUI.delay(1)
+
+WebUI.click(findTestObject('Page_University of Michigan Campus Bookstore/retrieve materials'))
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('Site 680 objects/course select new rental'))
+
+WebUI.click(findTestObject('Site 680 objects/add to cart'), FailureHandling.OPTIONAL)
+
+WebUI.click(findTestObject('Site 680 objects/buy again course lookup'), FailureHandling.OPTIONAL)
+
+not_run: WebUI.delay(1)
 
 WebUI.click(findTestObject('Site 680 objects/Mini Cart'))
 
@@ -52,9 +79,21 @@ WebUI.click(findTestObject('Site 680 objects/shipping cart proceed to checkout')
 
 WebUI.click(findTestObject('Site 680 objects/book condition proceed to checkout'), FailureHandling.OPTIONAL)
 
+not_run: WebUI.delay(1)
+
 WebUI.click(findTestObject('Site 680 objects/shipping method continue button'))
 
-WebUI.delay(2)
+WebUI.click(findTestObject('Site 680 objects/rental information saved payments button'), FailureHandling.OPTIONAL)
+
+WebUI.click(findTestObject('Site 680 objects/visa'), FailureHandling.OPTIONAL)
+
+WebUI.click(findTestObject('Site 680 objects/rental info cvv'), FailureHandling.OPTIONAL)
+
+WebUI.setText(findTestObject('Site 680 objects/rental info cvv'), '737', FailureHandling.OPTIONAL)
+
+WebUI.click(findTestObject('Site 680 objects/rental info continue button'), FailureHandling.OPTIONAL)
+
+WebUI.delay(1)
 
 WebUI.click(findTestObject('Site 680 objects/coop close'))
 
@@ -71,6 +110,10 @@ WebUI.setText(findTestObject('Site 680 objects/cc cvc'), '737')
 WebUI.click(findTestObject('Site 680 objects/apply cc'))
 
 WebUI.click(findTestObject('Site 680 objects/payment info proceed to checkout'))
+
+WebUI.click(findTestObject('Site 680 objects/rental agreement checkbox'))
+
+WebUI.click(findTestObject('Site 680 objects/rental agreement continue button'))
 
 not_run: WebUI.click(findTestObject('Site 680 objects/place order button'))
 

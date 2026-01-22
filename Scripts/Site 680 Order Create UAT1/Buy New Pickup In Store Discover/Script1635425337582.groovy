@@ -40,7 +40,7 @@ WebUI.click(findTestObject('Site 680 objects/user account sign in button'))
 WebUI.click(findTestObject('Page_Apparel, Gifts  Textbooks  University of Michigan Campus Bookstore/input_Enter your search details'))
 
 WebUI.setText(findTestObject('Page_Apparel, Gifts  Textbooks  University of Michigan Campus Bookstore/input_Enter your search details'), 
-    findTestData('Site 680/Site 680 Text Book').getValue(1, 89), FailureHandling.CONTINUE_ON_FAILURE)
+    findTestData('Site 680/Site 680 Text Book').getValue(1, 93), FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.sendKeys(findTestObject('Page_Apparel, Gifts  Textbooks  University of Michigan Campus Bookstore/input_Enter your search details'), 
     Keys.chord(Keys.ENTER), FailureHandling.CONTINUE_ON_FAILURE)

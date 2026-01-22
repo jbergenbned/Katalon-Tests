@@ -101,5 +101,5 @@ WebUI.click(findTestObject('Site 680 objects/rental agreement checkbox'))
 
 WebUI.click(findTestObject('Site 680 objects/rental agreement continue button'))
 
-WebUI.click(findTestObject('Site 680 objects/paypal agree button'))
+not_run: WebUI.click(findTestObject('Site 680 objects/paypal agree button'))
 

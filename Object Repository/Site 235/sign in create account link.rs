@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>click term</name>
+   <name>sign in create account link</name>
    <tag></tag>
-   <elementGuidId>9cb7c692-c76b-4958-b2ec-48c099e58d7c</elementGuidId>
+   <elementGuidId>e9ea44f1-6c5c-4be3-8fac-14d241c3162c</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//button[@id='bnedLoginButton']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//span[contains(@class,'select2-selection--single') and @role='combobox']</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

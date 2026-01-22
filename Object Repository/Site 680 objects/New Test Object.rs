@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>click term</name>
+   <name>New Test Object</name>
    <tag></tag>
-   <elementGuidId>9cb7c692-c76b-4958-b2ec-48c099e58d7c</elementGuidId>
+   <elementGuidId>44afb0ff-f8ab-4dcf-8f97-5ad98d87f2ca</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//span[contains(@class,'select2-selection--single') and @role='combobox']</value>
+         <value>//select[contains(@class,'js-term')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

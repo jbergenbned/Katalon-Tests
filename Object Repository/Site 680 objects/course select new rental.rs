@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>click term</name>
+   <name>course select new rental</name>
    <tag></tag>
-   <elementGuidId>9cb7c692-c76b-4958-b2ec-48c099e58d7c</elementGuidId>
+   <elementGuidId>1df5c5b9-9ab3-4312-81cc-66966c76547a</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//span[contains(@class,'select2-selection--single') and @role='combobox']</value>
+         <value>//span[@class='variantPriceText' and contains(., '$80.35')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

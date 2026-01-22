@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>new print book</name>
+   <name>department</name>
    <tag></tag>
-   <elementGuidId>873ab8e1-bf4f-4abe-864c-1110cce2da20</elementGuidId>
+   <elementGuidId>43fb28cb-1e0c-4c9b-b6c1-eba85eadca32</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@value = 'MBS_206854_new']</value>
+         <value>//*[@class = 'js-department bned-select-input js-enable-select-input form-control js-bned-select-typeahead select2-hidden-accessible']</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='print-MBS_1024802_new-5']</value>
+         <value>//span[contains(@aria-label, 'Select') and contains(@aria-label, 'Department')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -20,9 +20,9 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>value</name>
+      <name>class</name>
       <type>Main</type>
-      <value>MBS_206854_new</value>
-      <webElementGuid>c90f2f42-f86d-424f-9248-7c5c3c6f6f43</webElementGuid>
+      <value>js-department bned-select-input js-enable-select-input form-control js-bned-select-typeahead select2-hidden-accessible</value>
+      <webElementGuid>452d808c-01b0-44c7-92a7-3bdbcd91ae5b</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

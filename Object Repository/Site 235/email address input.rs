@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>new print book</name>
+   <name>email address input</name>
    <tag></tag>
-   <elementGuidId>873ab8e1-bf4f-4abe-864c-1110cce2da20</elementGuidId>
+   <elementGuidId>908810e5-9099-4ef2-aae3-ec651881036e</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value>//*[@value = 'MBS_206854_new']</value>
+         <key>XPATH</key>
+         <value>//input[@id='email' and @name='email']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='print-MBS_1024802_new-5']</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -20,9 +20,9 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>value</name>
+      <name>ref_element</name>
       <type>Main</type>
-      <value>MBS_206854_new</value>
-      <webElementGuid>c90f2f42-f86d-424f-9248-7c5c3c6f6f43</webElementGuid>
+      <value>Object Repository/Site 235/login iframe</value>
+      <webElementGuid>ffa8ae2b-9bea-4456-ada6-3322cc3665bc</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

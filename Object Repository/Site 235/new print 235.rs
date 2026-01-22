@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>new print book</name>
+   <name>new print 235</name>
    <tag></tag>
-   <elementGuidId>873ab8e1-bf4f-4abe-864c-1110cce2da20</elementGuidId>
+   <elementGuidId>8c13e85f-4cdc-4a16-b25e-0c9fe494e686</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value>//*[@value = 'MBS_206854_new']</value>
+         <key>XPATH</key>
+         <value></value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='print-MBS_1024802_new-5']</value>
+         <key>BASIC</key>
+         <value>//*[@id = 'print-MBS_210749_new-3']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>value</name>
+      <name>id</name>
       <type>Main</type>
-      <value>MBS_206854_new</value>
-      <webElementGuid>c90f2f42-f86d-424f-9248-7c5c3c6f6f43</webElementGuid>
+      <value>print-MBS_210749_new-3</value>
+      <webElementGuid>fd10dced-d495-4c3b-ace1-5680d55fbb53</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

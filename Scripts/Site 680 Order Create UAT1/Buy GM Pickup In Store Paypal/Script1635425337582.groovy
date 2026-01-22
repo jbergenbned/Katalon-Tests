@@ -21,7 +21,7 @@ WebUI.openBrowser('', FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.maximizeWindow(FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.navigateToUrl('https://michigan.uat1.helixbeta.com/Categories/School-Supplies-ArtTech/Writing-Instruments/Pens/Carded/BIC-Atlantis-Original-Retractable-Ball-Pen-Medium-Point-1-0mm-Black-2Pack/p/331916', 
+WebUI.navigateToUrl('https://michigan.uat1.helixbeta.com/Categories/School-Supplies-ArtTech/Writing-Instruments/Pens/Carded/Pilot-Precise-V5-Stick-Rolling-Ball-Pen-Extra-Fine-0-5mm-7Pack-Assorted/p/359118881', 
     FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('Page_Apparel, Gifts  Textbooks  University of Michigan Campus Bookstore/button_Sign In  Create Account'))

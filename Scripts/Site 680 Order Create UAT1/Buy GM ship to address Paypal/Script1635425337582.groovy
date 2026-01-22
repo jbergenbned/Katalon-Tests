@@ -21,7 +21,7 @@ WebUI.openBrowser('', FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.maximizeWindow(FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.navigateToUrl('https://michigan.uat1.helixbeta.com/Categories/School-Supplies-ArtTech/Art-Supplies/Art-Bases-Instruments--Supplies/Artist-Pads-Paper-Tracing-Paper/Paper-Miteintes-19x25-Ivy/p/19370', 
+WebUI.navigateToUrl('https://michigan.uat1.helixbeta.com/Categories/School-Supplies-ArtTech/Writing-Instruments/Pens/Carded/Pilot-Precise-V5-Stick-Rolling-Ball-Pen-Extra-Fine-0-5mm-7Pack-Assorted/p/359118881', 
     FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('Page_Apparel, Gifts  Textbooks  University of Michigan Campus Bookstore/button_Sign In  Create Account'))

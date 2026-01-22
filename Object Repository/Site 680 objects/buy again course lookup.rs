@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>click term</name>
+   <name>buy again course lookup</name>
    <tag></tag>
-   <elementGuidId>9cb7c692-c76b-4958-b2ec-48c099e58d7c</elementGuidId>
+   <elementGuidId>039dc742-1d26-4000-9c58-4195c280b99e</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//a[contains(@class, 'js-cm-add-to-cart') and contains(text(), 'Buy again')]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//span[contains(@class,'select2-selection--single') and @role='combobox']</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

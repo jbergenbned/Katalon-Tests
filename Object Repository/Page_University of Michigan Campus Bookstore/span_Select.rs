@@ -6,8 +6,8 @@
    <elementGuidId>98dd79ec-61cf-4feb-8167-45e25534283e</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>span.select2.select2-container.select2-container--default.select2-container--above > span.selection > span.select2-selection.select2-selection--single</value>
+         <key>XPATH</key>
+         <value>//div[@id='mainContent']/div/div/div/div/div[4]/div[2]/form/div/div[2]/div[2]/div/div/div/span/span/span</value>
       </entry>
       <entry>
          <key>BASIC</key>
@@ -16,11 +16,11 @@
                     Term' and (text() = 'Select' or . = 'Select')])]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='mainContent']/div/div/div/div/div[4]/div[2]/form/div/div[2]/div[2]/div/div/div/span/span/span</value>
+         <key>CSS</key>
+         <value>div.control > span.select2.select2-container.select2-container--default > span.selection > span.select2-selection.select2-selection--single</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
@@ -30,69 +30,69 @@
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>5a20235b-90d9-40f4-92f7-40b4edf9c799</webElementGuid>
+      <webElementGuid>b1c0c1bf-25a3-4679-9bd6-75d7eb074406</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
       <value>select2-selection select2-selection--single</value>
-      <webElementGuid>0f163e0c-0bdc-4de8-a859-ad40731b8ddf</webElementGuid>
+      <webElementGuid>1e7b15c7-a424-4445-9c8f-5fd129415641</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>role</name>
       <type>Main</type>
       <value>combobox</value>
-      <webElementGuid>3e733a8b-507d-405c-9843-f81582bea475</webElementGuid>
+      <webElementGuid>b432baeb-1eec-4227-9339-23be20040006</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>aria-haspopup</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>490f646f-e678-4877-aa9f-acf2efc3ee9a</webElementGuid>
+      <webElementGuid>cd0c412f-6958-4746-b803-da376da0446c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>aria-expanded</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>81730b2d-8d5e-4582-b08d-8355389cb127</webElementGuid>
+      <webElementGuid>025b9451-a76b-4928-bbea-0bb2d0741f14</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tabindex</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>262c268f-3622-4e57-834f-4427d4136aac</webElementGuid>
+      <webElementGuid>68908712-259d-4d4c-8ddd-a0e9e7c79e97</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>aria-disabled</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>2c6b7d30-9356-445b-9fe2-99509021b211</webElementGuid>
+      <webElementGuid>eda2217e-7016-44e4-9c9e-98a98ae6cdd2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>aria-label</name>
       <type>Main</type>
       <value>Select
                     Term</value>
-      <webElementGuid>b4ed77a6-4e7b-4bd2-83f7-211dc78f017b</webElementGuid>
+      <webElementGuid>23eeb7bf-391d-4908-8169-5107197d93d5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -100,15 +100,15 @@
       <name>text</name>
       <type>Main</type>
       <value>Select</value>
-      <webElementGuid>ed61c14c-e448-42d0-b680-d3b69b0c4c17</webElementGuid>
+      <webElementGuid>6462f928-a10e-42d3-acd7-6656d382c3d0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;mainContent&quot;)/div[@class=&quot;yCmsContentSlot course-finder-center-content-component&quot;]/div[@class=&quot;yCmsComponent course-finder-center-content-component&quot;]/div[@class=&quot;container&quot;]/div[@class=&quot;bned-container-cf&quot;]/div[@class=&quot;bned-cf-container&quot;]/div[@class=&quot;bned-course-finder-form-wrapper&quot;]/form[@class=&quot;js-course-finder-form&quot;]/div[@class=&quot;bned-campus-form js-bned-campus-form js-bned-campus-not-previous-search js-course-finder-element&quot;]/div[@class=&quot;bned-rows-block js-bned-rows-block js-accessibility-table&quot;]/div[@class=&quot;bned-register-section bned-course-row-wp js-course-row js-bned-course-not-previous-search js-course-finder-element&quot;]/div[@class=&quot;bned-select-item js-bned-select-item terms&quot;]/div[@class=&quot;form-group&quot;]/div[@class=&quot;control&quot;]/span[@class=&quot;select2 select2-container select2-container--default select2-container--above&quot;]/span[@class=&quot;selection&quot;]/span[@class=&quot;select2-selection select2-selection--single&quot;]</value>
-      <webElementGuid>3a7fd368-90ab-4cd9-bbd2-6c22fcd628de</webElementGuid>
+      <value>id(&quot;mainContent&quot;)/div[@class=&quot;yCmsContentSlot course-finder-center-content-component&quot;]/div[@class=&quot;yCmsComponent course-finder-center-content-component&quot;]/div[@class=&quot;container&quot;]/div[@class=&quot;bned-container-cf&quot;]/div[@class=&quot;bned-cf-container&quot;]/div[@class=&quot;bned-course-finder-form-wrapper&quot;]/form[@class=&quot;js-course-finder-form&quot;]/div[@class=&quot;bned-campus-form js-bned-campus-form js-bned-campus-not-previous-search js-course-finder-element&quot;]/div[@class=&quot;bned-rows-block js-bned-rows-block js-accessibility-table&quot;]/div[@class=&quot;bned-register-section bned-course-row-wp js-course-row js-bned-course-not-previous-search js-course-finder-element&quot;]/div[@class=&quot;bned-select-item js-bned-select-item terms&quot;]/div[@class=&quot;form-group&quot;]/div[@class=&quot;control&quot;]/span[@class=&quot;select2 select2-container select2-container--default&quot;]/span[@class=&quot;selection&quot;]/span[@class=&quot;select2-selection select2-selection--single&quot;]</value>
+      <webElementGuid>94ec52c3-e9e8-4c6e-bb2c-dd2ee17f4e07</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -116,7 +116,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='mainContent']/div/div/div/div/div[4]/div[2]/form/div/div[2]/div[2]/div/div/div/span/span/span</value>
-      <webElementGuid>ac0b01de-fd47-4d62-b56a-a50410df1f82</webElementGuid>
+      <webElementGuid>92c858cf-f880-41c1-8fb0-5c9e1844b352</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -124,7 +124,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Term'])[4]/following::span[3]</value>
-      <webElementGuid>913dc9de-1e80-4db8-88c7-9934ee848c08</webElementGuid>
+      <webElementGuid>8f55e55b-7b00-4103-ba93-7774b8742500</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -132,7 +132,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Clear Information'])[2]/following::span[3]</value>
-      <webElementGuid>19557251-b61a-4f01-be87-91f37c857e1c</webElementGuid>
+      <webElementGuid>c89d1433-817b-431f-9dab-e77321c6173d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -140,7 +140,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Department'])[4]/preceding::span[4]</value>
-      <webElementGuid>5203f7d1-1938-4dab-91a5-f25252e0549a</webElementGuid>
+      <webElementGuid>8d829a46-af9d-4f3d-9603-a175018ec0e7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -148,7 +148,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div/div/div/span/span/span</value>
-      <webElementGuid>dbad67fa-7551-45c6-ac40-f89bc8131321</webElementGuid>
+      <webElementGuid>6cb90961-86df-46a5-825d-80f4bfcca14c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -156,6 +156,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'Select' or . = 'Select')]</value>
-      <webElementGuid>cd5b2709-76d6-4549-9e05-83a8a55a5002</webElementGuid>
+      <webElementGuid>1d357570-f52b-413c-a5ba-fb5247f353a2</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

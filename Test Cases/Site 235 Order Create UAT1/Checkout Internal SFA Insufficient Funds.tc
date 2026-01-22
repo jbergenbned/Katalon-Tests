@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>Checkout Internal SFA Insufficient Funds</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>ee7b7fbb-cbed-46bb-8cfc-93dbdd756089</testCaseGuid>
-</TestCaseEntity>

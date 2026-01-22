@@ -43,7 +43,7 @@ WebUI.sendKeys(findTestObject('chub/search for dropdown menu'), Keys.chord(Keys.
 
 WebUI.click(findTestObject('chub/search for input box'))
 
-WebUI.setText(findTestObject('chub/search for input box'), '00163013')
+WebUI.setText(findTestObject('chub/search for input box'), '00564053')
 
 WebUI.click(findTestObject('chub/search go button'))
 

@@ -41,9 +41,9 @@ WebUI.click(findTestObject('helix reports/rental reports menu option'))
 
 WebUI.click(findTestObject('Page_Helix Reports/input_From Date_input-78'))
 
-WebUI.setText(findTestObject('Page_Helix Reports/input_From Date_input-78'), '2025-11-02')
+WebUI.setText(findTestObject('Page_Helix Reports/input_From Date_input-78'), '2025-11-08')
 
 WebUI.click(findTestObject('Page_Helix Reports/input_To Date_input-81'))
 
-WebUI.setText(findTestObject('Page_Helix Reports/input_To Date_input-81'), '2026-01-16')
+WebUI.setText(findTestObject('Page_Helix Reports/input_To Date_input-81'), '2026-01-17')
 

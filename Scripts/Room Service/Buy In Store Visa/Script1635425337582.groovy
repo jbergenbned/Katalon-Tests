@@ -21,7 +21,7 @@ WebUI.openBrowser('', FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.maximizeWindow(FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.navigateToUrl('https://clemson-roomservice.uat1.helixbeta.com/Bath/Storage-and-Organization/Room-Service-TEST-17/p/698414141', 
+WebUI.navigateToUrl('https://rit-roomservice.uat1.helixbeta.com/Bath/Storage-and-Organization/Room-Service-TEST-27/p/698463866', 
     FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('Page_Apparel, Gifts  Textbooks  University of Michigan Campus Bookstore/button_Sign In  Create Account'))
@@ -46,9 +46,9 @@ WebUI.click(findTestObject('Room Service/Room Service Mini cart'))
 
 WebUI.click(findTestObject('Room Service/your cart proceed to checkout'))
 
-WebUI.click(findTestObject('Room Service/campus room number'))
+WebUI.click(findTestObject('Room Service/campus room number'), FailureHandling.OPTIONAL)
 
-WebUI.setText(findTestObject('Room Service/campus room number'), '2')
+WebUI.setText(findTestObject('Room Service/campus room number'), '2', FailureHandling.OPTIONAL)
 
 WebUI.click(findTestObject('Room Service/student first name'))
 

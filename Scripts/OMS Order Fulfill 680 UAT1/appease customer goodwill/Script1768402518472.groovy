@@ -37,6 +37,8 @@ WebUI.setText(findTestObject('Site 680 objects/oms global search input'), '10058
 
 WebUI.sendKeys(findTestObject('Site 680 objects/oms global search input'), Keys.chord(Keys.ENTER))
 
+WebUI.delay(2)
+
 WebUI.click(findTestObject('Site 680 objects/order summary hamburger menu'))
 
 WebUI.click(findTestObject('Site 680 objects/appease customer option'))

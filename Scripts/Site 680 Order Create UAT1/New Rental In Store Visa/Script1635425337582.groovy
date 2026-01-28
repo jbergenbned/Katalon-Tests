@@ -65,7 +65,11 @@ WebUI.click(findTestObject('Site 680 objects/book condition proceed to checkout'
 
 WebUI.click(findTestObject('Site 680 objects/pickup info continue button'))
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Site 680 objects/rental information saved payments button'), FailureHandling.OPTIONAL)
+
+WebUI.click(findTestObject('Site 680 objects/visa'))
 
 WebUI.click(findTestObject('Site 680 objects/rental info cvv'), FailureHandling.OPTIONAL)
 

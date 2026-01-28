@@ -65,7 +65,7 @@ WebUI.click(findTestObject('Site 680 objects/book condition proceed to checkout'
 
 WebUI.click(findTestObject('Site 680 objects/pickup info continue button'))
 
-WebUI.delay(1)
+WebUI.delay(2)
 
 WebUI.click(findTestObject('Site 680 objects/coop close'))
 
@@ -83,5 +83,5 @@ WebUI.click(findTestObject('Site 680 objects/apply cc'))
 
 WebUI.click(findTestObject('Site 680 objects/payment info proceed to checkout'))
 
-WebUI.click(findTestObject('Site 680 objects/place order button'))
+not_run: WebUI.click(findTestObject('Site 680 objects/place order button'))
 

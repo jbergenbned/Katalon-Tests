@@ -21,7 +21,8 @@ WebUI.openBrowser('', FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.maximizeWindow(FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.navigateToUrl('https://rit-roomservice.uat1.helixbeta.com/Storage/Mirrors/Room-Service-TEST-56/p/698464156', FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.navigateToUrl('https://rit-roomservice.uat1.helixbeta.com/Bath/Storage-and-Organization/Room-Service-TEST-27/p/698463866', 
+    FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('Page_Apparel, Gifts  Textbooks  University of Michigan Campus Bookstore/button_Sign In  Create Account'))
 
@@ -67,19 +68,29 @@ WebUI.setText(findTestObject('Room Service/student phone'), '5555555555')
 
 WebUI.click(findTestObject('Room Service/student info continue button'))
 
-WebUI.click(findTestObject('Site 680 objects/credit debit payment option'))
+WebUI.delay(2)
 
-WebUI.click(findTestObject('Site 680 objects/saved payment method'))
+WebUI.click(findTestObject('Site 680 objects/paypal payment option'))
 
-WebUI.click(findTestObject('Site 680 objects/visa'))
+WebUI.click(findTestObject('Site 680 objects/apply paypal button'))
 
-WebUI.click(findTestObject('Site 680 objects/cc cvc'))
+WebUI.click(findTestObject('Site 680 objects/paypal email address input'))
 
-WebUI.setText(findTestObject('Site 680 objects/cc cvc'), '737')
+WebUI.setText(findTestObject('Site 680 objects/paypal email address input'), 'bntest150@gmail.com')
 
-WebUI.click(findTestObject('Site 680 objects/apply cc'))
+WebUI.click(findTestObject('Site 680 objects/paypal next button'))
 
-WebUI.click(findTestObject('Site 680 objects/payment info proceed to checkout'))
+WebUI.click(findTestObject('Site 680 objects/paypal try another way link'), FailureHandling.OPTIONAL)
+
+WebUI.click(findTestObject('Site 680 objects/use password instead link'), FailureHandling.OPTIONAL)
+
+WebUI.click(findTestObject('Site 680 objects/paypal password field'))
+
+WebUI.setText(findTestObject('Site 680 objects/paypal password field'), 'Welcome1')
+
+WebUI.click(findTestObject('Site 680 objects/paypal login button'))
+
+WebUI.click(findTestObject('Site 680 objects/paypal agree and continue'))
 
 not_run: WebUI.click(findTestObject('Site 680 objects/place order button'))
 
